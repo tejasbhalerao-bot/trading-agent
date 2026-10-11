@@ -11,7 +11,7 @@ the rules that bind them, and what is still open.
 
 ## Status
 
-M0 (foundations and data check) and M1 (design of Decide, Record and Learn) are complete. M2 (design of Settle, Analyze, Fetch and Clean) is complete and awaiting decisions. Reports: [docs/reports/](docs/reports/). Milestones: [docs/plan.md](docs/plan.md).
+M0 (foundations and data check) and M1 (design of Decide, Record and Learn) are complete. M2 (design of Settle, Analyze, Fetch and Clean) is complete. Next: M3, the first working slice. Reports: [docs/reports/](docs/reports/). Milestones: [docs/plan.md](docs/plan.md).
 
 ## Build order
 

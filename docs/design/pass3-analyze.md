@@ -2,7 +2,7 @@
 
 How the system decides which shares to look at, reads the market's mood, and checks every share against every checklist. Analyze reports facts only. It never ranks or scores; choosing is Decide's job.
 
-**Status:** Draft for approval at the end of M2. Open choices are marked **[your call]** and listed in [reports/m2.md](../reports/m2.md).
+**Status:** Approved 2026-10-11. Decisions are recorded in [reports/m2.md](../reports/m2.md).
 
 Background: [spec.md](../spec.md), [pass1-decide-record-learn.md](pass1-decide-record-learn.md).
 
@@ -25,14 +25,14 @@ Background: [spec.md](../spec.md), [pass1-decide-record-learn.md](pass1-decide-r
 
 On the first trading day of each month, the universe becomes the **500 ordinary shares with the highest median daily traded value over the previous 60 trading days**, counting only shares with at least 60 days of history. It is built from NSE's own daily files, so live trading and the backtest use exactly the same rule, and there is no bias from today's index lists.
 
-## Market mood [your call]
+## Market mood
 
-Recommended rule, from the Nifty 500 index:
+From the Nifty 500 index and its **50-day moving average (50 DMA)**, as you required:
 
 | Mood | When |
 |---|---|
-| **Up** | The index closes above its 50-day average, **and** that average is higher than it was 10 trading days ago. |
-| **Down** | The index closes below its 50-day average, **and** that average is lower than it was 10 trading days ago. |
+| **Up** | The index closes above its 50 DMA, **and** the 50 DMA is higher than it was 10 trading days ago. |
+| **Down** | The index closes below its 50 DMA, **and** the 50 DMA is lower than it was 10 trading days ago. |
 | **Sideways** | Anything else. |
 
 What it gives over 2015–2026 (2,633 trading days):
@@ -43,8 +43,6 @@ What it gives over 2015–2026 (2,633 trading days):
 
 - A mood lasts about 15 trading days on average. Half of all spells are 6 days or shorter, so it reacts within a week or two.
 - The split is steady across 2015–19, 2020–22 and 2023–26.
-
-**Alternative:** mood from breadth, i.e. the share of our 500 stocks closing above their own 50-day average (above 60% = up, below 40% = down). It needs no index file, but is harder to picture than "the market is above its average and rising".
 
 ## Rules every checklist shares
 
@@ -61,7 +59,7 @@ A share is only checked if, today:
 
 The same exits everywhere keep the checklists comparable, and keep any difference in results down to the entry conditions.
 
-## The first checklists [your call]
+## The first checklists
 
 Three well-known patterns, all buys (cash trading cannot sell short). Each condition is a yes or no answered from the numbers alone.
 

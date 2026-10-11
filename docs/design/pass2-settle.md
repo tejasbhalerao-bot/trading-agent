@@ -2,7 +2,7 @@
 
 How the system works out what its fake trades would actually have done, using only real daily prices. The honesty of the whole paper-trading period rests on this job: a result made up here looks exactly like a real one to everything that reads the notebook later.
 
-**Status:** Draft for approval at the end of M2.
+**Status:** Approved 2026-10-11.
 
 Background: [spec.md](../spec.md) (the seven jobs), [pass1-decide-record-learn.md](pass1-decide-record-learn.md) (how trades are decided).
 

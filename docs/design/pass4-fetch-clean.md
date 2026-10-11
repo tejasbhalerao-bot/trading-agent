@@ -2,7 +2,7 @@
 
 How each day's market data is collected and made trustworthy. Fetch gets the numbers and says exactly what arrived. Clean decides what goes into the stored history. All checking happens in Clean, and every later job trusts the history without re-checking it.
 
-**Status:** Draft for approval at the end of M2.
+**Status:** Approved 2026-10-11.
 
 Background: [spec.md](../spec.md), [reports/m0.md](../reports/m0.md) (what M0 learned about the data).
 
