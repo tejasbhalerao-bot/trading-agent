@@ -17,6 +17,7 @@ Milestones M0–M6 are building and take days to a couple of weeks, depending mo
 | Where it runs | Claude Code cloud routines, not a local machine. Each run works on a fresh copy of this repo and saves its results back to it. |
 | Language model | No API key. The routine's own Claude session writes the plain-English case and may veto a trade. Code checks its output, so it can never invent a trade. |
 | Backtest | Allowed, with limits: see M5. |
+| Repo structure | One repo, one branch. See [design/repo-structure.md](design/repo-structure.md). |
 
 ---
 
@@ -24,7 +25,7 @@ Milestones M0–M6 are building and take days to a couple of weeks, depending mo
 
 ### M0 — Foundations and data check
 
-**What gets done.** The Python project, the test setup, and a guard that rejects any commit that edits or deletes a notebook entry. Then a one-time cloud routine checks whether we can get daily NSE/BSE prices, five or more years of history (enough to cover different market moods, including 2020), corporate actions, and the index member lists. The same run checks that the cloud can reach those sources and push results back to the repo.
+**What gets done.** The repo laid out as designed in [design/repo-structure.md](design/repo-structure.md): the Python project, the test setup, and the checks that enforce the structure, including the one that rejects any change to `data/` other than added lines. A test that cloud routines can be limited to the two run commands and one review file. Then a one-time cloud routine checks whether we can get daily NSE/BSE prices, five or more years of history (enough to cover different market moods, including 2020), corporate actions, and the index member lists. The same run checks that the cloud can reach those sources and push results back to the repo.
 
 **What it unlocks.** Proof that the system can be built where it will run. Everything after this assumes it can.
 
@@ -100,6 +101,7 @@ Two limits keep the backtest honest:
 ## When Claude stops early, even mid-milestone
 
 - The data check fails, or the cloud cannot reach the data or push to the repo.
+- Cloud routines cannot be limited to the two run commands and one review file.
 - A design problem would require changing the spec. Under its own rules, the spec reopens rather than being quietly worked around.
 - Anything would need access beyond this repo and the routines named above.
 
