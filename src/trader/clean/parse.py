@@ -96,7 +96,7 @@ def symbol_changes(body: bytes) -> list[tuple[str, str, dt.date]]:
 
 
 def _date(s: str) -> dt.date:
-    for fmt in ("%Y-%m-%d", "%d-%b-%Y", "%d-%m-%Y"):
+    for fmt in ("%Y-%m-%d", "%d-%b-%Y", "%d-%m-%Y", "%d-%b-%y"):  # "%d-%b-%y": e.g. 13-Jul-20 in some 2020 files
         try:
             return dt.datetime.strptime(s, fmt).date()
         except ValueError:

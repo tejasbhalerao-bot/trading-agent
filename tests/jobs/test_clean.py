@@ -134,3 +134,20 @@ def test_a_rename_carries_history_but_an_old_rename_of_a_reused_symbol_does_not(
     h = Store(tmp_path).history().as_of(D2)
     assert [b.close for b in h.bars("NEWCO")] == [10, 10.2]
     assert [b.close for b in h.bars("REUSED")] == [5, 5]
+
+
+def test_dates_in_every_format_nse_has_used():
+    # Some 2020 price files wrote 13-Jul-20 instead of 13-JUL-2020.
+    for text in ("2020-07-13", "13-JUL-2020", "13-Jul-20", "13-07-2020"):
+        assert parse._date(text) == dt.date(2020, 7, 13)
+
+
+def test_an_unreadable_file_fails_its_day_and_the_next_day_carries_on(tmp_path):
+    store = Store(tmp_path)
+    c = Cleaner(store)
+    c.clean_day(D1, new_file(D1, [("AAA", 10, 11, 9, 10, 10)]), None)
+    out = c.clean_day(D2, b"not a zip file", None)
+    assert out["stored"] == 0 and "could not be read" in out["failed"]
+    assert Cleaner(Store(tmp_path)).prev_day == D2           # a new run does not retry the bad day forever
+    c.clean_day(D3, new_file(D3, [("AAA", 10, 11, 9, 10.5, 10.2)]), None)
+    assert Store(tmp_path).history().as_of(D3).bars("AAA")[-1].close == 10.5

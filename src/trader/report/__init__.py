@@ -139,8 +139,13 @@ def render(store: Store, d: dt.date) -> str:
 
     # 7. Health
     out += ["## 7. Is the system working properly?", ""]
-    out.append(f"- {'✅' if not dont_know else '⚠️'} **Market data:** "
-               + ("complete." if not dont_know else f"{len(dont_know)} share(s) left out today because their figures couldn't be verified."))
+    day_failed = [r for r in dont_know if r["symbol"] == "*"]
+    shares_out = [r for r in dont_know if r["symbol"] != "*"]
+    if day_failed:
+        out.append(f"- ⚠️ **Market data:** today's NSE file couldn't be read ({day_failed[0]['reason']}).")
+    else:
+        out.append(f"- {'✅' if not shares_out else '⚠️'} **Market data:** "
+                   + ("complete." if not shares_out else f"{len(shares_out)} share(s) left out today because their figures couldn't be verified."))
     if review:
         ok = review["status"] == "accepted"
         text = {"accepted": "arrived and passed the checks.",

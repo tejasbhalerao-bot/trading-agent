@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import csv
 import datetime as dt
+import json
 from collections import Counter
 
 from trader.schema import ACTION_FIELDS, INDEX_FIELDS, PRICE_FIELDS, RESTART
@@ -29,6 +30,13 @@ class Cleaner:
         history = store.history()
         self.last = {s: (b.date, b.close) for s, b in history.latest_bars().items()}
         self.prev_day = max((d for d, _ in self.last.values()), default=None)
+        skipped = store.history_dir / "skipped"
+        for path in sorted(skipped.glob("*.jsonl")) if skipped.exists() else []:
+            with open(path) as f:
+                for line in f:
+                    if '"symbol":"*"' in line:  # a whole day marked failed still counts as processed
+                        day = dt.date.fromisoformat(json.loads(line)["date"])
+                        self.prev_day = max(self.prev_day or day, day)
         self.actions = {(a.symbol, a.ex_date, a.kind): _Known(a.factor, a.status, a.known_from)
                         for a in history.all_actions()}
         self.isin = {}
@@ -91,7 +99,13 @@ class Cleaner:
         return len(new)
 
     def clean_day(self, d: dt.date, price_file: bytes, index_file: bytes | None) -> dict:
-        rows = parse.price_rows(price_file)
+        try:
+            rows = parse.price_rows(price_file)
+        except Exception as e:  # noqa: BLE001 - an unreadable file fails the day; it must not stop every evening after it
+            reason = f"NSE's file could not be read: {type(e).__name__}: {e}"
+            self.w.append_records(f"skipped/{month_file(d, 'jsonl')}", [{"date": d.isoformat(), "symbol": "*", "reason": reason}])
+            self.prev_day = d
+            return {"stored": 0, "failed": reason}
         counts = Counter(r["symbol"] for r in rows)
         stored, skipped, action_lines, identity = [], [], [], []
         for r in rows:
