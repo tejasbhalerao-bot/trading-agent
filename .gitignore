@@ -1,0 +1,24 @@
+# market data — never committed
+data/
+*.csv
+*.parquet
+*.db
+*.sqlite3
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# secrets
+.env
+*.pem
+credentials.json
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/
