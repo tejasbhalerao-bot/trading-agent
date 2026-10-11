@@ -9,6 +9,11 @@ what it would do, and you place every order yourself.
 **Start here:** [docs/spec.md](docs/spec.md) — the whole system in one document: the seven jobs,
 the rules that bind them, and what is still open.
 
+**Daily reports:** [data/reports/](data/reports/), one file per trading day, e.g.
+`data/reports/2026-10/2026-10-12.md`. They start when paper trading goes live (M6). Until then, see the
+[sample report](docs/reports/m4-sample-daily-report.md) and
+[how to read the daily report](docs/how-to-read-the-daily-report.md).
+
 ## Status
 
 M0–M4 are complete: foundations, the full design, and the full system (all seven jobs, the evening run, Claude's review check, the daily report), with market history from January 2024 in `data/history/`. Next: M5, the backtest and go/no-go. Reports: [docs/reports/](docs/reports/). Milestones: [docs/plan.md](docs/plan.md).
