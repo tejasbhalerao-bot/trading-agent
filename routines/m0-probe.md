@@ -1,4 +1,6 @@
-# M0 data check (one-time routine)
+# M0 data check (one-time routine) — past test, kept as a record
+
+> These are the instructions for a test run during M0. The test showed that a cloud routine cannot be restricted to a few commands and cannot reach NSE, which is why the daily run moved to GitHub Actions. See [docs/reports/m0.md](../docs/reports/m0.md). Not used by the live system.
 
 You are running a one-time check for the trading-agent project. You have deliberately been given very few permissions. Some steps below are **expected to be refused**: that is the point of the test. When a step is refused, record it and move on. Never look for a way around a refusal, and never retry a refused step another way.
 

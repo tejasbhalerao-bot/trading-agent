@@ -1,6 +1,6 @@
-"""The one entry point the cloud routines may run.
+"""The one entry point the daily GitHub Actions workflows run.
 
-    python3 src/trader/run.py probe      M0 data check: probe sources, record, publish
+    python3 src/trader/run.py probe      M0 data check (throwaway; Fetch replaces it in M3)
     python3 src/trader/run.py propose    (M3)
     python3 src/trader/run.py finalize   (M3)
 """
