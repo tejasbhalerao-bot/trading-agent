@@ -1,0 +1,12 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2020-10-01,GAEL,2020-10-01,split,2.0,verified,2020-09-21,checked against the price on 2020-10-01
+2020-10-05,SAGARDEEP,2020-10-05,bonus,1.5,verified,2020-09-25,checked against the price on 2020-10-05
+2020-10-06,PANACEABIO,2020-09-21,restart,1.0,verified,2020-09-11,checked against the price on 2020-10-06
+2020-10-08,SHRENIK,2020-10-08,bonus,3.0,verified,2020-09-28,checked against the price on 2020-10-08
+2020-10-08,SHRENIK,2020-10-08,split,2.0,verified,2020-09-28,checked against the price on 2020-10-08
+2020-10-09,MANINDS,2020-09-24,restart,1.0,verified,2020-09-14,checked against the price on 2020-10-09
+2020-10-13,MAHESHWARI,2020-10-13,bonus,2.0,verified,2020-10-03,checked against the price on 2020-10-13
+2020-10-14,PRIVISCL,2020-08-21,restart,1.0,verified,2020-08-11,checked against the price on 2020-10-14
+2020-10-15,SDBL,2020-10-15,split,2.0,verified,2020-10-05,checked against the price on 2020-10-15
+2020-10-19,EPL,2018-06-20,bonus,2.0,verified,2018-06-10,checked against the price on 2020-10-19
+2020-10-20,ANANTRAJ,2020-10-06,restart,1.0,verified,2020-09-26,checked against the price on 2020-10-20

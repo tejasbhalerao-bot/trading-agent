@@ -1,0 +1,7 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2019-02-04,CONCOR,2019-02-04,bonus,1.25,verified,2019-01-25,checked against the price on 2019-02-04
+2019-02-20,RADIOCITY,2019-02-20,split,5.0,verified,2019-02-10,checked against the price on 2019-02-20
+2019-02-26,BSOFT,2019-01-24,restart,1.0,verified,2019-01-14,checked against the price on 2019-02-26
+2019-02-01,KSERASERA,2019-02-01,restart,1.0,verified,2019-02-01,history restarts: unexplained move beyond 35% (applied in M5)
+2019-02-05,KSERASERA,2019-02-05,restart,1.0,verified,2019-02-05,history restarts: unexplained move beyond 35% (applied in M5)
+2019-02-18,VISESHINFO,2019-02-18,restart,1.0,verified,2019-02-18,history restarts: unexplained move beyond 35% (applied in M5)

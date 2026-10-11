@@ -1,0 +1,4 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2019-04-25,HTMEDIA,2019-04-09,restart,1.0,verified,2019-03-30,checked against the price on 2019-04-25
+2019-04-03,VISESHINFO,2019-04-03,restart,1.0,verified,2019-04-03,history restarts: unexplained move beyond 35% (applied in M5)
+2019-04-25,UVSL,2019-04-25,restart,1.0,verified,2019-04-25,history restarts: unexplained move beyond 35% (applied in M5)

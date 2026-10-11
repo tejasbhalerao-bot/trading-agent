@@ -1,0 +1,12 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-06-12,MUTHOOTCAP,2017-06-12,bonus,1.1,verified,2017-06-02,checked against the price on 2017-06-12
+2017-06-13,WIPRO,2017-06-13,bonus,2.0,verified,2017-06-03,checked against the price on 2017-06-13
+2017-06-15,BIOCON,2017-06-15,bonus,3.0,verified,2017-06-05,checked against the price on 2017-06-15
+2017-06-20,ICICIBANK,2017-06-20,bonus,1.1,verified,2017-06-10,checked against the price on 2017-06-20
+2017-06-22,ARCOTECH,2017-06-22,split,5.0,verified,2017-06-12,checked against the price on 2017-06-22
+2017-06-22,GODREJCP,2017-06-22,bonus,2.0,verified,2017-06-12,checked against the price on 2017-06-22
+2017-06-22,KITEX,2017-06-22,bonus,1.4,verified,2017-06-12,checked against the price on 2017-06-22
+2017-06-27,OMKARCHEM,2017-06-12,restart,1.0,verified,2017-06-02,checked against the price on 2017-06-27
+2017-06-15,VISESHINFO,2017-06-15,restart,1.0,verified,2017-06-15,history restarts: unexplained move beyond 35% (applied in M5)
+2017-06-27,VISESHINFO,2017-06-27,restart,1.0,verified,2017-06-27,history restarts: unexplained move beyond 35% (applied in M5)
+2017-06-29,VISESHINFO,2017-06-29,restart,1.0,verified,2017-06-29,history restarts: unexplained move beyond 35% (applied in M5)

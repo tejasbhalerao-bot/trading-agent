@@ -1,0 +1,7 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2020-12-09,HATSUN,2020-12-09,bonus,1.3333333333333333,verified,2020-11-29,checked against the price on 2020-12-09
+2020-12-15,APLAPOLLO,2020-12-15,split,5.0,verified,2020-12-05,checked against the price on 2020-12-15
+2020-12-16,VISHAL,2020-12-16,bonus,1.5,verified,2020-12-06,checked against the price on 2020-12-16
+2020-12-24,VALIANTORG,2020-12-24,bonus,2.0,verified,2020-12-14,checked against the price on 2020-12-24
+2020-12-31,PILANIINVS,2020-12-31,bonus,1.4,verified,2020-12-21,checked against the price on 2020-12-31
+2020-12-23,MAJESCO,2020-12-23,restart,1.0,verified,2020-12-23,history restarts: unexplained move beyond 35% (applied in M5)

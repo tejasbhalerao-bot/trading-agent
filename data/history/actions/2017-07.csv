@@ -1,0 +1,20 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-07-03,PETRONET,2017-07-03,bonus,2.0,verified,2017-06-23,checked against the price on 2017-07-03
+2017-07-03,PLASTIBLEN,2017-07-03,bonus,2.0,verified,2017-06-23,checked against the price on 2017-07-03
+2017-07-03,SANWARIA,2017-07-03,bonus,2.0,verified,2017-06-23,checked against the price on 2017-07-03
+2017-07-06,PCJEWELLER,2017-07-06,bonus,2.0,verified,2017-06-26,checked against the price on 2017-07-06
+2017-07-07,SMSPHARMA,2017-06-22,restart,1.0,verified,2017-06-12,checked against the price on 2017-07-07
+2017-07-10,MAANALU,2017-07-10,bonus,2.0,verified,2017-06-30,checked against the price on 2017-07-10
+2017-07-10,MHRIL,2017-07-10,bonus,1.5,verified,2017-06-30,checked against the price on 2017-07-10
+2017-07-11,HINDPETRO,2017-07-11,bonus,1.5,verified,2017-07-01,checked against the price on 2017-07-11
+2017-07-11,MUNJALAU,2017-07-11,bonus,2.0,verified,2017-07-01,checked against the price on 2017-07-11
+2017-07-13,BPCL,2017-07-13,bonus,1.5,verified,2017-07-03,checked against the price on 2017-07-13
+2017-07-13,CUB,2017-07-13,bonus,1.1,verified,2017-07-03,checked against the price on 2017-07-13
+2017-07-13,GPTINFRA,2017-07-13,bonus,2.0,verified,2017-07-03,checked against the price on 2017-07-13
+2017-07-13,LT,2017-07-13,bonus,1.5,verified,2017-07-03,checked against the price on 2017-07-13
+2017-07-19,GRASIM,2017-07-19,restart,1.0,verified,2017-07-09,checked against the price on 2017-07-19
+2017-07-19,NAVINFLUOR,2017-07-19,split,5.0,verified,2017-07-09,checked against the price on 2017-07-19
+2017-07-25,SUNTECK,2017-07-25,split,2.0,verified,2017-07-15,checked against the price on 2017-07-25
+2017-07-26,VISESHINFO,2017-07-26,restart,1.0,verified,2017-07-26,history restarts: unexplained move beyond 35% (applied in M5)
+2017-07-28,KSERASERA,2017-07-28,restart,1.0,verified,2017-07-28,history restarts: unexplained move beyond 35% (applied in M5)
+2017-07-28,VISESHINFO,2017-07-28,restart,1.0,verified,2017-07-28,history restarts: unexplained move beyond 35% (applied in M5)

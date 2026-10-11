@@ -1,0 +1,15 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2016-03-03,PRAKASHSTL,2016-03-03,split,10.0,verified,2016-02-22,checked against the price on 2016-03-03
+2016-03-09,MINDTREE,2016-03-09,bonus,2.0,verified,2016-02-28,checked against the price on 2016-03-09
+2016-03-14,RAMASTEEL,2016-03-14,split,2.0,rejected,2016-03-04,checked against the price on 2016-03-14
+2016-03-14,RAMASTEEL,2016-03-14,restart,1.0,verified,2016-03-14,history restarts: corporate action could not be verified
+2016-03-21,PRECWIRE,2016-03-21,split,2.0,verified,2016-03-11,checked against the price on 2016-03-21
+2016-03-30,VIVIDHA,2016-03-30,bonus,1.3333333333333333,verified,2016-03-20,checked against the price on 2016-03-30
+2016-03-01,VKSPL,2016-03-01,restart,1.0,verified,2016-03-01,history restarts: unexplained move beyond 35% (applied in M5)
+2016-03-10,VISESHINFO,2016-03-10,restart,1.0,verified,2016-03-10,history restarts: unexplained move beyond 35% (applied in M5)
+2016-03-15,CROMPGREAV,2016-03-15,restart,1.0,verified,2016-03-15,history restarts: unexplained move beyond 35% (applied in M5)
+2016-03-16,TIDEWATER,2016-03-16,restart,1.0,verified,2016-03-16,history restarts: unexplained move beyond 35% (applied in M5)
+2016-03-21,WELSPUNIND,2016-03-21,restart,1.0,verified,2016-03-21,history restarts: unexplained move beyond 35% (applied in M5)
+2016-03-23,VISESHINFO,2016-03-23,restart,1.0,verified,2016-03-23,history restarts: unexplained move beyond 35% (applied in M5)
+2016-03-29,VISESHINFO,2016-03-29,restart,1.0,verified,2016-03-29,history restarts: unexplained move beyond 35% (applied in M5)
+2016-03-31,VKSPL,2016-03-31,restart,1.0,verified,2016-03-31,history restarts: unexplained move beyond 35% (applied in M5)

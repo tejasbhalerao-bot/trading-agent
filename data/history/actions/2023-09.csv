@@ -1,0 +1,13 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2023-09-01,GNA,2023-09-01,bonus,2.0,verified,2023-08-22,checked against the price on 2023-09-01
+2023-09-07,JTLIND,2023-09-07,bonus,2.0,verified,2023-08-28,checked against the price on 2023-09-07
+2023-09-07,TVSHLTD,2023-08-24,restart,1.0,verified,2023-08-14,checked against the price on 2023-09-07
+2023-09-11,ADFFOODS,2023-09-11,split,5.0,verified,2023-09-01,checked against the price on 2023-09-11
+2023-09-12,POWERGRID,2023-09-12,bonus,1.3333333333333333,verified,2023-09-02,checked against the price on 2023-09-12
+2023-09-18,JBCHEPHARM,2023-09-18,split,2.0,verified,2023-09-08,checked against the price on 2023-09-18
+2023-09-21,PFC,2023-09-21,bonus,1.25,verified,2023-09-11,checked against the price on 2023-09-21
+2023-09-22,BERGEPAINT,2023-09-22,bonus,1.2,verified,2023-09-12,checked against the price on 2023-09-22
+2023-09-25,NINSYS,2023-08-03,bonus,1.8,verified,2023-07-24,checked against the price on 2023-09-25
+2023-09-25,SERVOTECH,2023-07-28,split,2.0,verified,2023-07-18,checked against the price on 2023-09-25
+2023-09-28,HAL,2023-09-28,split,2.0,verified,2023-09-18,checked against the price on 2023-09-28
+2023-09-29,BAJAJELEC,2023-09-14,restart,1.0,verified,2023-09-04,checked against the price on 2023-09-29

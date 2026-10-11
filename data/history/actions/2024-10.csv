@@ -5,6 +5,10 @@ seen,symbol,ex_date,kind,factor,status,known_from,subject
 2024-10-07,GRPLTD,2024-08-12,bonus,4.0,verified,2024-08-02,checked against the price on 2024-10-07
 2024-10-08,POWERMECH,2024-10-08,bonus,2.0,verified,2024-09-28,checked against the price on 2024-10-08
 2024-10-09,JINDALSAW,2024-10-09,split,2.0,verified,2024-09-29,checked against the price on 2024-10-09
+2024-10-09,VEEDOL,2016-03-16,split,2.0,verified,2016-03-06,checked against the price on 2024-10-09
+2024-10-09,VEEDOL,2021-07-26,split,2.5,verified,2021-07-16,checked against the price on 2024-10-09
+2024-10-09,VEEDOL,2021-07-26,bonus,2.0,verified,2021-07-16,checked against the price on 2024-10-09
+2024-10-10,ABREL,2019-10-11,restart,1.0,verified,2019-10-01,checked against the price on 2024-10-10
 2024-10-15,VAISHALI,2024-10-15,split,5.0,verified,2024-10-05,checked against the price on 2024-10-15
 2024-10-15,VAISHALI,2024-10-15,bonus,2.0,verified,2024-10-05,checked against the price on 2024-10-15
 2024-10-16,POCL,2024-10-16,split,2.0,verified,2024-10-06,checked against the price on 2024-10-16
@@ -12,6 +16,8 @@ seen,symbol,ex_date,kind,factor,status,known_from,subject
 2024-10-25,HERCULES,2024-10-11,restart,1.0,verified,2024-10-01,checked against the price on 2024-10-25
 2024-10-28,DRREDDY,2024-10-28,split,5.0,verified,2024-10-18,checked against the price on 2024-10-28
 2024-10-28,RELIANCE,2024-10-28,bonus,2.0,verified,2024-10-18,checked against the price on 2024-10-28
-2024-10-28,CUPID,2024-04-04,split,10.0,verified,2024-03-25,checked against the price on 2024-10-28
-2024-10-28,CUPID,2024-04-04,bonus,2.0,verified,2024-03-25,checked against the price on 2024-10-28
+2024-10-28,CUPID,2024-04-04,split,10.0,rejected,2024-03-25,checked against the price on 2024-10-28
+2024-10-28,CUPID,2024-04-04,bonus,2.0,rejected,2024-03-25,checked against the price on 2024-10-28
+2024-10-28,CUPID,2024-10-28,restart,1.0,verified,2024-10-28,history restarts: corporate action could not be verified
 2024-10-30,JASH,2024-10-30,split,5.0,verified,2024-10-20,checked against the price on 2024-10-30
+2024-10-18,HEG,2024-10-18,restart,1.0,verified,2024-10-18,history restarts: unexplained move beyond 35% (applied in M5)

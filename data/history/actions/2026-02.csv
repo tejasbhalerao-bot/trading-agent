@@ -5,9 +5,14 @@ seen,symbol,ex_date,kind,factor,status,known_from,subject
 2026-02-01,UEL,2024-09-20,bonus,1.25,verified,2024-09-10,checked against the price on 2026-02-01
 2026-02-01,UEL,2025-05-30,bonus,1.68,verified,2025-05-20,checked against the price on 2026-02-01
 2026-02-01,UEL,2025-10-10,bonus,3.0,verified,2025-09-30,checked against the price on 2026-02-01
+2026-02-03,CCAVENUE,2017-08-31,split,10.0,verified,2017-08-21,checked against the price on 2026-02-03
+2026-02-03,CCAVENUE,2020-12-10,restart,1.0,verified,2020-11-30,checked against the price on 2026-02-03
+2026-02-03,CCAVENUE,2021-03-18,bonus,2.0,verified,2021-03-08,checked against the price on 2026-02-03
+2026-02-03,CCAVENUE,2022-03-14,bonus,2.0,verified,2022-03-04,checked against the price on 2026-02-03
 2026-02-03,CCAVENUE,2024-09-11,restart,1.0,verified,2024-09-01,checked against the price on 2026-02-03
 2026-02-13,DELPHIFX,2026-02-13,split,5.0,verified,2026-02-03,checked against the price on 2026-02-13
 2026-02-13,DELPHIFX,2026-02-13,bonus,3.0,verified,2026-02-03,checked against the price on 2026-02-13
 2026-02-20,GENUSPOWER,2026-02-06,restart,1.0,verified,2026-01-27,checked against the price on 2026-02-20
 2026-02-26,ANGELONE,2026-02-26,split,10.0,verified,2026-02-16,checked against the price on 2026-02-26
 2026-02-27,INFOBEAN,2026-02-27,bonus,4.0,verified,2026-02-17,checked against the price on 2026-02-27
+2026-02-18,SADHNANIQ,2026-02-18,restart,1.0,verified,2026-02-18,history restarts: unexplained move beyond 35% (applied in M5)

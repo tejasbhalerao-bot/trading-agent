@@ -1,0 +1,10 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-12-07,NBIFIN,2017-12-07,split,2.0,verified,2017-11-27,checked against the price on 2017-12-07
+2017-12-13,FRETAIL,2017-11-29,restart,1.0,verified,2017-11-19,checked against the price on 2017-12-13
+2017-12-21,BALKRISIND,2017-12-21,bonus,2.0,verified,2017-12-11,checked against the price on 2017-12-21
+2017-12-21,CASTROLIND,2017-12-21,bonus,2.0,verified,2017-12-11,checked against the price on 2017-12-21
+2017-12-21,M&M,2017-12-21,bonus,2.0,verified,2017-12-11,checked against the price on 2017-12-21
+2017-12-21,VAKRANGEE,2017-12-21,bonus,2.0,verified,2017-12-11,checked against the price on 2017-12-21
+2017-12-26,JINDWORLD,2017-12-26,split,2.0,verified,2017-12-16,checked against the price on 2017-12-26
+2017-12-26,MOHOTAIND,2015-03-16,bonus,1.1666666666666667,verified,2015-03-06,checked against the price on 2017-12-26
+2017-12-20,RCOM,2017-12-20,restart,1.0,verified,2017-12-20,history restarts: unexplained move beyond 35% (applied in M5)

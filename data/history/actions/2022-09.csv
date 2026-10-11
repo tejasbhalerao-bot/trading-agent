@@ -1,0 +1,22 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2022-09-01,SOTL,2022-09-01,split,5.0,verified,2022-08-22,checked against the price on 2022-09-01
+2022-09-05,XPROINDIA,2022-07-01,bonus,1.5,verified,2022-06-21,checked against the price on 2022-09-05
+2022-09-06,DANGEE,2022-09-06,split,10.0,verified,2022-08-27,checked against the price on 2022-09-06
+2022-09-06,DANGEE,2022-09-06,bonus,1.5,verified,2022-08-27,checked against the price on 2022-09-06
+2022-09-06,GAIL,2022-09-06,bonus,1.5,verified,2022-08-27,checked against the price on 2022-09-06
+2022-09-08,BANSWRAS,2022-09-08,split,2.0,verified,2022-08-29,checked against the price on 2022-09-08
+2022-09-08,SONATSOFTW,2022-09-08,bonus,1.3333333333333333,verified,2022-08-29,checked against the price on 2022-09-08
+2022-09-13,BAJAJFINSV,2022-09-13,split,5.0,verified,2022-09-03,checked against the price on 2022-09-13
+2022-09-13,BAJAJFINSV,2022-09-13,bonus,2.0,verified,2022-09-03,checked against the price on 2022-09-13
+2022-09-15,BEL,2022-09-15,bonus,3.0,verified,2022-09-05,checked against the price on 2022-09-15
+2022-09-15,RAJMET,2022-09-15,bonus,1.5,verified,2022-09-05,checked against the price on 2022-09-15
+2022-09-21,ECLERX,2022-09-21,bonus,1.5,verified,2022-09-11,checked against the price on 2022-09-21
+2022-09-22,BEML,2022-09-08,restart,1.0,verified,2022-08-29,checked against the price on 2022-09-22
+2022-09-22,CHOICEIN,2022-09-22,bonus,2.0,verified,2022-09-12,checked against the price on 2022-09-22
+2022-09-23,BSHSL,2022-09-23,split,10.0,verified,2022-09-13,checked against the price on 2022-09-23
+2022-09-23,RUBYMILLS,2022-09-23,bonus,2.0,verified,2022-09-13,checked against the price on 2022-09-23
+2022-09-23,SAKSOFT,2022-09-23,split,10.0,verified,2022-09-13,checked against the price on 2022-09-23
+2022-09-27,BHARATGEAR,2022-09-27,bonus,1.5,verified,2022-09-17,checked against the price on 2022-09-27
+2022-09-28,RAMRAT,2022-09-28,bonus,2.0,verified,2022-09-18,checked against the price on 2022-09-28
+2022-09-30,INSECTICID,2022-09-30,bonus,1.5,verified,2022-09-20,checked against the price on 2022-09-30
+2022-09-28,EXCEL,2022-09-28,restart,1.0,verified,2022-09-28,history restarts: unexplained move beyond 35% (applied in M5)

@@ -1,0 +1,7 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2018-05-03,MMTC,2018-05-03,bonus,1.5,verified,2018-04-23,checked against the price on 2018-05-03
+2018-05-04,3PLAND,2016-02-11,restart,1.0,verified,2016-02-01,checked against the price on 2018-05-04
+2018-05-21,GMBREW,2018-05-21,bonus,1.25,verified,2018-05-11,checked against the price on 2018-05-21
+2018-05-31,TCS,2018-05-31,bonus,2.0,verified,2018-05-21,checked against the price on 2018-05-31
+2018-05-04,PCJEWELLER,2018-05-04,restart,1.0,verified,2018-05-04,history restarts: unexplained move beyond 35% (applied in M5)
+2018-05-17,RCOM,2018-05-17,restart,1.0,verified,2018-05-17,history restarts: unexplained move beyond 35% (applied in M5)

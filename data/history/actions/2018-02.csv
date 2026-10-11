@@ -1,0 +1,6 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2018-02-07,BILENERGY,2018-01-11,bonus,2.0,rejected,2018-01-01,checked against the price on 2018-02-07
+2018-02-07,BILENERGY,2018-02-07,restart,1.0,verified,2018-02-07,history restarts: corporate action could not be verified
+2018-02-14,GAYAPROJ,2018-01-30,restart,1.0,verified,2018-01-20,checked against the price on 2018-02-14
+2018-02-16,SUNDARMFIN,2018-02-01,restart,1.0,verified,2018-01-22,checked against the price on 2018-02-16
+2018-02-02,FCSSOFT,2018-02-02,restart,1.0,verified,2018-02-02,history restarts: unexplained move beyond 35% (applied in M5)

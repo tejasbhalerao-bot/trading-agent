@@ -1,0 +1,20 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2015-07-01,RELAXO,2015-07-01,bonus,2.0,verified,2015-06-21,checked against the price on 2015-07-01
+2015-07-10,FEDERALBNK,2015-07-08,bonus,2.0,verified,2015-06-28,checked against the price on 2015-07-10
+2015-07-10,KOTAKBANK,2015-07-08,bonus,2.0,verified,2015-06-28,checked against the price on 2015-07-10
+2015-07-15,MAITHANALL,2015-07-15,bonus,2.0,verified,2015-07-05,checked against the price on 2015-07-15
+2015-07-20,AUROPHARMA,2015-07-20,bonus,2.0,verified,2015-07-10,checked against the price on 2015-07-20
+2015-07-28,MBLINFRA,2015-07-28,bonus,2.0,verified,2015-07-18,checked against the price on 2015-07-28
+2015-07-02,BIRLACOT,2015-07-02,restart,1.0,verified,2015-07-02,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-02,VISESHINFO,2015-07-02,restart,1.0,verified,2015-07-02,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-06,BIRLACOT,2015-07-06,restart,1.0,verified,2015-07-06,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-06,VISESHINFO,2015-07-06,restart,1.0,verified,2015-07-06,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-10,BIRLACOT,2015-07-10,restart,1.0,verified,2015-07-10,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-14,VISESHINFO,2015-07-14,restart,1.0,verified,2015-07-14,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-16,BIRLACOT,2015-07-16,restart,1.0,verified,2015-07-16,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-17,VKSPL,2015-07-17,restart,1.0,verified,2015-07-17,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-22,BIRLACOT,2015-07-22,restart,1.0,verified,2015-07-22,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-24,BIRLACOT,2015-07-24,restart,1.0,verified,2015-07-24,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-28,VISESHINFO,2015-07-28,restart,1.0,verified,2015-07-28,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-30,BIRLACOT,2015-07-30,restart,1.0,verified,2015-07-30,history restarts: unexplained move beyond 35% (applied in M5)
+2015-07-30,VISESHINFO,2015-07-30,restart,1.0,verified,2015-07-30,history restarts: unexplained move beyond 35% (applied in M5)

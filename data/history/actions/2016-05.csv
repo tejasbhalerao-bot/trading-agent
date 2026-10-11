@@ -1,0 +1,23 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2016-05-02,DISHMAN,2016-05-02,bonus,2.0,verified,2016-04-22,checked against the price on 2016-05-02
+2016-05-25,FEL,2016-05-11,restart,1.0,verified,2016-05-01,checked against the price on 2016-05-25
+2016-05-26,JINDALPHOT,2016-05-12,restart,1.0,verified,2016-05-02,checked against the price on 2016-05-26
+2016-05-30,GMBREW,2016-05-30,bonus,1.25,verified,2016-05-20,checked against the price on 2016-05-30
+2016-05-02,VKSPL,2016-05-02,restart,1.0,verified,2016-05-02,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-03,VISESHINFO,2016-05-03,restart,1.0,verified,2016-05-03,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-05,BIRLACOT,2016-05-05,restart,1.0,verified,2016-05-05,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-05,FARMAXIND,2016-05-05,restart,1.0,verified,2016-05-05,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-06,VKSPL,2016-05-06,restart,1.0,verified,2016-05-06,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-11,BIRLACOT,2016-05-11,restart,1.0,verified,2016-05-11,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-11,FARMAXIND,2016-05-11,restart,1.0,verified,2016-05-11,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-12,VKSPL,2016-05-12,restart,1.0,verified,2016-05-12,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-13,BIRLACOT,2016-05-13,restart,1.0,verified,2016-05-13,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-13,FARMAXIND,2016-05-13,restart,1.0,verified,2016-05-13,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-17,VKSPL,2016-05-17,restart,1.0,verified,2016-05-17,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-18,BIRLACOT,2016-05-18,restart,1.0,verified,2016-05-18,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-20,BIRLACOT,2016-05-20,restart,1.0,verified,2016-05-20,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-24,VKSPL,2016-05-24,restart,1.0,verified,2016-05-24,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-26,BIRLACOT,2016-05-26,restart,1.0,verified,2016-05-26,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-27,VKSPL,2016-05-27,restart,1.0,verified,2016-05-27,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-31,BIRLACOT,2016-05-31,restart,1.0,verified,2016-05-31,history restarts: unexplained move beyond 35% (applied in M5)
+2016-05-31,VKSPL,2016-05-31,restart,1.0,verified,2016-05-31,history restarts: unexplained move beyond 35% (applied in M5)

@@ -1,0 +1,5 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2021-04-13,GFLLIMITED,2021-03-26,restart,1.0,verified,2021-03-16,checked against the price on 2021-04-13
+2021-04-15,FINPIPE,2021-04-15,split,5.0,verified,2021-04-05,checked against the price on 2021-04-15
+2021-04-16,SHARDAMOTR,2021-04-16,split,5.0,verified,2021-04-06,checked against the price on 2021-04-16
+2021-04-27,LIBAS,2021-04-06,bonus,1.2,verified,2021-03-27,checked against the price on 2021-04-27

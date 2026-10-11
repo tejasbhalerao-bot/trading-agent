@@ -1,0 +1,7 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2018-03-15,IOC,2018-03-15,bonus,2.0,verified,2018-03-05,checked against the price on 2018-03-15
+2018-03-21,INDNIPPON,2018-03-21,split,2.0,verified,2018-03-11,checked against the price on 2018-03-21
+2018-03-22,LAOPALA,2018-03-22,bonus,2.0,verified,2018-03-12,checked against the price on 2018-03-22
+2018-03-27,GAIL,2018-03-27,bonus,1.3333333333333333,verified,2018-03-17,checked against the price on 2018-03-27
+2018-03-27,KELLTONTEC,2018-03-27,bonus,2.0,verified,2018-03-17,checked against the price on 2018-03-27
+2018-03-27,OIL,2018-03-27,bonus,1.5,verified,2018-03-17,checked against the price on 2018-03-27

@@ -1,0 +1,17 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2022-03-03,SUPREMEENG,2022-03-03,split,10.0,verified,2022-02-21,checked against the price on 2022-03-03
+2022-03-07,ZYDUSLIFE,2015-10-06,split,5.0,verified,2015-09-26,checked against the price on 2022-03-07
+2022-03-10,VISHAL,2022-03-10,bonus,3.0,verified,2022-02-28,checked against the price on 2022-03-10
+2022-03-14,RKFORGE,2022-03-14,split,5.0,verified,2022-03-04,checked against the price on 2022-03-14
+2022-03-15,BCG,2022-03-15,bonus,1.6666666666666667,verified,2022-03-05,checked against the price on 2022-03-15
+2022-03-17,ARSHIYA,2022-03-03,restart,1.0,verified,2022-02-21,checked against the price on 2022-03-17
+2022-03-21,BSE,2022-03-21,bonus,3.0,verified,2022-03-11,checked against the price on 2022-03-21
+2022-03-24,NDL,2022-03-24,bonus,3.0,verified,2022-03-14,checked against the price on 2022-03-24
+2022-03-24,VTL,2022-03-24,split,5.0,verified,2022-03-14,checked against the price on 2022-03-24
+2022-03-28,GOLDIAM,2022-03-28,split,5.0,verified,2022-03-18,checked against the price on 2022-03-28
+2022-03-28,RAJRATAN,2022-03-15,split,5.0,verified,2022-03-05,checked against the price on 2022-03-28
+2022-03-29,SBC,2022-02-22,split,10.0,rejected,2022-02-12,checked against the price on 2022-03-29
+2022-03-29,SBC,2022-02-22,bonus,2.0,rejected,2022-02-12,checked against the price on 2022-03-29
+2022-03-29,SBC,2022-03-29,restart,1.0,verified,2022-03-29,history restarts: corporate action could not be verified
+2022-03-30,SUULD,2022-03-30,bonus,2.0,verified,2022-03-20,checked against the price on 2022-03-30
+2022-03-14,INFIBEAM,2022-03-14,restart,1.0,verified,2022-03-14,history restarts: unexplained move beyond 35% (applied in M5)

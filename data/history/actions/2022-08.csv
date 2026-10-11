@@ -1,0 +1,12 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2022-08-05,UNOMINDA,2016-09-12,split,5.0,verified,2016-09-02,checked against the price on 2022-08-05
+2022-08-05,UNOMINDA,2018-07-11,bonus,3.0,verified,2018-07-01,checked against the price on 2022-08-05
+2022-08-05,UNOMINDA,2022-07-07,bonus,2.0,verified,2022-06-27,checked against the price on 2022-08-05
+2022-08-08,DRCSYSTEMS,2022-03-16,split,10.0,rejected,2022-03-06,checked against the price on 2022-08-08
+2022-08-08,DRCSYSTEMS,2022-08-08,restart,1.0,verified,2022-08-08,history restarts: corporate action could not be verified
+2022-08-17,RECLTD,2022-08-17,bonus,1.3333333333333333,verified,2022-08-07,checked against the price on 2022-08-17
+2022-08-18,MGEL,2022-08-18,split,5.0,verified,2022-08-08,checked against the price on 2022-08-18
+2022-08-25,RAMASTEEL,2022-08-25,split,5.0,verified,2022-08-15,checked against the price on 2022-08-25
+2022-08-26,PDSL,2022-08-26,split,5.0,verified,2022-08-16,checked against the price on 2022-08-26
+2022-08-30,KRITIKA,2022-08-30,split,5.0,verified,2022-08-20,checked against the price on 2022-08-30
+2022-08-30,PEL,2022-08-30,restart,1.0,verified,2022-08-20,checked against the price on 2022-08-30

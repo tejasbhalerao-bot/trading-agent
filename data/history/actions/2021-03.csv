@@ -1,0 +1,4 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2021-03-18,ASTRAL,2021-03-18,bonus,1.3333333333333333,verified,2021-03-08,checked against the price on 2021-03-18
+2021-03-18,DIXON,2021-03-18,split,5.0,verified,2021-03-08,checked against the price on 2021-03-18
+2021-03-18,INFIBEAM,2021-03-18,restart,1.0,verified,2021-03-18,history restarts: unexplained move beyond 35% (applied in M5)

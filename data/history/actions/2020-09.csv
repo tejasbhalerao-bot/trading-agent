@@ -1,0 +1,5 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2020-09-24,ELGIEQUIP,2020-09-24,bonus,2.0,verified,2020-09-14,checked against the price on 2020-09-24
+2020-09-29,LAURUSLABS,2020-09-29,split,5.0,verified,2020-09-19,checked against the price on 2020-09-29
+2020-09-30,AARTIDRUGS,2020-09-30,bonus,4.0,verified,2020-09-20,checked against the price on 2020-09-30
+2020-09-25,SUVENPHAR,2020-09-25,restart,1.0,verified,2020-09-25,history restarts: unexplained move beyond 35% (applied in M5)

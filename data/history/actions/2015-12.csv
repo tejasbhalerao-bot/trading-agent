@@ -1,0 +1,13 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2015-12-03,JAMNAAUTO,2015-12-03,split,2.0,verified,2015-11-23,checked against the price on 2015-12-03
+2015-12-04,JSL,2015-11-19,restart,1.0,verified,2015-11-09,checked against the price on 2015-12-04
+2015-12-10,JKIL,2015-12-10,split,2.0,verified,2015-11-30,checked against the price on 2015-12-10
+2015-12-17,ECLERX,2015-12-17,bonus,1.3333333333333333,verified,2015-12-07,checked against the price on 2015-12-17
+2015-12-17,SMSPHARMA,2015-12-17,split,10.0,verified,2015-12-07,checked against the price on 2015-12-17
+2015-12-21,INDTERRAIN,2015-12-21,split,5.0,verified,2015-12-11,checked against the price on 2015-12-21
+2015-12-21,VENKEYS,2015-12-21,bonus,1.5,verified,2015-12-11,checked against the price on 2015-12-21
+2015-12-22,MARICO,2015-12-22,bonus,2.0,verified,2015-12-12,checked against the price on 2015-12-22
+2015-12-30,ALLCARGO,2015-12-30,bonus,2.0,verified,2015-12-20,checked against the price on 2015-12-30
+2015-12-07,VKSPL,2015-12-07,restart,1.0,verified,2015-12-07,history restarts: unexplained move beyond 35% (applied in M5)
+2015-12-22,VISESHINFO,2015-12-22,restart,1.0,verified,2015-12-22,history restarts: unexplained move beyond 35% (applied in M5)
+2015-12-22,VKSPL,2015-12-22,restart,1.0,verified,2015-12-22,history restarts: unexplained move beyond 35% (applied in M5)

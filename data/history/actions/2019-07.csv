@@ -1,0 +1,30 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2019-07-02,UPL,2019-07-02,bonus,1.5,verified,2019-06-22,checked against the price on 2019-07-02
+2019-07-04,APCOTEXIND,2019-07-04,split,2.5,verified,2019-06-24,checked against the price on 2019-07-04
+2019-07-09,GAIL,2019-07-09,bonus,2.0,verified,2019-06-29,checked against the price on 2019-07-09
+2019-07-17,AARTIIND,2019-07-03,restart,1.0,verified,2019-06-23,checked against the price on 2019-07-17
+2019-07-17,BHAGERIA,2019-07-17,bonus,2.0,verified,2019-07-07,checked against the price on 2019-07-17
+2019-07-25,VBL,2019-07-25,bonus,1.5,verified,2019-07-15,checked against the price on 2019-07-25
+2019-07-26,GREENPLY,2019-07-12,restart,1.0,verified,2019-07-02,checked against the price on 2019-07-26
+2019-07-02,VISESHINFO,2019-07-02,restart,1.0,verified,2019-07-02,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-03,UVSL,2019-07-03,restart,1.0,verified,2019-07-03,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-04,KSERASERA,2019-07-04,restart,1.0,verified,2019-07-04,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-05,VISESHINFO,2019-07-05,restart,1.0,verified,2019-07-05,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-09,KSERASERA,2019-07-09,restart,1.0,verified,2019-07-09,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-09,VISESHINFO,2019-07-09,restart,1.0,verified,2019-07-09,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-10,UVSL,2019-07-10,restart,1.0,verified,2019-07-10,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-12,UVSL,2019-07-12,restart,1.0,verified,2019-07-12,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-15,VISESHINFO,2019-07-15,restart,1.0,verified,2019-07-15,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-16,UVSL,2019-07-16,restart,1.0,verified,2019-07-16,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-17,VISESHINFO,2019-07-17,restart,1.0,verified,2019-07-17,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-18,UVSL,2019-07-18,restart,1.0,verified,2019-07-18,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-19,KSERASERA,2019-07-19,restart,1.0,verified,2019-07-19,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-19,VISESHINFO,2019-07-19,restart,1.0,verified,2019-07-19,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-22,UVSL,2019-07-22,restart,1.0,verified,2019-07-22,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-23,KSERASERA,2019-07-23,restart,1.0,verified,2019-07-23,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-23,VISESHINFO,2019-07-23,restart,1.0,verified,2019-07-23,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-24,UVSL,2019-07-24,restart,1.0,verified,2019-07-24,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-25,KSERASERA,2019-07-25,restart,1.0,verified,2019-07-25,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-25,VISESHINFO,2019-07-25,restart,1.0,verified,2019-07-25,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-26,UVSL,2019-07-26,restart,1.0,verified,2019-07-26,history restarts: unexplained move beyond 35% (applied in M5)
+2019-07-29,VISESHINFO,2019-07-29,restart,1.0,verified,2019-07-29,history restarts: unexplained move beyond 35% (applied in M5)

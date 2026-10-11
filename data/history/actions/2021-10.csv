@@ -1,0 +1,18 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2021-10-07,AFFLE,2021-10-07,split,5.0,verified,2021-09-27,checked against the price on 2021-10-07
+2021-10-12,BCG,2021-08-18,bonus,1.25,rejected,2021-08-08,checked against the price on 2021-10-12
+2021-10-12,BCG,2021-10-12,restart,1.0,verified,2021-10-12,history restarts: corporate action could not be verified
+2021-10-12,GLOBE,2021-08-03,bonus,3.0,rejected,2021-07-24,checked against the price on 2021-10-12
+2021-10-12,GLOBE,2021-08-03,split,5.0,rejected,2021-07-24,checked against the price on 2021-10-12
+2021-10-12,GLOBE,2021-10-12,restart,1.0,verified,2021-10-12,history restarts: corporate action could not be verified
+2021-10-12,MAANALU,2021-08-02,bonus,2.0,rejected,2021-07-23,checked against the price on 2021-10-12
+2021-10-12,MAANALU,2021-10-12,restart,1.0,verified,2021-10-12,history restarts: corporate action could not be verified
+2021-10-12,RAJMET,2021-09-02,bonus,1.5,rejected,2021-08-23,checked against the price on 2021-10-12
+2021-10-12,RAJMET,2021-10-12,restart,1.0,verified,2021-10-12,history restarts: corporate action could not be verified
+2021-10-13,SRF,2021-10-13,bonus,5.0,verified,2021-10-03,checked against the price on 2021-10-13
+2021-10-21,VISHWARAJ,2021-10-21,split,5.0,verified,2021-10-11,checked against the price on 2021-10-21
+2021-10-26,GPIL,2021-10-26,split,2.0,verified,2021-10-16,checked against the price on 2021-10-26
+2021-10-26,GPIL,2021-10-26,bonus,2.0,verified,2021-10-16,checked against the price on 2021-10-26
+2021-10-28,IRCTC,2021-10-28,split,5.0,verified,2021-10-18,checked against the price on 2021-10-28
+2021-10-28,NIPPOBATRY,2021-10-28,split,2.0,verified,2021-10-18,checked against the price on 2021-10-28
+2021-10-28,PATINTLOG,2021-10-28,restart,1.0,verified,2021-10-28,history restarts: unexplained move beyond 35% (applied in M5)

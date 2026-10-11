@@ -1,0 +1,19 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2015-09-09,DHFL,2015-09-09,bonus,2.0,verified,2015-08-30,checked against the price on 2015-09-09
+2015-09-14,BEL,2015-09-14,bonus,3.0,verified,2015-09-04,checked against the price on 2015-09-14
+2015-09-23,ALANKIT,2015-09-23,split,5.0,verified,2015-09-13,checked against the price on 2015-09-23
+2015-09-23,APCOTEXIND,2015-09-23,bonus,2.0,verified,2015-09-13,checked against the price on 2015-09-23
+2015-09-23,COLPAL,2015-09-23,bonus,2.0,verified,2015-09-13,checked against the price on 2015-09-23
+2015-09-23,DIVISLAB,2015-09-23,bonus,2.0,verified,2015-09-13,checked against the price on 2015-09-23
+2015-09-01,VKSPL,2015-09-01,restart,1.0,verified,2015-09-01,history restarts: unexplained move beyond 35% (applied in M5)
+2015-09-07,VISESHINFO,2015-09-07,restart,1.0,verified,2015-09-07,history restarts: unexplained move beyond 35% (applied in M5)
+2015-09-09,FARMAXIND,2015-09-09,restart,1.0,verified,2015-09-09,history restarts: unexplained move beyond 35% (applied in M5)
+2015-09-09,VISESHINFO,2015-09-09,restart,1.0,verified,2015-09-09,history restarts: unexplained move beyond 35% (applied in M5)
+2015-09-10,VKSPL,2015-09-10,restart,1.0,verified,2015-09-10,history restarts: unexplained move beyond 35% (applied in M5)
+2015-09-11,AMTEKAUTO,2015-09-11,restart,1.0,verified,2015-09-11,history restarts: unexplained move beyond 35% (applied in M5)
+2015-09-11,VISESHINFO,2015-09-11,restart,1.0,verified,2015-09-11,history restarts: unexplained move beyond 35% (applied in M5)
+2015-09-15,VISESHINFO,2015-09-15,restart,1.0,verified,2015-09-15,history restarts: unexplained move beyond 35% (applied in M5)
+2015-09-16,AEGISCHEM,2015-09-16,restart,1.0,verified,2015-09-16,history restarts: unexplained move beyond 35% (applied in M5)
+2015-09-16,VKSPL,2015-09-16,restart,1.0,verified,2015-09-16,history restarts: unexplained move beyond 35% (applied in M5)
+2015-09-28,VISESHINFO,2015-09-28,restart,1.0,verified,2015-09-28,history restarts: unexplained move beyond 35% (applied in M5)
+2015-09-30,VISESHINFO,2015-09-30,restart,1.0,verified,2015-09-30,history restarts: unexplained move beyond 35% (applied in M5)

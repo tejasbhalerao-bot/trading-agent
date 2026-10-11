@@ -1,0 +1,7 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2022-02-03,AAKASH,2022-02-03,split,10.0,verified,2022-01-24,checked against the price on 2022-02-03
+2022-02-08,SCHAEFFLER,2022-02-08,split,5.0,verified,2022-01-29,checked against the price on 2022-02-08
+2022-02-10,GREENLAM,2022-02-10,split,5.0,verified,2022-01-31,checked against the price on 2022-02-10
+2022-02-21,JBMA,2022-02-21,split,2.5,verified,2022-02-11,checked against the price on 2022-02-21
+2022-02-22,HGS,2022-02-22,bonus,2.0,verified,2022-02-12,checked against the price on 2022-02-22
+2022-02-28,EASEMYTRIP,2022-02-28,bonus,2.0,verified,2022-02-18,checked against the price on 2022-02-28

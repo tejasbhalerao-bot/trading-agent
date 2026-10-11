@@ -1,0 +1,15 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2019-06-11,SYNGENE,2019-06-11,bonus,2.0,verified,2019-06-01,checked against the price on 2019-06-11
+2019-06-12,BIOCON,2019-06-12,bonus,2.0,verified,2019-06-02,checked against the price on 2019-06-12
+2019-06-14,CHOLAFIN,2019-06-14,split,5.0,verified,2019-06-04,checked against the price on 2019-06-14
+2019-06-14,DCM,2019-05-30,restart,1.0,verified,2019-05-20,checked against the price on 2019-06-14
+2019-06-14,IIFL,2019-05-30,restart,1.0,verified,2019-05-20,checked against the price on 2019-06-14
+2019-06-26,RELAXO,2019-06-26,bonus,2.0,verified,2019-06-16,checked against the price on 2019-06-26
+2019-06-27,AVADHSUGAR,2019-06-27,bonus,2.0,verified,2019-06-17,checked against the price on 2019-06-27
+2019-06-27,MAGADSUGAR,2019-06-27,bonus,1.4,verified,2019-06-17,checked against the price on 2019-06-27
+2019-06-07,KSERASERA,2019-06-07,restart,1.0,verified,2019-06-07,history restarts: unexplained move beyond 35% (applied in M5)
+2019-06-13,UVSL,2019-06-13,restart,1.0,verified,2019-06-13,history restarts: unexplained move beyond 35% (applied in M5)
+2019-06-18,JETAIRWAYS,2019-06-18,restart,1.0,verified,2019-06-18,history restarts: unexplained move beyond 35% (applied in M5)
+2019-06-20,JETAIRWAYS,2019-06-20,restart,1.0,verified,2019-06-20,history restarts: unexplained move beyond 35% (applied in M5)
+2019-06-20,KSERASERA,2019-06-20,restart,1.0,verified,2019-06-20,history restarts: unexplained move beyond 35% (applied in M5)
+2019-06-28,VISESHINFO,2019-06-28,restart,1.0,verified,2019-06-28,history restarts: unexplained move beyond 35% (applied in M5)

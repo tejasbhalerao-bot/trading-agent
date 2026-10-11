@@ -1,0 +1,22 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2018-06-06,GRUH,2018-06-06,bonus,2.0,verified,2018-05-27,checked against the price on 2018-06-06
+2018-06-06,PITTIENG,2015-04-16,split,2.0,verified,2015-04-06,checked against the price on 2018-06-06
+2018-06-07,LUMAXTECH,2018-06-07,split,5.0,verified,2018-05-28,checked against the price on 2018-06-07
+2018-06-14,LGBBROSLTD,2018-06-14,bonus,2.0,verified,2018-06-04,checked against the price on 2018-06-14
+2018-06-21,EMAMILTD,2018-06-21,bonus,2.0,verified,2018-06-11,checked against the price on 2018-06-21
+2018-06-21,JUBLFOOD,2018-06-21,bonus,2.0,verified,2018-06-11,checked against the price on 2018-06-21
+2018-06-22,HIKAL,2018-06-22,bonus,1.5,verified,2018-06-12,checked against the price on 2018-06-22
+2018-06-25,UNIPLY,2018-06-25,split,5.0,verified,2018-06-15,checked against the price on 2018-06-25
+2018-06-26,AVANTIFEED,2018-06-26,split,2.0,rejected,2018-06-16,checked against the price on 2018-06-26
+2018-06-26,AVANTIFEED,2018-06-26,restart,1.0,verified,2018-06-26,history restarts: corporate action could not be verified
+2018-06-26,CONCOR,2018-06-26,split,2.0,verified,2018-06-16,checked against the price on 2018-06-26
+2018-06-27,FILATEX,2018-06-27,split,5.0,verified,2018-06-17,checked against the price on 2018-06-27
+2018-06-27,NIACL,2018-06-27,bonus,2.0,verified,2018-06-17,checked against the price on 2018-06-27
+2018-06-28,JYOTHYLAB,2018-06-28,bonus,2.0,verified,2018-06-18,checked against the price on 2018-06-28
+2018-06-28,NILAINFRA,2018-06-14,restart,1.0,verified,2018-06-04,checked against the price on 2018-06-28
+2018-06-11,VISESHINFO,2018-06-11,restart,1.0,verified,2018-06-11,history restarts: unexplained move beyond 35% (applied in M5)
+2018-06-14,VISESHINFO,2018-06-14,restart,1.0,verified,2018-06-14,history restarts: unexplained move beyond 35% (applied in M5)
+2018-06-15,MCDOWELL-N,2018-06-15,restart,1.0,verified,2018-06-15,history restarts: unexplained move beyond 35% (applied in M5)
+2018-06-20,ESSELPACK,2018-06-20,restart,1.0,verified,2018-06-20,history restarts: unexplained move beyond 35% (applied in M5)
+2018-06-20,VISESHINFO,2018-06-20,restart,1.0,verified,2018-06-20,history restarts: unexplained move beyond 35% (applied in M5)
+2018-06-26,VISESHINFO,2018-06-26,restart,1.0,verified,2018-06-26,history restarts: unexplained move beyond 35% (applied in M5)

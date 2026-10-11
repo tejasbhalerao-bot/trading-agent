@@ -3,7 +3,7 @@ seen,symbol,ex_date,kind,factor,status,known_from,subject
 2025-06-04,COFORGE,2025-06-04,split,5.0,verified,2025-05-25,checked against the price on 2025-06-04
 2025-06-10,VESUVIUS,2025-06-10,split,10.0,verified,2025-05-31,checked against the price on 2025-06-10
 2025-06-13,VIMTALABS,2025-06-13,bonus,2.0,verified,2025-06-03,checked against the price on 2025-06-13
-2025-06-16,BAJFINANCE,2025-06-16,bonus,5.0,verified,2025-06-06,checked against the price on 2025-06-16
 2025-06-16,BAJFINANCE,2025-06-16,split,2.0,verified,2025-06-06,checked against the price on 2025-06-16
+2025-06-16,BAJFINANCE,2025-06-16,bonus,5.0,verified,2025-06-06,checked against the price on 2025-06-16
 2025-06-20,KHADIM,2025-06-06,restart,1.0,verified,2025-05-27,checked against the price on 2025-06-20
 2025-06-23,VMART,2025-06-23,bonus,4.0,verified,2025-06-13,checked against the price on 2025-06-23

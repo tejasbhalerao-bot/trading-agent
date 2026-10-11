@@ -1,0 +1,8 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2019-09-11,ALEMBICLTD,2019-08-26,restart,1.0,verified,2019-08-16,checked against the price on 2019-09-11
+2019-09-16,ASTRAL,2019-09-16,bonus,1.25,verified,2019-09-06,checked against the price on 2019-09-16
+2019-09-19,HDFCBANK,2019-09-19,split,2.0,verified,2019-09-09,checked against the price on 2019-09-19
+2019-09-27,AARTIIND,2019-09-27,bonus,2.0,verified,2019-09-17,checked against the price on 2019-09-27
+2019-09-18,UVSL,2019-09-18,restart,1.0,verified,2019-09-18,history restarts: unexplained move beyond 35% (applied in M5)
+2019-09-24,UVSL,2019-09-24,restart,1.0,verified,2019-09-24,history restarts: unexplained move beyond 35% (applied in M5)
+2019-09-30,UVSL,2019-09-30,restart,1.0,verified,2019-09-30,history restarts: unexplained move beyond 35% (applied in M5)

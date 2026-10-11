@@ -1,8 +1,10 @@
 seen,symbol,ex_date,kind,factor,status,known_from,subject
+2026-07-01,GUJENERGY,2019-01-15,split,5.0,verified,2019-01-05,checked against the price on 2026-07-01
 2026-07-03,KRISHANA,2026-07-03,split,5.0,verified,2026-06-23,checked against the price on 2026-07-03
 2026-07-03,MBAPL,2026-07-03,split,5.0,verified,2026-06-23,checked against the price on 2026-07-03
 2026-07-10,GOLDIAM,2026-07-10,bonus,1.3333333333333333,verified,2026-06-30,checked against the price on 2026-07-10
 2026-07-10,MWL,2026-07-10,split,10.0,verified,2026-06-30,checked against the price on 2026-07-10
+2026-07-14,AURUS,2017-07-12,bonus,1.4,verified,2017-07-02,checked against the price on 2026-07-14
 2026-07-16,GUJENERGY,2026-07-02,restart,1.0,verified,2026-06-22,checked against the price on 2026-07-16
 2026-07-21,POCL,2026-07-21,split,2.5,verified,2026-07-11,checked against the price on 2026-07-21
 2026-07-24,JLHL,2026-07-24,split,5.0,verified,2026-07-14,checked against the price on 2026-07-24

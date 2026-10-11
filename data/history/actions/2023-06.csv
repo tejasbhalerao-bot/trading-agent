@@ -1,0 +1,12 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2023-06-05,HARDWYN,2023-06-05,split,10.0,verified,2023-05-26,checked against the price on 2023-06-05
+2023-06-05,HARDWYN,2023-06-05,bonus,1.3333333333333333,verified,2023-05-26,checked against the price on 2023-06-05
+2023-06-12,IONEXCHANG,2023-06-12,split,10.0,verified,2023-06-02,checked against the price on 2023-06-12
+2023-06-15,VBL,2023-06-15,split,2.0,verified,2023-06-05,checked against the price on 2023-06-15
+2023-06-16,EDELWEISS,2023-06-02,restart,1.0,verified,2023-05-23,checked against the price on 2023-06-16
+2023-06-19,TITAGARH,2015-04-23,split,5.0,verified,2015-04-13,checked against the price on 2023-06-19
+2023-06-20,BLUESTARCO,2023-06-20,bonus,2.0,verified,2023-06-10,checked against the price on 2023-06-20
+2023-06-21,GULPOLY,2023-06-21,bonus,1.2,verified,2023-06-11,checked against the price on 2023-06-21
+2023-06-21,INDIAMART,2023-06-21,bonus,2.0,verified,2023-06-11,checked against the price on 2023-06-21
+2023-06-22,NIITLTD,2023-06-08,restart,1.0,verified,2023-05-29,checked against the price on 2023-06-22
+2023-06-30,VAKRANGEE,2023-06-15,restart,1.0,verified,2023-06-05,checked against the price on 2023-06-30

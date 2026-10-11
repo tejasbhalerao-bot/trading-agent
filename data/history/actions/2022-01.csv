@@ -1,0 +1,10 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2022-01-04,TIRUPATIFL,2021-10-07,split,5.0,rejected,2021-09-27,checked against the price on 2022-01-04
+2022-01-04,TIRUPATIFL,2021-10-07,bonus,1.75,rejected,2021-09-27,checked against the price on 2022-01-04
+2022-01-04,TIRUPATIFL,2022-01-04,restart,1.0,verified,2022-01-04,history restarts: corporate action could not be verified
+2022-01-07,IMFA,2022-01-07,bonus,2.0,verified,2021-12-28,checked against the price on 2022-01-07
+2022-01-10,IPCALAB,2022-01-10,split,2.0,verified,2021-12-31,checked against the price on 2022-01-10
+2022-01-13,PCBL,2018-04-19,split,5.0,verified,2018-04-09,checked against the price on 2022-01-13
+2022-01-18,ONEPOINT,2022-01-18,split,5.0,verified,2022-01-08,checked against the price on 2022-01-18
+2022-01-18,ONEPOINT,2022-01-18,bonus,1.5,verified,2022-01-08,checked against the price on 2022-01-18
+2022-01-20,GODHA,2022-01-20,restart,1.0,verified,2022-01-20,history restarts: unexplained move beyond 35% (applied in M5)

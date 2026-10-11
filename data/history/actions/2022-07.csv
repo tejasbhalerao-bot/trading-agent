@@ -1,0 +1,13 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2022-07-08,TORNTPHARM,2022-07-08,bonus,2.0,verified,2022-06-28,checked against the price on 2022-07-08
+2022-07-11,GMMPFAUDLR,2022-07-11,bonus,3.0,verified,2022-07-01,checked against the price on 2022-07-11
+2022-07-12,STEELXIND,2022-07-12,split,10.0,verified,2022-07-02,checked against the price on 2022-07-12
+2022-07-19,RGL,2022-07-19,split,5.0,verified,2022-07-09,checked against the price on 2022-07-19
+2022-07-21,HNDFDS,2022-07-21,split,5.0,verified,2022-07-11,checked against the price on 2022-07-21
+2022-07-25,COSMOFIRST,2022-06-16,bonus,1.5,verified,2022-06-06,checked against the price on 2022-07-25
+2022-07-25,HARDWYN,2022-07-25,bonus,1.5,verified,2022-07-15,checked against the price on 2022-07-25
+2022-07-26,MAXIND,2022-07-26,restart,1.0,verified,2022-07-16,checked against the price on 2022-07-26
+2022-07-28,TATASTEEL,2022-07-28,split,10.0,verified,2022-07-18,checked against the price on 2022-07-28
+2022-07-29,NAVA,2016-09-01,bonus,2.0,verified,2016-08-22,checked against the price on 2022-07-29
+2022-07-07,MINDAIND,2022-07-07,restart,1.0,verified,2022-07-07,history restarts: unexplained move beyond 35% (applied in M5)
+2022-07-14,SONAMCLOCK,2022-07-14,restart,1.0,verified,2022-07-14,history restarts: unexplained move beyond 35% (applied in M5)

@@ -1,0 +1,9 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2023-01-04,SECURCRED,2023-01-04,bonus,4.0,verified,2022-12-25,checked against the price on 2023-01-04
+2023-01-06,RAMASTEEL,2023-01-06,bonus,5.0,verified,2022-12-27,checked against the price on 2023-01-06
+2023-01-06,SPLPETRO,2023-01-06,split,2.0,verified,2022-12-27,checked against the price on 2023-01-06
+2023-01-13,RADIOCITY,2023-01-13,restart,1.0,verified,2023-01-03,checked against the price on 2023-01-13
+2023-01-13,VISHNU,2023-01-13,split,5.0,verified,2023-01-03,checked against the price on 2023-01-13
+2023-01-18,KPIGREEN,2023-01-18,bonus,2.0,verified,2023-01-08,checked against the price on 2023-01-18
+2023-01-20,SHRADHA,2023-01-20,split,2.0,verified,2023-01-10,checked against the price on 2023-01-20
+2023-01-20,HERITGFOOD,2023-01-20,restart,1.0,verified,2023-01-20,history restarts: unexplained move beyond 35% (applied in M5)

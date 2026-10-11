@@ -1,0 +1,6 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2022-04-11,PCBL,2022-04-11,split,2.0,verified,2022-04-01,checked against the price on 2022-04-11
+2022-04-12,ARIHANTCAP,2022-04-12,split,5.0,verified,2022-04-02,checked against the price on 2022-04-12
+2022-04-18,DUCON,2022-04-18,bonus,1.1,verified,2022-04-08,checked against the price on 2022-04-18
+2022-04-19,JUBLFOOD,2022-04-19,split,5.0,verified,2022-04-09,checked against the price on 2022-04-19
+2022-04-26,SAREGAMA,2022-04-26,split,10.0,verified,2022-04-16,checked against the price on 2022-04-26

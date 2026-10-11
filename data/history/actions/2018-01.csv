@@ -1,0 +1,4 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2018-01-19,AMJLAND,2016-02-11,restart,1.0,verified,2016-02-01,checked against the price on 2018-01-19
+2018-01-25,ORIENTPPR,2018-01-11,restart,1.0,verified,2018-01-01,checked against the price on 2018-01-25
+2018-01-12,VISESHINFO,2018-01-12,restart,1.0,verified,2018-01-12,history restarts: unexplained move beyond 35% (applied in M5)

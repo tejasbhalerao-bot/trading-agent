@@ -1,0 +1,9 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2018-07-10,CUB,2018-07-10,bonus,1.1,verified,2018-06-30,checked against the price on 2018-07-10
+2018-07-12,ASHOKA,2018-07-12,bonus,1.5,verified,2018-07-02,checked against the price on 2018-07-12
+2018-07-12,GICRE,2018-07-12,bonus,2.0,verified,2018-07-02,checked against the price on 2018-07-12
+2018-07-18,MMFL,2018-07-18,bonus,2.0,verified,2018-07-08,checked against the price on 2018-07-18
+2018-07-09,VISESHINFO,2018-07-09,restart,1.0,verified,2018-07-09,history restarts: unexplained move beyond 35% (applied in M5)
+2018-07-11,MINDAIND,2018-07-11,restart,1.0,verified,2018-07-11,history restarts: unexplained move beyond 35% (applied in M5)
+2018-07-17,VISESHINFO,2018-07-17,restart,1.0,verified,2018-07-17,history restarts: unexplained move beyond 35% (applied in M5)
+2018-07-19,VISESHINFO,2018-07-19,restart,1.0,verified,2018-07-19,history restarts: unexplained move beyond 35% (applied in M5)

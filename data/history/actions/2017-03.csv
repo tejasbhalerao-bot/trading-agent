@@ -1,0 +1,7 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-03-08,CGPOWER,2016-03-15,restart,1.0,verified,2016-03-05,checked against the price on 2017-03-08
+2017-03-09,GAIL,2017-03-09,bonus,1.3333333333333333,verified,2017-02-27,checked against the price on 2017-03-09
+2017-03-15,VGUARD,2017-03-15,bonus,1.4,verified,2017-03-05,checked against the price on 2017-03-15
+2017-03-16,BEL,2017-03-16,split,10.0,verified,2017-03-06,checked against the price on 2017-03-16
+2017-03-24,POLYMED,2017-03-24,bonus,2.0,verified,2017-03-14,checked against the price on 2017-03-24
+2017-03-08,BIRLACOT,2017-03-08,restart,1.0,verified,2017-03-08,history restarts: unexplained move beyond 35% (applied in M5)

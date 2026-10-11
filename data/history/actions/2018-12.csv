@@ -1,0 +1,8 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2018-12-04,VIKASECO,2018-11-19,restart,1.0,verified,2018-11-09,checked against the price on 2018-12-04
+2018-12-04,VISESHINFO,2018-12-04,restart,1.0,verified,2018-12-04,history restarts: unexplained move beyond 35% (applied in M5)
+2018-12-07,VISESHINFO,2018-12-07,restart,1.0,verified,2018-12-07,history restarts: unexplained move beyond 35% (applied in M5)
+2018-12-14,VISESHINFO,2018-12-14,restart,1.0,verified,2018-12-14,history restarts: unexplained move beyond 35% (applied in M5)
+2018-12-20,VISESHINFO,2018-12-20,restart,1.0,verified,2018-12-20,history restarts: unexplained move beyond 35% (applied in M5)
+2018-12-26,VISESHINFO,2018-12-26,restart,1.0,verified,2018-12-26,history restarts: unexplained move beyond 35% (applied in M5)
+2018-12-28,VISESHINFO,2018-12-28,restart,1.0,verified,2018-12-28,history restarts: unexplained move beyond 35% (applied in M5)

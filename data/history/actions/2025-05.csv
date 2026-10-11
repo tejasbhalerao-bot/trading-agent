@@ -5,6 +5,7 @@ seen,symbol,ex_date,kind,factor,status,known_from,subject
 2025-05-09,NAVKARURB,2025-05-09,split,2.0,verified,2025-04-29,checked against the price on 2025-05-09
 2025-05-09,STLTECH,2025-04-24,restart,1.0,verified,2025-04-14,checked against the price on 2025-05-09
 2025-05-12,SHRADHA,2024-12-10,split,2.5,verified,2024-11-30,checked against the price on 2025-05-12
+2025-05-19,COHANCE,2020-09-25,bonus,2.0,verified,2020-09-15,checked against the price on 2025-05-19
 2025-05-19,MAZDA,2025-01-28,split,5.0,rejected,2025-01-18,checked against the price on 2025-05-19
 2025-05-19,MAZDA,2025-05-19,restart,1.0,verified,2025-05-19,history restarts: corporate action could not be verified
 2025-05-22,ABFRL,2025-05-22,restart,1.0,verified,2025-05-12,checked against the price on 2025-05-22

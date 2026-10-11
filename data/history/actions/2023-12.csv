@@ -1,0 +1,8 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2023-12-12,GATECH,2017-01-10,bonus,1.25,verified,2016-12-31,checked against the price on 2023-12-12
+2023-12-12,SAFARI,2023-12-12,bonus,2.0,verified,2023-12-02,checked against the price on 2023-12-12
+2023-12-12,SONATSOFTW,2023-12-12,bonus,2.0,verified,2023-12-02,checked against the price on 2023-12-12
+2023-12-14,WELSPUNLIV,2016-03-21,split,10.0,verified,2016-03-11,checked against the price on 2023-12-14
+2023-12-19,BOROLTD,2023-12-05,restart,1.0,verified,2023-11-25,checked against the price on 2023-12-19
+2023-12-22,AXITA,2023-12-22,bonus,1.3333333333333333,verified,2023-12-12,checked against the price on 2023-12-22
+2023-12-29,HMAAGRO,2023-12-29,split,10.0,verified,2023-12-19,checked against the price on 2023-12-29

@@ -10,3 +10,4 @@ seen,symbol,ex_date,kind,factor,status,known_from,subject
 2026-09-28,AASTHA,2026-09-28,bonus,2.0,verified,2026-09-18,checked against the price on 2026-09-28
 2026-09-28,KOTYARK,2026-06-24,bonus,11.0,rejected,2026-06-14,checked against the price on 2026-09-28
 2026-09-28,KOTYARK,2026-09-28,restart,1.0,verified,2026-09-28,history restarts: corporate action could not be verified
+2026-09-24,POLICYBZR,2026-09-24,restart,1.0,verified,2026-09-24,history restarts: unexplained move beyond 35% (applied in M5)

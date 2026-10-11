@@ -1,0 +1,11 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2020-02-03,SUVEN,2020-01-21,restart,1.0,verified,2020-01-11,checked against the price on 2020-02-03
+2020-02-05,VINATIORGA,2020-02-05,split,2.0,verified,2020-01-26,checked against the price on 2020-02-05
+2020-02-20,BORORENEW,2018-08-02,bonus,4.0,verified,2018-07-23,checked against the price on 2020-02-20
+2020-02-28,ARCHIDPLY,2020-02-13,restart,1.0,verified,2020-02-03,checked against the price on 2020-02-28
+2020-02-03,UVSL,2020-02-03,restart,1.0,verified,2020-02-03,history restarts: unexplained move beyond 35% (applied in M5)
+2020-02-10,UVSL,2020-02-10,restart,1.0,verified,2020-02-10,history restarts: unexplained move beyond 35% (applied in M5)
+2020-02-14,UVSL,2020-02-14,restart,1.0,verified,2020-02-14,history restarts: unexplained move beyond 35% (applied in M5)
+2020-02-19,IDEA,2020-02-19,restart,1.0,verified,2020-02-19,history restarts: unexplained move beyond 35% (applied in M5)
+2020-02-20,UVSL,2020-02-20,restart,1.0,verified,2020-02-20,history restarts: unexplained move beyond 35% (applied in M5)
+2020-02-26,UVSL,2020-02-26,restart,1.0,verified,2020-02-26,history restarts: unexplained move beyond 35% (applied in M5)

@@ -1,0 +1,14 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2021-09-08,MHRIL,2021-09-08,bonus,1.5,verified,2021-08-29,checked against the price on 2021-09-08
+2021-09-13,GANGAFORGE,2021-09-13,split,10.0,verified,2021-09-03,checked against the price on 2021-09-13
+2021-09-14,MAHLIFE,2021-09-14,bonus,3.0,verified,2021-09-04,checked against the price on 2021-09-14
+2021-09-15,KANPRPLA,2021-09-15,bonus,1.5,verified,2021-09-05,checked against the price on 2021-09-15
+2021-09-16,APLAPOLLO,2021-09-16,bonus,2.0,verified,2021-09-06,checked against the price on 2021-09-16
+2021-09-16,TPLPLASTEH,2021-09-16,bonus,2.0,verified,2021-09-06,checked against the price on 2021-09-16
+2021-09-17,CESC,2021-09-17,split,10.0,verified,2021-09-07,checked against the price on 2021-09-17
+2021-09-21,LIBAS,2021-09-21,bonus,1.2,verified,2021-09-11,checked against the price on 2021-09-21
+2021-09-23,ARTEMISMED,2021-09-23,split,10.0,verified,2021-09-13,checked against the price on 2021-09-23
+2021-09-24,KPRMILL,2021-09-24,split,5.0,verified,2021-09-14,checked against the price on 2021-09-24
+2021-09-30,CLEDUCATE,2021-09-30,split,2.0,verified,2021-09-20,checked against the price on 2021-09-30
+2021-09-07,PRAXIS,2021-09-07,restart,1.0,verified,2021-09-07,history restarts: unexplained move beyond 35% (applied in M5)
+2021-09-14,ZEEL,2021-09-14,restart,1.0,verified,2021-09-14,history restarts: unexplained move beyond 35% (applied in M5)

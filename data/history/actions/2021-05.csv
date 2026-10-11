@@ -1,0 +1,4 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2021-05-07,VAIBHAVGBL,2021-05-07,split,5.0,verified,2021-04-27,checked against the price on 2021-05-07
+2021-05-11,ALKYLAMINE,2021-05-11,split,2.5,verified,2021-05-01,checked against the price on 2021-05-11
+2021-05-20,IRCON,2021-05-20,bonus,2.0,verified,2021-05-10,checked against the price on 2021-05-20

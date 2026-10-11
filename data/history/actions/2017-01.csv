@@ -1,0 +1,5 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-01-12,OIL,2017-01-12,bonus,1.3333333333333333,verified,2017-01-02,checked against the price on 2017-01-12
+2017-01-04,JSWSTEEL,2017-01-04,restart,1.0,verified,2017-01-04,history restarts: unexplained move beyond 35% (applied in M5)
+2017-01-09,STERTOOLS,2017-01-09,restart,1.0,verified,2017-01-09,history restarts: unexplained move beyond 35% (applied in M5)
+2017-01-25,FARMAXIND,2017-01-25,restart,1.0,verified,2017-01-25,history restarts: unexplained move beyond 35% (applied in M5)

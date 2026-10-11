@@ -1,0 +1,10 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2019-01-22,ABMINTLTD,2017-03-15,bonus,6.0,verified,2017-03-05,checked against the price on 2019-01-22
+2019-01-01,VISESHINFO,2019-01-01,restart,1.0,verified,2019-01-01,history restarts: unexplained move beyond 35% (applied in M5)
+2019-01-03,VISESHINFO,2019-01-03,restart,1.0,verified,2019-01-03,history restarts: unexplained move beyond 35% (applied in M5)
+2019-01-15,GUJGASLTD,2019-01-15,restart,1.0,verified,2019-01-15,history restarts: unexplained move beyond 35% (applied in M5)
+2019-01-22,VISESHINFO,2019-01-22,restart,1.0,verified,2019-01-22,history restarts: unexplained move beyond 35% (applied in M5)
+2019-01-24,KPIT,2019-01-24,restart,1.0,verified,2019-01-24,history restarts: unexplained move beyond 35% (applied in M5)
+2019-01-25,VISESHINFO,2019-01-25,restart,1.0,verified,2019-01-25,history restarts: unexplained move beyond 35% (applied in M5)
+2019-01-28,KSERASERA,2019-01-28,restart,1.0,verified,2019-01-28,history restarts: unexplained move beyond 35% (applied in M5)
+2019-01-30,VISESHINFO,2019-01-30,restart,1.0,verified,2019-01-30,history restarts: unexplained move beyond 35% (applied in M5)

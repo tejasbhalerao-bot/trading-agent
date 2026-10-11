@@ -1,0 +1,15 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-10-03,PANAMAPET,2017-10-03,bonus,1.5,verified,2017-09-23,checked against the price on 2017-10-03
+2017-10-05,JAMNAAUTO,2017-10-05,split,5.0,verified,2017-09-25,checked against the price on 2017-10-05
+2017-10-10,HERITGFOOD,2017-10-10,split,2.0,verified,2017-09-30,checked against the price on 2017-10-10
+2017-10-12,CANFINHOME,2017-10-12,split,5.0,verified,2017-10-02,checked against the price on 2017-10-12
+2017-10-18,POKARNA,2017-10-18,split,5.0,verified,2017-10-08,checked against the price on 2017-10-18
+2017-10-18,VIJIFIN,2017-08-04,bonus,1.1,rejected,2017-07-25,checked against the price on 2017-10-18
+2017-10-18,VIJIFIN,2017-10-18,restart,1.0,verified,2017-10-18,history restarts: corporate action could not be verified
+2017-10-19,ZEEMEDIA,2017-10-05,restart,1.0,verified,2017-09-25,checked against the price on 2017-10-19
+2017-10-25,SIYSIL,2017-10-25,split,5.0,verified,2017-10-15,checked against the price on 2017-10-25
+2017-10-04,KSERASERA,2017-10-04,restart,1.0,verified,2017-10-04,history restarts: unexplained move beyond 35% (applied in M5)
+2017-10-23,KSERASERA,2017-10-23,restart,1.0,verified,2017-10-23,history restarts: unexplained move beyond 35% (applied in M5)
+2017-10-25,CANBK,2017-10-25,restart,1.0,verified,2017-10-25,history restarts: unexplained move beyond 35% (applied in M5)
+2017-10-25,PNB,2017-10-25,restart,1.0,verified,2017-10-25,history restarts: unexplained move beyond 35% (applied in M5)
+2017-10-30,KSERASERA,2017-10-30,restart,1.0,verified,2017-10-30,history restarts: unexplained move beyond 35% (applied in M5)

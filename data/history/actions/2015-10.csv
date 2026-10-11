@@ -1,0 +1,13 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2015-10-01,IDFC,2015-10-01,restart,1.0,verified,2015-09-21,checked against the price on 2015-10-01
+2015-10-05,GOKUL,2015-09-16,restart,1.0,verified,2015-09-06,checked against the price on 2015-10-05
+2015-10-07,BATAINDIA,2015-10-07,split,2.0,verified,2015-09-27,checked against the price on 2015-10-07
+2015-10-08,SHIVAMAUTO,2015-10-08,bonus,2.0,verified,2015-09-28,checked against the price on 2015-10-08
+2015-10-15,LAMBODHARA,2015-10-15,split,2.0,verified,2015-10-05,checked against the price on 2015-10-15
+2015-10-21,RUBYMILLS,2015-10-21,bonus,2.0,verified,2015-10-11,checked against the price on 2015-10-21
+2015-10-29,SARLAPOLY,2015-10-29,split,10.0,verified,2015-10-19,checked against the price on 2015-10-29
+2015-10-06,CADILAHC,2015-10-06,restart,1.0,verified,2015-10-06,history restarts: unexplained move beyond 35% (applied in M5)
+2015-10-07,VISESHINFO,2015-10-07,restart,1.0,verified,2015-10-07,history restarts: unexplained move beyond 35% (applied in M5)
+2015-10-15,VISESHINFO,2015-10-15,restart,1.0,verified,2015-10-15,history restarts: unexplained move beyond 35% (applied in M5)
+2015-10-21,VISESHINFO,2015-10-21,restart,1.0,verified,2015-10-21,history restarts: unexplained move beyond 35% (applied in M5)
+2015-10-30,VKSPL,2015-10-30,restart,1.0,verified,2015-10-30,history restarts: unexplained move beyond 35% (applied in M5)

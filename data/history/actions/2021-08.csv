@@ -1,0 +1,6 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2021-08-05,DVL,2021-08-05,bonus,1.5,rejected,2021-07-26,checked against the price on 2021-08-05
+2021-08-05,DVL,2021-08-05,restart,1.0,verified,2021-08-05,history restarts: corporate action could not be verified
+2021-08-17,SAGCEM,2021-08-17,split,5.0,verified,2021-08-07,checked against the price on 2021-08-17
+2021-08-18,REDINGTON,2021-08-18,bonus,2.0,verified,2021-08-08,checked against the price on 2021-08-18
+2021-08-31,MITTAL,2021-08-31,bonus,1.1,verified,2021-08-21,checked against the price on 2021-08-31

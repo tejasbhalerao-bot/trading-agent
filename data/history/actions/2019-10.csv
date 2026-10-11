@@ -1,0 +1,10 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2019-10-01,TATACOMM,2019-09-17,restart,1.0,verified,2019-09-07,checked against the price on 2019-10-01
+2019-10-15,SATIA,2019-10-15,split,10.0,verified,2019-10-05,checked against the price on 2019-10-15
+2019-10-25,IMPAL,2019-10-25,bonus,1.5,verified,2019-10-15,checked against the price on 2019-10-25
+2019-10-07,UVSL,2019-10-07,restart,1.0,verified,2019-10-07,history restarts: unexplained move beyond 35% (applied in M5)
+2019-10-10,UVSL,2019-10-10,restart,1.0,verified,2019-10-10,history restarts: unexplained move beyond 35% (applied in M5)
+2019-10-11,CENTURYTEX,2019-10-11,restart,1.0,verified,2019-10-11,history restarts: unexplained move beyond 35% (applied in M5)
+2019-10-14,UVSL,2019-10-14,restart,1.0,verified,2019-10-14,history restarts: unexplained move beyond 35% (applied in M5)
+2019-10-27,UVSL,2019-10-27,restart,1.0,verified,2019-10-27,history restarts: unexplained move beyond 35% (applied in M5)
+2019-10-30,UVSL,2019-10-30,restart,1.0,verified,2019-10-30,history restarts: unexplained move beyond 35% (applied in M5)

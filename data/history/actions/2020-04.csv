@@ -1,0 +1,7 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2020-04-03,IRCON,2020-04-03,split,5.0,verified,2020-03-24,checked against the price on 2020-04-03
+2020-04-15,SHARDAMOTR,2020-03-26,restart,1.0,verified,2020-03-16,checked against the price on 2020-04-15
+2020-04-09,KSERASERA,2020-04-09,restart,1.0,verified,2020-04-09,history restarts: unexplained move beyond 35% (applied in M5)
+2020-04-15,KSERASERA,2020-04-15,restart,1.0,verified,2020-04-15,history restarts: unexplained move beyond 35% (applied in M5)
+2020-04-21,KSERASERA,2020-04-21,restart,1.0,verified,2020-04-21,history restarts: unexplained move beyond 35% (applied in M5)
+2020-04-29,KSERASERA,2020-04-29,restart,1.0,verified,2020-04-29,history restarts: unexplained move beyond 35% (applied in M5)

@@ -1,0 +1,10 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2016-08-11,KTIL,2016-08-11,split,2.0,verified,2016-08-01,checked against the price on 2016-08-11
+2016-08-12,PNCINFRA,2016-08-12,split,5.0,verified,2016-08-02,checked against the price on 2016-08-12
+2016-08-24,PILITA,2016-08-24,split,4.0,verified,2016-08-14,checked against the price on 2016-08-24
+2016-08-26,PFC,2016-08-26,bonus,2.0,verified,2016-08-16,checked against the price on 2016-08-26
+2016-08-30,MENONBE,2016-08-30,bonus,1.2,verified,2016-08-20,checked against the price on 2016-08-30
+2016-08-30,VGUARD,2016-08-30,split,10.0,verified,2016-08-20,checked against the price on 2016-08-30
+2016-08-05,FARMAXIND,2016-08-05,restart,1.0,verified,2016-08-05,history restarts: unexplained move beyond 35% (applied in M5)
+2016-08-08,VISESHINFO,2016-08-08,restart,1.0,verified,2016-08-08,history restarts: unexplained move beyond 35% (applied in M5)
+2016-08-18,FARMAXIND,2016-08-18,restart,1.0,verified,2016-08-18,history restarts: unexplained move beyond 35% (applied in M5)

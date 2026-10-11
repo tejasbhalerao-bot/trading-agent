@@ -1,0 +1,9 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2019-05-09,PRAKASH,2019-04-23,restart,1.0,verified,2019-04-13,checked against the price on 2019-05-09
+2019-05-14,JMA,2019-05-14,split,5.0,verified,2019-05-04,checked against the price on 2019-05-14
+2019-05-15,TTKPRESTIG,2019-05-15,bonus,1.2,verified,2019-05-05,checked against the price on 2019-05-15
+2019-05-07,KSERASERA,2019-05-07,restart,1.0,verified,2019-05-07,history restarts: unexplained move beyond 35% (applied in M5)
+2019-05-09,UVSL,2019-05-09,restart,1.0,verified,2019-05-09,history restarts: unexplained move beyond 35% (applied in M5)
+2019-05-13,UVSL,2019-05-13,restart,1.0,verified,2019-05-13,history restarts: unexplained move beyond 35% (applied in M5)
+2019-05-15,KSERASERA,2019-05-15,restart,1.0,verified,2019-05-15,history restarts: unexplained move beyond 35% (applied in M5)
+2019-05-20,UVSL,2019-05-20,restart,1.0,verified,2019-05-20,history restarts: unexplained move beyond 35% (applied in M5)

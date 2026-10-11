@@ -1,0 +1,14 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2015-08-17,SIGNET,2015-08-17,split,10.0,verified,2015-08-07,checked against the price on 2015-08-17
+2015-08-03,VISESHINFO,2015-08-03,restart,1.0,verified,2015-08-03,history restarts: unexplained move beyond 35% (applied in M5)
+2015-08-04,BIRLACOT,2015-08-04,restart,1.0,verified,2015-08-04,history restarts: unexplained move beyond 35% (applied in M5)
+2015-08-05,VKSPL,2015-08-05,restart,1.0,verified,2015-08-05,history restarts: unexplained move beyond 35% (applied in M5)
+2015-08-06,BIRLACOT,2015-08-06,restart,1.0,verified,2015-08-06,history restarts: unexplained move beyond 35% (applied in M5)
+2015-08-07,VISESHINFO,2015-08-07,restart,1.0,verified,2015-08-07,history restarts: unexplained move beyond 35% (applied in M5)
+2015-08-10,BIRLACOT,2015-08-10,restart,1.0,verified,2015-08-10,history restarts: unexplained move beyond 35% (applied in M5)
+2015-08-12,BIRLACOT,2015-08-12,restart,1.0,verified,2015-08-12,history restarts: unexplained move beyond 35% (applied in M5)
+2015-08-18,BIRLACOT,2015-08-18,restart,1.0,verified,2015-08-18,history restarts: unexplained move beyond 35% (applied in M5)
+2015-08-20,VISESHINFO,2015-08-20,restart,1.0,verified,2015-08-20,history restarts: unexplained move beyond 35% (applied in M5)
+2015-08-21,ITDCEM,2015-08-21,restart,1.0,verified,2015-08-21,history restarts: unexplained move beyond 35% (applied in M5)
+2015-08-27,VISESHINFO,2015-08-27,restart,1.0,verified,2015-08-27,history restarts: unexplained move beyond 35% (applied in M5)
+2015-08-31,VISESHINFO,2015-08-31,restart,1.0,verified,2015-08-31,history restarts: unexplained move beyond 35% (applied in M5)

@@ -1,0 +1,6 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2021-02-02,SECURKLOUD,2016-10-10,split,2.0,verified,2016-09-30,checked against the price on 2021-02-02
+2021-02-03,KNRCON,2021-02-03,bonus,2.0,verified,2021-01-24,checked against the price on 2021-02-03
+2021-02-12,BASML,2021-02-12,split,2.0,verified,2021-02-02,checked against the price on 2021-02-12
+2021-02-18,JUBLPHARMA,2021-02-04,restart,1.0,verified,2021-01-25,checked against the price on 2021-02-18
+2021-02-18,MARINE,2021-02-18,split,5.0,verified,2021-02-08,checked against the price on 2021-02-18

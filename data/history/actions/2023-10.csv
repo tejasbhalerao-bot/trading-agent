@@ -1,0 +1,16 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2023-10-06,FOCUS,2023-10-06,split,5.0,verified,2023-09-26,checked against the price on 2023-10-06
+2023-10-06,SURYAROSNI,2023-10-06,split,2.0,verified,2023-09-26,checked against the price on 2023-10-06
+2023-10-09,AKSHAR,2023-07-31,split,10.0,verified,2023-07-21,checked against the price on 2023-10-09
+2023-10-09,SIGACHI,2023-10-09,split,10.0,verified,2023-09-29,checked against the price on 2023-10-09
+2023-10-10,THEMISMED,2023-10-10,split,10.0,verified,2023-09-30,checked against the price on 2023-10-10
+2023-10-16,JHS,2023-09-11,restart,1.0,verified,2023-09-01,checked against the price on 2023-10-16
+2023-10-17,GENSOL,2023-10-17,bonus,3.0,verified,2023-10-07,checked against the price on 2023-10-17
+2023-10-20,MBAPL,2023-10-20,bonus,2.0,verified,2023-10-10,checked against the price on 2023-10-20
+2023-10-25,KRISHANA,2023-10-25,bonus,2.0,verified,2023-10-15,checked against the price on 2023-10-25
+2023-10-26,JAYBARMARU,2023-10-26,split,2.5,verified,2023-10-16,checked against the price on 2023-10-26
+2023-10-27,BCLIND,2023-10-27,split,10.0,verified,2023-10-17,checked against the price on 2023-10-27
+2023-10-27,TALBROAUTO,2023-10-27,split,5.0,verified,2023-10-17,checked against the price on 2023-10-27
+2023-10-30,MAANALU,2023-07-27,bonus,2.0,rejected,2023-07-17,checked against the price on 2023-10-30
+2023-10-30,MAANALU,2023-07-27,split,2.0,rejected,2023-07-17,checked against the price on 2023-10-30
+2023-10-30,MAANALU,2023-10-30,restart,1.0,verified,2023-10-30,history restarts: corporate action could not be verified

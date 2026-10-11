@@ -1,0 +1,14 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2018-10-04,JMCPROJECT,2018-10-04,split,5.0,verified,2018-09-24,checked against the price on 2018-10-04
+2018-10-11,CUPID,2018-10-11,bonus,1.2,verified,2018-10-01,checked against the price on 2018-10-11
+2018-10-12,APOLSINHOT,2018-10-12,split,2.0,verified,2018-10-02,checked against the price on 2018-10-12
+2018-10-16,SUMEETINDS,2018-08-02,bonus,1.25,rejected,2018-07-23,checked against the price on 2018-10-16
+2018-10-16,SUMEETINDS,2018-10-16,restart,1.0,verified,2018-10-16,history restarts: corporate action could not be verified
+2018-10-19,IEX,2018-10-19,split,10.0,verified,2018-10-09,checked against the price on 2018-10-19
+2018-10-25,DAMODARIND,2018-10-25,split,2.0,verified,2018-10-15,checked against the price on 2018-10-25
+2018-10-30,CESC,2018-10-30,restart,1.0,verified,2018-10-20,checked against the price on 2018-10-30
+2018-10-31,JINDWORLD,2018-10-31,split,5.0,verified,2018-10-21,checked against the price on 2018-10-31
+2018-10-03,VISESHINFO,2018-10-03,restart,1.0,verified,2018-10-03,history restarts: unexplained move beyond 35% (applied in M5)
+2018-10-05,VISESHINFO,2018-10-05,restart,1.0,verified,2018-10-05,history restarts: unexplained move beyond 35% (applied in M5)
+2018-10-17,VISESHINFO,2018-10-17,restart,1.0,verified,2018-10-17,history restarts: unexplained move beyond 35% (applied in M5)
+2018-10-29,VISESHINFO,2018-10-29,restart,1.0,verified,2018-10-29,history restarts: unexplained move beyond 35% (applied in M5)

@@ -1,0 +1,8 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-02-10,GAYAPROJ,2017-02-10,split,5.0,verified,2017-01-31,checked against the price on 2017-02-10
+2017-02-14,ORBTEXP,2017-02-14,bonus,2.0,verified,2017-02-04,checked against the price on 2017-02-14
+2017-02-16,COMPINFO,2017-02-16,split,5.0,verified,2017-02-06,checked against the price on 2017-02-16
+2017-02-17,NBCC,2017-02-17,bonus,1.5,verified,2017-02-07,checked against the price on 2017-02-17
+2017-02-02,FARMAXIND,2017-02-02,restart,1.0,verified,2017-02-02,history restarts: unexplained move beyond 35% (applied in M5)
+2017-02-07,DAAWAT,2017-02-07,restart,1.0,verified,2017-02-07,history restarts: unexplained move beyond 35% (applied in M5)
+2017-02-14,FARMAXIND,2017-02-14,restart,1.0,verified,2017-02-14,history restarts: unexplained move beyond 35% (applied in M5)

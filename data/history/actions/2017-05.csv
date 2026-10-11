@@ -1,0 +1,8 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-05-25,ADVENZYMES,2017-05-25,split,5.0,verified,2017-05-15,checked against the price on 2017-05-25
+2017-05-25,HINDCOMPOS,2017-05-25,split,2.0,rejected,2017-05-15,checked against the price on 2017-05-25
+2017-05-25,HINDCOMPOS,2017-05-25,restart,1.0,verified,2017-05-25,history restarts: corporate action could not be verified
+2017-05-25,SINTEX,2017-05-25,restart,1.0,verified,2017-05-15,checked against the price on 2017-05-25
+2017-05-30,BEARDSELL,2017-05-04,split,5.0,rejected,2017-04-24,checked against the price on 2017-05-30
+2017-05-30,BEARDSELL,2017-05-30,restart,1.0,verified,2017-05-30,history restarts: corporate action could not be verified
+2017-05-31,KSERASERA,2017-05-31,restart,1.0,verified,2017-05-31,history restarts: unexplained move beyond 35% (applied in M5)

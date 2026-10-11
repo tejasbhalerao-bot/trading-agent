@@ -1,0 +1,8 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2018-04-05,ADANIENT,2018-04-05,restart,1.0,verified,2018-03-26,checked against the price on 2018-04-05
+2018-04-05,MARATHON,2018-04-05,split,2.0,verified,2018-03-26,checked against the price on 2018-04-05
+2018-04-06,STAR,2018-04-06,restart,1.0,verified,2018-03-27,checked against the price on 2018-04-06
+2018-04-12,TALWALKARS,2018-03-27,restart,1.0,verified,2018-03-17,checked against the price on 2018-04-12
+2018-04-13,AMRUTANJAN,2018-04-13,split,2.0,verified,2018-04-03,checked against the price on 2018-04-13
+2018-04-25,NBCC,2018-04-25,split,2.0,verified,2018-04-15,checked against the price on 2018-04-25
+2018-04-19,PHILIPCARB,2018-04-19,restart,1.0,verified,2018-04-19,history restarts: unexplained move beyond 35% (applied in M5)

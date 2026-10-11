@@ -1,0 +1,7 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2016-01-05,KOTHARIPRO,2016-01-05,bonus,1.5,verified,2015-12-26,checked against the price on 2016-01-05
+2016-01-06,GREENPLY,2016-01-06,split,5.0,verified,2015-12-27,checked against the price on 2016-01-06
+2016-01-20,ABIRLANUVO,2016-01-20,restart,1.0,verified,2016-01-10,checked against the price on 2016-01-20
+2016-01-04,VISESHINFO,2016-01-04,restart,1.0,verified,2016-01-04,history restarts: unexplained move beyond 35% (applied in M5)
+2016-01-19,VISESHINFO,2016-01-19,restart,1.0,verified,2016-01-19,history restarts: unexplained move beyond 35% (applied in M5)
+2016-01-21,VISESHINFO,2016-01-21,restart,1.0,verified,2016-01-21,history restarts: unexplained move beyond 35% (applied in M5)

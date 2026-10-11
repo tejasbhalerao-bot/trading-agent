@@ -1,0 +1,12 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2015-11-06,SHILPAMED,2015-11-06,split,2.0,verified,2015-10-27,checked against the price on 2015-11-06
+2015-11-26,AVANTIFEED,2015-11-26,split,5.0,verified,2015-11-16,checked against the price on 2015-11-26
+2015-11-26,NATCOPHARM,2015-11-26,split,5.0,verified,2015-11-16,checked against the price on 2015-11-26
+2015-11-06,VISESHINFO,2015-11-06,restart,1.0,verified,2015-11-06,history restarts: unexplained move beyond 35% (applied in M5)
+2015-11-11,VISESHINFO,2015-11-11,restart,1.0,verified,2015-11-11,history restarts: unexplained move beyond 35% (applied in M5)
+2015-11-13,BIRLACOT,2015-11-13,restart,1.0,verified,2015-11-13,history restarts: unexplained move beyond 35% (applied in M5)
+2015-11-18,VISESHINFO,2015-11-18,restart,1.0,verified,2015-11-18,history restarts: unexplained move beyond 35% (applied in M5)
+2015-11-20,BIRLACOT,2015-11-20,restart,1.0,verified,2015-11-20,history restarts: unexplained move beyond 35% (applied in M5)
+2015-11-24,BIRLACOT,2015-11-24,restart,1.0,verified,2015-11-24,history restarts: unexplained move beyond 35% (applied in M5)
+2015-11-27,BIRLACOT,2015-11-27,restart,1.0,verified,2015-11-27,history restarts: unexplained move beyond 35% (applied in M5)
+2015-11-27,VKSPL,2015-11-27,restart,1.0,verified,2015-11-27,history restarts: unexplained move beyond 35% (applied in M5)

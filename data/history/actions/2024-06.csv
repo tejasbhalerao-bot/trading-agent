@@ -1,5 +1,8 @@
 seen,symbol,ex_date,kind,factor,status,known_from,subject
-2024-06-10,KRITIKA,2023-12-19,bonus,3.0,verified,2023-12-09,checked against the price on 2024-06-10
+2024-06-07,AEGISLOG,2015-09-16,split,10.0,verified,2015-09-06,checked against the price on 2024-06-07
+2024-06-07,UNITDSPR,2018-06-15,split,5.0,verified,2018-06-05,checked against the price on 2024-06-07
+2024-06-10,KRITIKA,2023-12-19,bonus,3.0,rejected,2023-12-09,checked against the price on 2024-06-10
+2024-06-10,KRITIKA,2024-06-10,restart,1.0,verified,2024-06-10,history restarts: corporate action could not be verified
 2024-06-10,MOTILALOFS,2024-06-10,bonus,4.0,verified,2024-05-31,checked against the price on 2024-06-10
 2024-06-10,TPHQ,2023-12-14,split,10.0,verified,2023-12-04,checked against the price on 2024-06-10
 2024-06-14,KAMOPAINTS,2024-06-14,split,5.0,verified,2024-06-04,checked against the price on 2024-06-14

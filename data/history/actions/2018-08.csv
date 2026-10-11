@@ -1,0 +1,8 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2018-08-07,GALLISPAT,2018-08-07,split,10.0,verified,2018-07-28,checked against the price on 2018-08-07
+2018-08-08,WHEELS,2018-08-08,bonus,2.0,verified,2018-07-29,checked against the price on 2018-08-08
+2018-08-14,KARURVYSYA,2018-08-14,bonus,1.1,verified,2018-08-04,checked against the price on 2018-08-14
+2018-08-14,TIRUMALCHM,2018-08-14,split,10.0,verified,2018-08-04,checked against the price on 2018-08-14
+2018-08-30,AURIONPRO,2018-08-14,restart,1.0,verified,2018-08-04,checked against the price on 2018-08-30
+2018-08-02,BOROSIL,2018-08-02,restart,1.0,verified,2018-08-02,history restarts: unexplained move beyond 35% (applied in M5)
+2018-08-16,VISESHINFO,2018-08-16,restart,1.0,verified,2018-08-16,history restarts: unexplained move beyond 35% (applied in M5)

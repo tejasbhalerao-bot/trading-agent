@@ -1,0 +1,11 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2015-05-08,SFCL,2015-04-23,restart,1.0,verified,2015-04-13,checked against the price on 2015-05-08
+2015-05-28,ARVIND,2015-05-28,restart,1.0,verified,2015-05-18,checked against the price on 2015-05-28
+2015-05-28,VIVIDHA,2015-05-28,bonus,11.0,verified,2015-05-18,checked against the price on 2015-05-28
+2015-05-04,BIRLACOT,2015-05-04,restart,1.0,verified,2015-05-04,history restarts: unexplained move beyond 35% (applied in M5)
+2015-05-06,BIRLACOT,2015-05-06,restart,1.0,verified,2015-05-06,history restarts: unexplained move beyond 35% (applied in M5)
+2015-05-18,VISESHINFO,2015-05-18,restart,1.0,verified,2015-05-18,history restarts: unexplained move beyond 35% (applied in M5)
+2015-05-22,VISESHINFO,2015-05-22,restart,1.0,verified,2015-05-22,history restarts: unexplained move beyond 35% (applied in M5)
+2015-05-25,BIRLACOT,2015-05-25,restart,1.0,verified,2015-05-25,history restarts: unexplained move beyond 35% (applied in M5)
+2015-05-27,BIRLACOT,2015-05-27,restart,1.0,verified,2015-05-27,history restarts: unexplained move beyond 35% (applied in M5)
+2015-05-29,BIRLACOT,2015-05-29,restart,1.0,verified,2015-05-29,history restarts: unexplained move beyond 35% (applied in M5)

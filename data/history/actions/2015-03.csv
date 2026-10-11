@@ -1,0 +1,20 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2015-03-10,PERSISTENT,2015-03-10,bonus,2.0,verified,2015-02-28,checked against the price on 2015-03-10
+2015-03-19,HCLTECH,2015-03-19,bonus,2.0,verified,2015-03-09,checked against the price on 2015-03-19
+2015-03-19,TECHM,2015-03-19,split,2.0,rejected,2015-03-09,checked against the price on 2015-03-19
+2015-03-19,TECHM,2015-03-19,restart,1.0,verified,2015-03-19,history restarts: corporate action could not be verified
+2015-03-20,AJANTPHARM,2015-03-20,split,2.5,verified,2015-03-10,checked against the price on 2015-03-20
+2015-03-20,NTPC,2015-03-20,restart,1.0,verified,2015-03-10,checked against the price on 2015-03-20
+2015-03-24,AARTIDRUGS,2015-03-24,bonus,2.0,verified,2015-03-14,checked against the price on 2015-03-24
+2015-03-26,KANSAINER,2015-03-26,split,10.0,verified,2015-03-16,checked against the price on 2015-03-26
+2015-03-26,WABAG,2015-03-26,bonus,2.0,verified,2015-03-16,checked against the price on 2015-03-26
+2015-03-30,KSERASERA,2015-03-30,split,10.0,verified,2015-03-20,checked against the price on 2015-03-30
+2015-03-03,BIRLACOT,2015-03-03,restart,1.0,verified,2015-03-03,history restarts: unexplained move beyond 35% (applied in M5)
+2015-03-11,BIRLACOT,2015-03-11,restart,1.0,verified,2015-03-11,history restarts: unexplained move beyond 35% (applied in M5)
+2015-03-19,BIRLACOT,2015-03-19,restart,1.0,verified,2015-03-19,history restarts: unexplained move beyond 35% (applied in M5)
+2015-03-23,BIRLACOT,2015-03-23,restart,1.0,verified,2015-03-23,history restarts: unexplained move beyond 35% (applied in M5)
+2015-03-23,GRANULES,2015-03-23,restart,1.0,verified,2015-03-23,history restarts: unexplained move beyond 35% (applied in M5)
+2015-03-25,BIRLACOT,2015-03-25,restart,1.0,verified,2015-03-25,history restarts: unexplained move beyond 35% (applied in M5)
+2015-03-25,VISESHINFO,2015-03-25,restart,1.0,verified,2015-03-25,history restarts: unexplained move beyond 35% (applied in M5)
+2015-03-30,BIRLACOT,2015-03-30,restart,1.0,verified,2015-03-30,history restarts: unexplained move beyond 35% (applied in M5)
+2015-03-30,VISESHINFO,2015-03-30,restart,1.0,verified,2015-03-30,history restarts: unexplained move beyond 35% (applied in M5)

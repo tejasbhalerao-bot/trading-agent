@@ -2,10 +2,11 @@ seen,symbol,ex_date,kind,factor,status,known_from,subject
 2024-12-03,WIPRO,2024-12-03,bonus,2.0,verified,2024-11-23,checked against the price on 2024-12-03
 2024-12-05,TARACHAND,2024-12-05,split,5.0,verified,2024-11-25,checked against the price on 2024-12-05
 2024-12-10,GLOBAL,2024-12-10,split,2.5,verified,2024-11-30,checked against the price on 2024-12-10
+2024-12-11,GMRAIRPORT,2022-01-11,restart,1.0,verified,2022-01-01,checked against the price on 2024-12-11
 2024-12-13,EXXARO,2024-12-13,split,10.0,verified,2024-12-03,checked against the price on 2024-12-13
 2024-12-20,STAR,2024-12-06,restart,1.0,verified,2024-11-26,checked against the price on 2024-12-20
-2024-12-20,LINC,2024-12-20,bonus,2.0,verified,2024-12-10,checked against the price on 2024-12-20
 2024-12-20,LINC,2024-12-20,split,2.0,verified,2024-12-10,checked against the price on 2024-12-20
+2024-12-20,LINC,2024-12-20,bonus,2.0,verified,2024-12-10,checked against the price on 2024-12-20
 2024-12-27,NMDC,2024-12-27,bonus,3.0,verified,2024-12-17,checked against the price on 2024-12-27
 2024-12-27,HARDWYN,2024-12-27,bonus,1.4,verified,2024-12-17,checked against the price on 2024-12-27
 2024-12-27,MAZDOCK,2024-12-27,split,2.0,verified,2024-12-17,checked against the price on 2024-12-27

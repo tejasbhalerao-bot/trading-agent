@@ -1,0 +1,14 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2023-05-03,ALLCARGO,2023-04-18,restart,1.0,verified,2023-04-08,checked against the price on 2023-05-03
+2023-05-04,APOLLO,2023-05-04,split,10.0,verified,2023-04-24,checked against the price on 2023-05-04
+2023-05-09,NDLVENTURE,2022-11-22,restart,1.0,verified,2022-11-12,checked against the price on 2023-05-09
+2023-05-11,SIRCA,2023-05-11,bonus,2.0,verified,2023-05-01,checked against the price on 2023-05-11
+2023-05-15,VISAKAIND,2023-05-15,split,5.0,verified,2023-05-05,checked against the price on 2023-05-15
+2023-05-19,SRPL,2023-05-19,split,10.0,verified,2023-05-09,checked against the price on 2023-05-19
+2023-05-23,GOYALALUM,2023-04-25,split,10.0,rejected,2023-04-15,checked against the price on 2023-05-23
+2023-05-23,GOYALALUM,2023-05-23,restart,1.0,verified,2023-05-23,history restarts: corporate action could not be verified
+2023-05-23,VINNY,2023-02-24,split,10.0,verified,2023-02-14,checked against the price on 2023-05-23
+2023-05-23,VINNY,2023-02-24,bonus,2.3,verified,2023-02-14,checked against the price on 2023-05-23
+2023-05-26,RADHIKAJWE,2023-05-26,split,5.0,verified,2023-05-16,checked against the price on 2023-05-26
+2023-05-26,VSSL,2023-05-26,bonus,2.0,verified,2023-05-16,checked against the price on 2023-05-26
+2023-05-31,LODHA,2023-05-31,bonus,2.0,verified,2023-05-21,checked against the price on 2023-05-31

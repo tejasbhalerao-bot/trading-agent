@@ -1,0 +1,9 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2015-02-04,POLYMED,2015-02-02,split,2.0,verified,2015-01-23,checked against the price on 2015-02-04
+2015-02-12,FCL,2015-02-12,bonus,2.0,verified,2015-02-02,checked against the price on 2015-02-12
+2015-02-16,ASAHISONG,2015-02-02,restart,1.0,verified,2015-01-23,checked against the price on 2015-02-16
+2015-02-27,HIKAL,2015-02-27,split,5.0,verified,2015-02-17,checked against the price on 2015-02-27
+2015-02-11,BIRLACOT,2015-02-11,restart,1.0,verified,2015-02-11,history restarts: unexplained move beyond 35% (applied in M5)
+2015-02-18,BIRLACOT,2015-02-18,restart,1.0,verified,2015-02-18,history restarts: unexplained move beyond 35% (applied in M5)
+2015-02-23,BIRLACOT,2015-02-23,restart,1.0,verified,2015-02-23,history restarts: unexplained move beyond 35% (applied in M5)
+2015-02-27,BIRLACOT,2015-02-27,restart,1.0,verified,2015-02-27,history restarts: unexplained move beyond 35% (applied in M5)

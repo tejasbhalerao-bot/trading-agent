@@ -1,0 +1,4 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2021-07-13,SALASAR,2021-07-13,bonus,2.0,verified,2021-07-03,checked against the price on 2021-07-13
+2021-07-14,MOKSH,2021-07-14,split,5.0,verified,2021-07-04,checked against the price on 2021-07-14
+2021-07-29,POWERGRID,2021-07-29,bonus,1.3333333333333333,verified,2021-07-19,checked against the price on 2021-07-29

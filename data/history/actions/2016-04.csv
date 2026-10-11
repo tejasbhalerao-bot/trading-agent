@@ -1,0 +1,9 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2016-04-06,VIVIMEDLAB,2016-04-06,split,5.0,verified,2016-03-27,checked against the price on 2016-04-06
+2016-04-13,MOHITIND,2016-03-30,restart,1.0,verified,2016-03-20,checked against the price on 2016-04-13
+2016-04-04,VISESHINFO,2016-04-04,restart,1.0,verified,2016-04-04,history restarts: unexplained move beyond 35% (applied in M5)
+2016-04-06,VISESHINFO,2016-04-06,restart,1.0,verified,2016-04-06,history restarts: unexplained move beyond 35% (applied in M5)
+2016-04-20,VISESHINFO,2016-04-20,restart,1.0,verified,2016-04-20,history restarts: unexplained move beyond 35% (applied in M5)
+2016-04-25,VKSPL,2016-04-25,restart,1.0,verified,2016-04-25,history restarts: unexplained move beyond 35% (applied in M5)
+2016-04-26,VISESHINFO,2016-04-26,restart,1.0,verified,2016-04-26,history restarts: unexplained move beyond 35% (applied in M5)
+2016-04-27,VKSPL,2016-04-27,restart,1.0,verified,2016-04-27,history restarts: unexplained move beyond 35% (applied in M5)

@@ -1,0 +1,5 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-04-05,CONCOR,2017-04-05,bonus,1.25,verified,2017-03-26,checked against the price on 2017-04-05
+2017-04-11,PTL,2017-03-27,restart,1.0,verified,2017-03-17,checked against the price on 2017-04-11
+2017-04-26,BLS,2017-04-26,split,10.0,verified,2017-04-16,checked against the price on 2017-04-26
+2017-04-17,IBREALEST,2017-04-17,restart,1.0,verified,2017-04-17,history restarts: unexplained move beyond 35% (applied in M5)

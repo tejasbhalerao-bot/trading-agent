@@ -10,3 +10,4 @@ seen,symbol,ex_date,kind,factor,status,known_from,subject
 2026-03-25,V2RETAIL,2026-03-25,split,10.0,verified,2026-03-15,checked against the price on 2026-03-25
 2026-03-27,HIRECT,2026-03-27,bonus,2.0,verified,2026-03-17,checked against the price on 2026-03-27
 2026-03-30,IRB,2026-03-30,bonus,2.0,verified,2026-03-20,checked against the price on 2026-03-30
+2026-03-20,MAHAPEXLTD,2026-03-20,restart,1.0,verified,2026-03-20,history restarts: unexplained move beyond 35% (applied in M5)

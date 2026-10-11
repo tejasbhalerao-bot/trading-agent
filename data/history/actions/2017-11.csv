@@ -1,0 +1,4 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-11-01,IIFL,2017-10-17,restart,1.0,verified,2017-10-07,checked against the price on 2017-11-01
+2017-11-01,INFINITE,2017-11-01,bonus,1.0384615384615385,verified,2017-10-22,checked against the price on 2017-11-01
+2017-11-09,IGL,2017-11-09,split,5.0,verified,2017-10-30,checked against the price on 2017-11-09

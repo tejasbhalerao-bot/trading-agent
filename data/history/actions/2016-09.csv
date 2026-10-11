@@ -1,0 +1,20 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2016-09-06,TECHNO,2016-09-06,bonus,2.0,verified,2016-08-27,checked against the price on 2016-09-06
+2016-09-08,BAJFINANCE,2016-09-08,split,5.0,rejected,2016-08-29,checked against the price on 2016-09-08
+2016-09-08,BAJFINANCE,2016-09-08,restart,1.0,verified,2016-09-08,history restarts: corporate action could not be verified
+2016-09-09,JINDALSAW,2016-08-25,restart,1.0,verified,2016-08-15,checked against the price on 2016-09-09
+2016-09-12,TCI,2016-08-26,restart,1.0,verified,2016-08-16,checked against the price on 2016-09-12
+2016-09-12,TRENT,2016-09-12,split,10.0,verified,2016-09-02,checked against the price on 2016-09-12
+2016-09-14,HINDPETRO,2016-09-14,bonus,3.0,verified,2016-09-04,checked against the price on 2016-09-14
+2016-09-14,SYMPHONY,2016-09-14,bonus,2.0,verified,2016-09-04,checked against the price on 2016-09-14
+2016-09-21,JMTAUTOLTD,2016-09-21,split,2.0,verified,2016-09-11,checked against the price on 2016-09-21
+2016-09-28,RECLTD,2016-09-28,bonus,2.0,verified,2016-09-18,checked against the price on 2016-09-28
+2016-09-01,NBVENTURES,2016-09-01,restart,1.0,verified,2016-09-01,history restarts: unexplained move beyond 35% (applied in M5)
+2016-09-02,FARMAXIND,2016-09-02,restart,1.0,verified,2016-09-02,history restarts: unexplained move beyond 35% (applied in M5)
+2016-09-12,FARMAXIND,2016-09-12,restart,1.0,verified,2016-09-12,history restarts: unexplained move beyond 35% (applied in M5)
+2016-09-12,MINDAIND,2016-09-12,restart,1.0,verified,2016-09-12,history restarts: unexplained move beyond 35% (applied in M5)
+2016-09-12,VKSPL,2016-09-12,restart,1.0,verified,2016-09-12,history restarts: unexplained move beyond 35% (applied in M5)
+2016-09-14,VISESHINFO,2016-09-14,restart,1.0,verified,2016-09-14,history restarts: unexplained move beyond 35% (applied in M5)
+2016-09-15,VKSPL,2016-09-15,restart,1.0,verified,2016-09-15,history restarts: unexplained move beyond 35% (applied in M5)
+2016-09-23,FARMAXIND,2016-09-23,restart,1.0,verified,2016-09-23,history restarts: unexplained move beyond 35% (applied in M5)
+2016-09-27,VISESHINFO,2016-09-27,restart,1.0,verified,2016-09-27,history restarts: unexplained move beyond 35% (applied in M5)

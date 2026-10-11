@@ -1,0 +1,8 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2020-01-06,ABB,2019-12-20,restart,1.0,verified,2019-12-10,checked against the price on 2020-01-06
+2020-01-08,KESORAMIND,2019-12-24,restart,1.0,verified,2019-12-14,checked against the price on 2020-01-08
+2020-01-13,JINDALPOLY,2019-12-30,restart,1.0,verified,2019-12-20,checked against the price on 2020-01-13
+2020-01-15,SIS,2020-01-15,split,2.0,verified,2020-01-05,checked against the price on 2020-01-15
+2020-01-09,UVSL,2020-01-09,restart,1.0,verified,2020-01-09,history restarts: unexplained move beyond 35% (applied in M5)
+2020-01-13,UVSL,2020-01-13,restart,1.0,verified,2020-01-13,history restarts: unexplained move beyond 35% (applied in M5)
+2020-01-15,UVSL,2020-01-15,restart,1.0,verified,2020-01-15,history restarts: unexplained move beyond 35% (applied in M5)

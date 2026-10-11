@@ -1,0 +1,9 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2021-12-02,APOLLOPIPE,2021-12-02,bonus,3.0,verified,2021-11-22,checked against the price on 2021-12-02
+2021-12-03,IEX,2021-12-03,bonus,3.0,verified,2021-11-23,checked against the price on 2021-12-03
+2021-12-06,SSWL,2021-11-18,split,2.0,verified,2021-11-08,checked against the price on 2021-12-06
+2021-12-14,TTKPRESTIG,2021-12-14,split,10.0,verified,2021-12-04,checked against the price on 2021-12-14
+2021-12-16,KKCL,2021-12-16,bonus,5.0,verified,2021-12-06,checked against the price on 2021-12-16
+2021-12-22,PRECWIRE,2021-12-22,split,5.0,verified,2021-12-12,checked against the price on 2021-12-22
+2021-12-23,PTL,2021-12-23,split,2.0,verified,2021-12-13,checked against the price on 2021-12-23
+2021-12-30,ANDHRSUGAR,2021-12-30,split,5.0,verified,2021-12-20,checked against the price on 2021-12-30

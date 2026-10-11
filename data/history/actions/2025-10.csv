@@ -11,9 +11,12 @@ seen,symbol,ex_date,kind,factor,status,known_from,subject
 2025-10-14,GOKULAGRO,2025-10-14,split,2.0,verified,2025-10-04,checked against the price on 2025-10-14
 2025-10-14,TATAINVEST,2025-10-14,split,10.0,verified,2025-10-04,checked against the price on 2025-10-14
 2025-10-17,ABINFRA,2025-10-17,split,10.0,verified,2025-10-07,checked against the price on 2025-10-17
+2025-10-17,AURIGROW,2022-01-20,bonus,2.0,verified,2022-01-10,checked against the price on 2025-10-17
+2025-10-17,AURIGROW,2022-03-24,split,10.0,verified,2022-03-14,checked against the price on 2025-10-17
 2025-10-17,ROLEXRINGS,2025-10-17,split,10.0,verified,2025-10-07,checked against the price on 2025-10-17
 2025-10-24,TMPV,2025-10-14,restart,1.0,verified,2025-10-04,checked against the price on 2025-10-24
 2025-10-30,GEEKAYWIRE,2025-10-30,split,2.0,verified,2025-10-20,checked against the price on 2025-10-30
 2025-10-31,FCL,2025-10-31,bonus,5.0,verified,2025-10-21,checked against the price on 2025-10-31
 2025-10-31,FCL,2025-10-31,split,2.0,verified,2025-10-21,checked against the price on 2025-10-31
 2025-10-31,SKFINDIA,2025-10-15,restart,1.0,verified,2025-10-05,checked against the price on 2025-10-31
+2025-10-14,TATAMOTORS,2025-10-14,restart,1.0,verified,2025-10-14,history restarts: unexplained move beyond 35% (applied in M5)

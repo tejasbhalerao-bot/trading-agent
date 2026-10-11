@@ -1,0 +1,12 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2022-06-06,VBL,2022-06-06,bonus,1.5,verified,2022-05-27,checked against the price on 2022-06-06
+2022-06-09,AUBANK,2022-06-09,bonus,2.0,verified,2022-05-30,checked against the price on 2022-06-09
+2022-06-09,MOTHERSON,2017-07-05,bonus,1.5,verified,2017-06-25,checked against the price on 2022-06-09
+2022-06-09,MOTHERSON,2018-10-30,bonus,1.5,verified,2018-10-20,checked against the price on 2022-06-09
+2022-06-09,MOTHERSON,2022-01-14,restart,1.0,verified,2022-01-04,checked against the price on 2022-06-09
+2022-06-21,ESSENTIA,2022-02-03,split,3.0,verified,2022-01-24,checked against the price on 2022-06-21
+2022-06-24,NAZARA,2022-06-24,bonus,2.0,verified,2022-06-14,checked against the price on 2022-06-24
+2022-06-27,SALASAR,2022-06-27,split,10.0,verified,2022-06-17,checked against the price on 2022-06-27
+2022-06-30,IOC,2022-06-30,bonus,1.5,verified,2022-06-20,checked against the price on 2022-06-30
+2022-06-30,PAISALO,2022-06-30,split,10.0,verified,2022-06-20,checked against the price on 2022-06-30
+2022-06-30,RATNAMANI,2022-06-30,bonus,1.5,verified,2022-06-20,checked against the price on 2022-06-30

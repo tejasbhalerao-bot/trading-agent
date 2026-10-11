@@ -27,6 +27,8 @@
 {"date":"2024-02-08","reason":"not traded today","symbol":"OMAXAUTO"}
 {"date":"2024-02-08","reason":"not traded today","symbol":"SHAKTIPUMP"}
 {"date":"2024-02-08","reason":"not traded today","symbol":"SHIVATEX"}
+{"date":"2024-02-12","reason":"corporate action of 5x does not match the price move; history restarts","symbol":"GEEKAYWIRE"}
+{"date":"2024-02-12","reason":"corporate action of 2x does not match the price move; history restarts","symbol":"NEWGEN"}
 {"date":"2024-02-12","reason":"not traded today","symbol":"CORDSCABLE"}
 {"date":"2024-02-12","reason":"not traded today","symbol":"MAHASTEEL"}
 {"date":"2024-02-12","reason":"not traded today","symbol":"MEP"}
@@ -46,6 +48,7 @@
 {"date":"2024-02-16","reason":"not traded today","symbol":"LAGNAM"}
 {"date":"2024-02-16","reason":"not traded today","symbol":"SCHNEIDER"}
 {"date":"2024-02-16","reason":"not traded today","symbol":"SUZLON"}
+{"date":"2024-02-19","reason":"corporate action of 2x does not match the price move; history restarts","symbol":"NDRAUTO"}
 {"date":"2024-02-19","reason":"not traded today","symbol":"SHANTI"}
 {"date":"2024-02-20","reason":"not traded today","symbol":"GREENPOWER"}
 {"date":"2024-02-20","reason":"not traded today","symbol":"NILAINFRA"}

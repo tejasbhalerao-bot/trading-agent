@@ -1,0 +1,10 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-08-01,JAYAGROGN,2017-08-01,bonus,2.0,verified,2017-07-22,checked against the price on 2017-08-01
+2017-08-03,CORALFINAC,2017-08-03,split,5.0,verified,2017-07-24,checked against the price on 2017-08-03
+2017-08-10,DWARKESH,2017-08-10,split,10.0,verified,2017-07-31,checked against the price on 2017-08-10
+2017-08-31,DOLLAR,2017-08-31,split,5.0,verified,2017-08-21,checked against the price on 2017-08-31
+2017-08-08,KSERASERA,2017-08-08,restart,1.0,verified,2017-08-08,history restarts: unexplained move beyond 35% (applied in M5)
+2017-08-11,KSERASERA,2017-08-11,restart,1.0,verified,2017-08-11,history restarts: unexplained move beyond 35% (applied in M5)
+2017-08-21,KSERASERA,2017-08-21,restart,1.0,verified,2017-08-21,history restarts: unexplained move beyond 35% (applied in M5)
+2017-08-28,KSERASERA,2017-08-28,restart,1.0,verified,2017-08-28,history restarts: unexplained move beyond 35% (applied in M5)
+2017-08-31,INFIBEAM,2017-08-31,restart,1.0,verified,2017-08-31,history restarts: unexplained move beyond 35% (applied in M5)

@@ -1,0 +1,4 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2020-08-18,MOTOGENFIN,2020-06-19,split,2.0,rejected,2020-06-09,checked against the price on 2020-08-18
+2020-08-18,MOTOGENFIN,2020-08-18,restart,1.0,verified,2020-08-18,history restarts: corporate action could not be verified
+2020-08-24,EICHERMOT,2020-08-24,split,10.0,verified,2020-08-14,checked against the price on 2020-08-24

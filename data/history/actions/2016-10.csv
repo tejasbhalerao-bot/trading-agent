@@ -1,0 +1,22 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2016-10-04,KAJARIACER,2016-10-04,split,2.0,verified,2016-09-24,checked against the price on 2016-10-04
+2016-10-06,GRASIM,2016-10-06,split,5.0,verified,2016-09-26,checked against the price on 2016-10-06
+2016-10-13,MANDHANA,2016-09-22,restart,1.0,verified,2016-09-12,checked against the price on 2016-10-13
+2016-10-18,IOC,2016-10-18,bonus,2.0,verified,2016-10-08,checked against the price on 2016-10-18
+2016-10-19,ALANKIT,2016-10-19,bonus,2.0,verified,2016-10-09,checked against the price on 2016-10-19
+2016-10-03,FARMAXIND,2016-10-03,restart,1.0,verified,2016-10-03,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-04,VISESHINFO,2016-10-04,restart,1.0,verified,2016-10-04,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-05,VKSPL,2016-10-05,restart,1.0,verified,2016-10-05,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-07,VISESHINFO,2016-10-07,restart,1.0,verified,2016-10-07,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-10,8KMILES,2016-10-10,restart,1.0,verified,2016-10-10,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-10,VKSPL,2016-10-10,restart,1.0,verified,2016-10-10,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-13,GAL,2016-10-13,restart,1.0,verified,2016-10-13,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-14,VKSPL,2016-10-14,restart,1.0,verified,2016-10-14,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-18,VKSPL,2016-10-18,restart,1.0,verified,2016-10-18,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-19,CAPLIPOINT,2016-10-19,restart,1.0,verified,2016-10-19,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-19,FARMAXIND,2016-10-19,restart,1.0,verified,2016-10-19,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-21,VKSPL,2016-10-21,restart,1.0,verified,2016-10-21,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-25,VIJIFIN,2016-10-25,restart,1.0,verified,2016-10-25,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-25,VKSPL,2016-10-25,restart,1.0,verified,2016-10-25,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-26,BHAGERIA,2016-10-26,restart,1.0,verified,2016-10-26,history restarts: unexplained move beyond 35% (applied in M5)
+2016-10-27,VKSPL,2016-10-27,restart,1.0,verified,2016-10-27,history restarts: unexplained move beyond 35% (applied in M5)

@@ -1,0 +1,8 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2023-02-03,SERVOTECH,2023-02-03,split,5.0,verified,2023-01-24,checked against the price on 2023-02-03
+2023-02-06,MBAPL,2022-10-18,bonus,2.0,rejected,2022-10-08,checked against the price on 2023-02-06
+2023-02-06,MBAPL,2023-02-06,restart,1.0,verified,2023-02-06,history restarts: corporate action could not be verified
+2023-02-15,ACCURACY,2023-02-15,split,10.0,verified,2023-02-05,checked against the price on 2023-02-15
+2023-02-15,VCL,2023-02-15,split,2.0,rejected,2023-02-05,checked against the price on 2023-02-15
+2023-02-15,VCL,2023-02-15,restart,1.0,verified,2023-02-15,history restarts: corporate action could not be verified
+2023-02-22,IRB,2023-02-22,split,10.0,verified,2023-02-12,checked against the price on 2023-02-22

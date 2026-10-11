@@ -1,0 +1,9 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2023-11-01,MITTAL,2023-11-01,split,10.0,verified,2023-10-22,checked against the price on 2023-11-01
+2023-11-02,CANTABIL,2023-11-02,split,5.0,verified,2023-10-23,checked against the price on 2023-11-02
+2023-11-08,DPWIRES,2023-11-08,bonus,1.1428571428571428,verified,2023-10-29,checked against the price on 2023-11-08
+2023-11-09,HPAL,2023-11-09,split,5.0,verified,2023-10-30,checked against the price on 2023-11-09
+2023-11-10,MKPL,2023-11-10,split,10.0,verified,2023-10-31,checked against the price on 2023-11-10
+2023-11-20,HINDCON,2023-11-10,split,5.0,rejected,2023-10-31,checked against the price on 2023-11-20
+2023-11-20,HINDCON,2023-11-20,restart,1.0,verified,2023-11-20,history restarts: corporate action could not be verified
+2023-11-23,SHAILY,2023-11-23,split,5.0,verified,2023-11-13,checked against the price on 2023-11-23

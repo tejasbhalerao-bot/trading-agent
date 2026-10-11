@@ -1,0 +1,14 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2022-10-03,MOTHERSON,2022-10-03,bonus,1.5,verified,2022-09-23,checked against the price on 2022-10-03
+2022-10-07,AJOONI,2022-10-07,split,5.0,verified,2022-09-27,checked against the price on 2022-10-07
+2022-10-10,RUCHIRA,2022-10-10,bonus,1.1,verified,2022-09-30,checked against the price on 2022-10-10
+2022-10-12,SBCL,2022-10-12,bonus,1.5,verified,2022-10-02,checked against the price on 2022-10-12
+2022-10-18,HLEGLAS,2022-10-18,split,5.0,verified,2022-10-08,checked against the price on 2022-10-18
+2022-10-19,AARTIIND,2022-10-19,restart,1.0,verified,2022-10-09,checked against the price on 2022-10-19
+2022-10-19,GLOBAL,2022-10-19,split,2.0,verified,2022-10-09,checked against the price on 2022-10-19
+2022-10-19,TPLPLASTEH,2022-10-19,split,5.0,verified,2022-10-09,checked against the price on 2022-10-19
+2022-10-21,AXITA,2022-10-21,split,10.0,verified,2022-10-11,checked against the price on 2022-10-21
+2022-10-27,DIL,2022-10-27,bonus,2.0,verified,2022-10-17,checked against the price on 2022-10-27
+2022-10-27,NMDC,2022-10-27,restart,1.0,verified,2022-10-17,checked against the price on 2022-10-27
+2022-10-28,SIKKO,2022-10-28,bonus,1.5,verified,2022-10-18,checked against the price on 2022-10-28
+2022-10-31,TDPOWERSYS,2022-10-31,split,5.0,verified,2022-10-21,checked against the price on 2022-10-31

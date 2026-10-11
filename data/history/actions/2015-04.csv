@@ -1,0 +1,13 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2015-04-09,BALKRISIND,2015-03-24,restart,1.0,verified,2015-03-14,checked against the price on 2015-04-09
+2015-04-09,MENONBE,2015-04-09,split,5.0,verified,2015-03-30,checked against the price on 2015-04-09
+2015-04-16,INSECTICID,2015-04-16,bonus,1.5,verified,2015-04-06,checked against the price on 2015-04-16
+2015-04-06,VISESHINFO,2015-04-06,restart,1.0,verified,2015-04-06,history restarts: unexplained move beyond 35% (applied in M5)
+2015-04-07,BIRLACOT,2015-04-07,restart,1.0,verified,2015-04-07,history restarts: unexplained move beyond 35% (applied in M5)
+2015-04-08,VISESHINFO,2015-04-08,restart,1.0,verified,2015-04-08,history restarts: unexplained move beyond 35% (applied in M5)
+2015-04-10,VISESHINFO,2015-04-10,restart,1.0,verified,2015-04-10,history restarts: unexplained move beyond 35% (applied in M5)
+2015-04-15,VISESHINFO,2015-04-15,restart,1.0,verified,2015-04-15,history restarts: unexplained move beyond 35% (applied in M5)
+2015-04-16,PITTILAM,2015-04-16,restart,1.0,verified,2015-04-16,history restarts: unexplained move beyond 35% (applied in M5)
+2015-04-17,VISESHINFO,2015-04-17,restart,1.0,verified,2015-04-17,history restarts: unexplained move beyond 35% (applied in M5)
+2015-04-22,BIRLACOT,2015-04-22,restart,1.0,verified,2015-04-22,history restarts: unexplained move beyond 35% (applied in M5)
+2015-04-23,TWL,2015-04-23,restart,1.0,verified,2015-04-23,history restarts: unexplained move beyond 35% (applied in M5)

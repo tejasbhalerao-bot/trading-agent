@@ -1,5 +1,7 @@
 seen,symbol,ex_date,kind,factor,status,known_from,subject
 2025-01-01,SURYAROSNI,2025-01-01,bonus,2.0,verified,2024-12-22,checked against the price on 2025-01-01
+2025-01-03,ATLASCYCLE,2017-10-30,split,2.0,rejected,2017-10-20,checked against the price on 2025-01-03
+2025-01-03,ATLASCYCLE,2025-01-03,restart,1.0,verified,2025-01-03,history restarts: corporate action could not be verified
 2025-01-03,KPIGREEN,2025-01-03,bonus,1.5,verified,2024-12-24,checked against the price on 2025-01-03
 2025-01-03,GARFIBRES,2025-01-03,bonus,5.0,verified,2024-12-24,checked against the price on 2025-01-03
 2025-01-06,ITC,2025-01-06,restart,1.0,verified,2024-12-27,checked against the price on 2025-01-06
@@ -16,3 +18,4 @@ seen,symbol,ex_date,kind,factor,status,known_from,subject
 2025-01-31,JBMA,2025-01-31,split,2.0,verified,2025-01-21,checked against the price on 2025-01-31
 2025-01-31,IGL,2025-01-31,bonus,2.0,verified,2025-01-21,checked against the price on 2025-01-31
 2025-01-31,SENCO,2025-01-31,split,2.0,verified,2025-01-21,checked against the price on 2025-01-31
+2025-01-15,CALSOFT,2025-01-15,restart,1.0,verified,2025-01-15,history restarts: unexplained move beyond 35% (applied in M5)

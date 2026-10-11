@@ -1,0 +1,5 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2019-03-06,WIPRO,2019-03-06,bonus,1.3333333333333333,verified,2019-02-24,checked against the price on 2019-03-06
+2019-03-19,NTPC,2019-03-19,bonus,1.2,verified,2019-03-09,checked against the price on 2019-03-19
+2019-03-06,VISESHINFO,2019-03-06,restart,1.0,verified,2019-03-06,history restarts: unexplained move beyond 35% (applied in M5)
+2019-03-29,IDEA,2019-03-29,restart,1.0,verified,2019-03-29,history restarts: unexplained move beyond 35% (applied in M5)

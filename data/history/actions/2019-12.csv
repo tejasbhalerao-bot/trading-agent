@@ -1,0 +1,6 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2019-12-05,HCLTECH,2019-12-05,bonus,2.0,verified,2019-11-25,checked against the price on 2019-12-05
+2019-12-13,TRIDENT,2019-12-13,split,10.0,verified,2019-12-03,checked against the price on 2019-12-13
+2019-12-19,THOMASCOOK,2019-12-05,restart,1.0,verified,2019-11-25,checked against the price on 2019-12-19
+2019-12-26,BALMLAWRIE,2019-12-26,bonus,1.5,verified,2019-12-16,checked against the price on 2019-12-26
+2019-12-20,UVSL,2019-12-20,restart,1.0,verified,2019-12-20,history restarts: unexplained move beyond 35% (applied in M5)

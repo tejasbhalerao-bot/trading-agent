@@ -1,0 +1,15 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2017-09-05,RELCAPITAL,2017-09-05,restart,1.0,verified,2017-08-26,checked against the price on 2017-09-05
+2017-09-07,RELIANCE,2017-09-07,bonus,2.0,verified,2017-08-28,checked against the price on 2017-09-07
+2017-09-11,DECCANCE,2017-09-11,split,2.0,verified,2017-09-01,checked against the price on 2017-09-11
+2017-09-15,NESCO,2017-09-15,split,5.0,verified,2017-09-05,checked against the price on 2017-09-15
+2017-09-18,TATAELXSI,2017-09-18,bonus,2.0,verified,2017-09-08,checked against the price on 2017-09-18
+2017-09-21,YESBANK,2017-09-21,split,5.0,verified,2017-09-11,checked against the price on 2017-09-21
+2017-09-26,SUTLEJTEX,2017-09-26,split,10.0,verified,2017-09-16,checked against the price on 2017-09-26
+2017-09-27,MANPASAND,2017-09-27,bonus,2.0,verified,2017-09-17,checked against the price on 2017-09-27
+2017-09-27,MOIL,2017-09-27,bonus,2.0,verified,2017-09-17,checked against the price on 2017-09-27
+2017-09-28,BEL,2017-09-28,bonus,1.1,verified,2017-09-18,checked against the price on 2017-09-28
+2017-09-28,BHARATFORG,2017-09-28,bonus,2.0,verified,2017-09-18,checked against the price on 2017-09-28
+2017-09-28,BHEL,2017-09-28,bonus,1.5,verified,2017-09-18,checked against the price on 2017-09-28
+2017-09-20,KSERASERA,2017-09-20,restart,1.0,verified,2017-09-20,history restarts: unexplained move beyond 35% (applied in M5)
+2017-09-28,TRIL,2017-09-28,restart,1.0,verified,2017-09-28,history restarts: unexplained move beyond 35% (applied in M5)

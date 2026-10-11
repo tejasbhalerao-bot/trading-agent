@@ -1,0 +1,12 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2016-11-08,VKSPL,2016-11-08,restart,1.0,verified,2016-11-08,history restarts: unexplained move beyond 35% (applied in M5)
+2016-11-11,BIRLACOT,2016-11-11,restart,1.0,verified,2016-11-11,history restarts: unexplained move beyond 35% (applied in M5)
+2016-11-11,ICIL,2016-11-11,restart,1.0,verified,2016-11-11,history restarts: unexplained move beyond 35% (applied in M5)
+2016-11-15,VKSPL,2016-11-15,restart,1.0,verified,2016-11-15,history restarts: unexplained move beyond 35% (applied in M5)
+2016-11-17,BIRLACOT,2016-11-17,restart,1.0,verified,2016-11-17,history restarts: unexplained move beyond 35% (applied in M5)
+2016-11-17,KARURVYSYA,2016-11-17,restart,1.0,verified,2016-11-17,history restarts: unexplained move beyond 35% (applied in M5)
+2016-11-17,VKSPL,2016-11-17,restart,1.0,verified,2016-11-17,history restarts: unexplained move beyond 35% (applied in M5)
+2016-11-21,BIRLACOT,2016-11-21,restart,1.0,verified,2016-11-21,history restarts: unexplained move beyond 35% (applied in M5)
+2016-11-23,CGCL,2016-11-23,restart,1.0,verified,2016-11-23,history restarts: unexplained move beyond 35% (applied in M5)
+2016-11-28,BIRLACOT,2016-11-28,restart,1.0,verified,2016-11-28,history restarts: unexplained move beyond 35% (applied in M5)
+2016-11-29,KPRMILL,2016-11-29,restart,1.0,verified,2016-11-29,history restarts: unexplained move beyond 35% (applied in M5)
