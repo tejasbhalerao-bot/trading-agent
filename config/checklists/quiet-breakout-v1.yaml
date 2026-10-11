@@ -1,0 +1,12 @@
+# Quiet breakout: the spec's own example. Approved 2026-10-11 (docs/reports/m2.md).
+# Each condition is a yes/no answered from the numbers alone. Changing anything here means a new version.
+id: quiet-breakout-v1
+name: Quiet breakout
+conditions:
+  - quiet_range: {days: 10, max_pct: 8}        # previous 10 days' high is within 8% of their low
+  - close_above_range_high: {days: 10}         # today closes above that 10-day high
+  - volume_multiple: {min: 2, avg_days: 20}    # today's volume is at least 2x the previous 20 days' average
+exits:
+  stop_typical_moves: 1.0      # stop: today's close minus one typical daily move
+  target_typical_moves: 1.5    # target: today's close plus 1.5 typical daily moves
+  max_hold_days: 3             # sell at the next open after 3 counted trading days

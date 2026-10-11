@@ -70,7 +70,7 @@ Clean asks one question of every figure: **did this happen in the market?** Neve
 | `data/history/identity.csv` | Which ISIN each symbol had from which date, and symbol renames. A company's history follows it through both. |
 | `data/history/skipped/2026.jsonl` | Every "don't know": share, date, reason. |
 
-All lines are only ever added. History from 2015 onwards is fetched once in M3 through this same code, for the backtest. Sizes: about 35 MB per year of history, about 400 MB in all after that one-time fetch, within GitHub's comfortable limits.
+All lines are only ever added. History from January 2024 is fetched in M3; 2015–2023 is added in M5 for the backtest, through this same code. Sizes: about 35 MB per year of history, about 400 MB in all after that one-time fetch, within GitHub's comfortable limits.
 
 ### Checks on every share, every day
 

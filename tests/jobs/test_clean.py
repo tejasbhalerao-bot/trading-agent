@@ -1,0 +1,117 @@
+"""Clean, one test per row of the checks table in docs/design/pass4-fetch-clean.md."""
+
+from __future__ import annotations
+
+import datetime as dt
+import io
+import json
+import zipfile
+
+from trader.clean import Cleaner, parse
+from trader.store import Store
+
+D1, D2, D3 = dt.date(2025, 3, 3), dt.date(2025, 3, 4), dt.date(2025, 3, 5)
+NEW_COLS = ["TradDt", "BizDt", "Sgmt", "Src", "FinInstrmTp", "FinInstrmId", "ISIN", "TckrSymb", "SctySrs", "OpnPric",
+            "HghPric", "LwPric", "ClsPric", "LastPric", "PrvsClsgPric", "TtlTradgVol", "TtlTrfVal", "TtlNbOfTxsExctd"]
+OLD_COLS = ["SYMBOL", "SERIES", "OPEN", "HIGH", "LOW", "CLOSE", "LAST", "PREVCLOSE", "TOTTRDQTY", "TOTTRDVAL",
+            "TIMESTAMP", "TOTALTRADES", "ISIN"]
+
+
+def new_file(d, rows):
+    """rows: (symbol, open, high, low, close, prev_close[, isin])"""
+    lines = [",".join(NEW_COLS)]
+    for s, o, h, l, c, p, *isin in rows:
+        isin = isin[0] if isin else f"INE{s:0>9}"
+        lines.append(f"{d},{d},CM,NSE,STK,1,{isin},{s},EQ,{o},{h},{l},{c},{c},{p},1000,{1000 * c},10")
+    return _zip("\n".join(lines))
+
+
+def old_file(d, rows):
+    lines = [",".join(OLD_COLS)]
+    for s, o, h, l, c, p, *isin in rows:
+        isin = isin[0] if isin else f"INE{s:0>9}"
+        lines.append(f"{s},EQ,{o},{h},{l},{c},{c},{p},1000,{1000 * c},{d:%d-%b-%Y},10,{isin}")
+    return _zip("\n".join(lines))
+
+
+def _zip(text):
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        z.writestr("f.csv", text)
+    return buf.getvalue()
+
+
+def cleaned(tmp_path, days, announcements=()):
+    store = Store(tmp_path)
+    c = Cleaner(store)
+    if announcements:
+        c.add_announcements(json.dumps(list(announcements)).encode(), seen=D1, backfill=False)
+    for d, rows in days:
+        c.clean_day(d, new_file(d, rows), None)
+    skipped = store.records(f"history/skipped/{D1.year}.jsonl")
+    return store, {(r["symbol"], r["date"]): r["reason"] for r in skipped}
+
+
+def split(symbol, ex, ratio="From Rs 10/- Per Share To Rs 5/- Per Share"):
+    return {"symbol": symbol, "series": "EQ", "exDate": f"{ex:%d-%b-%Y}", "subject": f"Face Value Split (Sub-Division) - {ratio}"}
+
+
+def test_old_and_new_formats_give_identical_rows():
+    rows = [("AAA", 10, 11, 9, 10.5, 10), ("BBB", 20, 21, 19, 20.5, 20)]
+    assert parse.price_rows(old_file(D1, rows)) == parse.price_rows(new_file(D1, rows))
+
+
+def test_funds_and_etfs_are_left_out():
+    rows = parse.price_rows(new_file(D1, [("AAA", 10, 11, 9, 10, 10), ("NIFTYBEES", 10, 11, 9, 10, 10, "INF204KB14I2")]))
+    assert [r["symbol"] for r in rows] == ["AAA"]
+
+
+def test_inconsistent_prices_are_dont_know(tmp_path):
+    _, skipped = cleaned(tmp_path, [(D1, [("AAA", 10, 9, 11, 10, 10)])])
+    assert "not consistent" in skipped[("AAA", "2025-03-03")]
+
+
+def test_previous_close_must_match_the_stored_close(tmp_path):
+    _, skipped = cleaned(tmp_path, [(D1, [("AAA", 10, 11, 9, 10, 10)]), (D2, [("AAA", 10, 11, 9, 10, 10.4)])])
+    assert "does not match stored close" in skipped[("AAA", "2025-03-04")]
+
+
+def test_a_share_missing_today_is_dont_know(tmp_path):
+    _, skipped = cleaned(tmp_path, [(D1, [("AAA", 10, 11, 9, 10, 10), ("BBB", 5, 6, 4, 5, 5)]),
+                                    (D2, [("AAA", 10, 11, 9, 10, 10)])])
+    assert skipped[("BBB", "2025-03-04")] == "not traded today"
+
+
+def test_a_duplicated_share_is_dont_know(tmp_path):
+    _, skipped = cleaned(tmp_path, [(D1, [("AAA", 10, 11, 9, 10, 10), ("AAA", 10, 11, 9, 10, 10)])])
+    assert "more than once" in skipped[("AAA", "2025-03-03")]
+
+
+def test_a_split_matching_the_price_is_stored_and_applied_only_from_its_date(tmp_path):
+    store, skipped = cleaned(tmp_path, [(D1, [("AAA", 100, 101, 99, 100, 100)]), (D2, [("AAA", 50, 51, 49, 50.5, 100)])],
+                             announcements=[split("AAA", D2)])
+    assert not skipped
+    h = store.history()
+    assert h.as_of(D1).bars("AAA")[-1].close == 100     # before the split took effect: unadjusted
+    assert h.as_of(D2).bars("AAA")[0].close == 50       # after: the earlier price is halved
+
+
+def test_a_split_not_matching_the_price_is_dont_know_and_history_restarts(tmp_path):
+    store, skipped = cleaned(tmp_path, [(D1, [("AAA", 100, 101, 99, 100, 100)]), (D2, [("AAA", 98, 99, 97, 98, 100)]),
+                                        (D3, [("AAA", 98, 99, 97, 98.5, 98)])], announcements=[split("AAA", D2)])
+    assert "does not match the price move" in skipped[("AAA", "2025-03-04")]
+    assert [b.date for b in store.history().as_of(D3).bars("AAA")] == [D3]
+
+
+def test_a_big_unexplained_move_sits_out_one_day_then_is_accepted(tmp_path):
+    store, skipped = cleaned(tmp_path, [(D1, [("AAA", 100, 101, 99, 100, 100)]), (D2, [("AAA", 70, 71, 69, 70, 100)]),
+                                        (D3, [("AAA", 70, 72, 69, 71, 70)])])
+    assert "sitting out one day" in skipped[("AAA", "2025-03-04")]
+    assert ("AAA", "2025-03-05") not in skipped
+    assert store.history().as_of(D3).bars("AAA")[-1].close == 71
+
+
+def test_a_new_cleaner_picks_up_where_the_last_one_stopped(tmp_path):
+    cleaned(tmp_path, [(D1, [("AAA", 10, 11, 9, 10, 10)])])
+    again = Cleaner(Store(tmp_path))
+    assert again.prev_day == D1 and again.last["AAA"] == (D1, 10.0)
