@@ -2,7 +2,7 @@
 
 How the system chooses trades, writes them down, and learns from the results. These three jobs carry the project's central bet: can a record of past decisions measurably improve future ones? They are designed together because Learn can only learn what Record kept, and Record can only keep what Decide exposed.
 
-**Status:** Draft for approval at the end of M1. Decisions still open are marked **[your call]** and listed in [reports/m1.md](../reports/m1.md).
+**Status:** Approved 2026-10-11. Decisions are recorded in [reports/m1.md](../reports/m1.md).
 
 Background: [spec.md](../spec.md) describes the seven jobs. [repo-structure.md](repo-structure.md) describes where things live.
 
@@ -17,7 +17,7 @@ Background: [spec.md](../spec.md) describes the seven jobs. [repo-structure.md](
 | Market mood | Up, down or sideways, as of the decision date. Defined in M2. |
 | Cell | One checklist in one market mood, e.g. "breakout v1 in an up market". Trust is tracked per cell. |
 | R | The amount risked on a trade: entry price minus stop price, per share. A trade that loses its full stop is −1R; one that gains twice its risk is +2R. Using R lets trades of different sizes be compared. |
-| Net | After an estimate of trading costs (default 0.25% of the trade value per round trip; see "Costs"). |
+| Net | After an estimate of trading costs. Set to zero for now (see "Costs"), so net equals gross until it is revisited. |
 | Win | A trade whose net result is above zero. |
 | Unknown | A trade whose result daily prices cannot settle, e.g. the day's range touched both the stop and the target. Settle reports these; nobody guesses them. |
 | Trust version | A numbered snapshot of everything Learn believes. Every decision names the version it was made under. |
@@ -66,21 +66,21 @@ Where the stop and target go comes from the checklist's own exit rule. Fixed exi
    - the safety limits leave no room for it.
 3. **One checklist per share.** If a share matched two checklists, the one with the higher expected result is kept, and the other is recorded as skipped.
 4. **Ranking.** If there are more candidates than room, they are ranked by expected net result in R (see "Trust scores"), highest first. Ties go to the share with the higher trading value, then alphabetically, so the same inputs always give the same choice.
-5. **Size.** Quantity = (balance × risk per trade) ÷ (entry − stop), rounded down. The entry estimate is today's close. Then capped by the maximum position size and the maximum total open risk.
+5. **Size.** Quantity = (balance × risk per trade) ÷ (entry − stop), rounded down. The entry estimate is today's close. Then capped by the maximum position size, the maximum total open risk, and the cash on hand (this is cash trading, so nothing is borrowed). If the result is zero shares, the candidate is skipped as "cannot afford one share within the limits". With a small account this happens often, e.g. for shares priced above ₹2,000.
 
 **Learning never changes size.** Confidence and trust decide *what* is bought. Only your limits decide *how much*, as the spec requires.
 
-### Safety limits [your call]
-Stored in `config/limits.yaml`, which code can read but never write.
+### Safety limits
+Stored in `config/limits.yaml`, which code can read but never write. Set by you on 2026-10-11.
 
-| Limit | What it does |
-|---|---|
-| Paper starting balance | The fake money the account starts with. |
-| Risk per trade | The share of the balance lost if a stop is hit. |
-| Max open positions | How many shares may be held at once. |
-| Max position size | The largest share of the balance in one share. Stops a very tight stop from creating a huge position. |
-| Max total open risk | The most that can be lost if every open stop is hit at once. |
-| Losing-run brake | When the balance falls a set amount below its highest point, risk per trade is halved. At a deeper fall, new buys pause for a set number of trading days, then resume at half risk until the balance recovers. Automatic, so nothing waits for you. |
+| Limit | Value | What it does |
+|---|---|---|
+| Paper starting balance | ₹10,000 | The fake money the account starts with. |
+| Risk per trade | 1% of the balance (₹100 at the start) | The amount lost if a stop is hit. |
+| Max open positions | 5 | How many shares may be held at once. |
+| Max position size | 20% of the balance (₹2,000 at the start) | The most in any one share. Stops a very tight stop from creating a huge position, and limits the damage from one share crashing overnight. |
+| Max total open risk | 5% of the balance | The most that can be lost if every open stop is hit at once. |
+| Losing-run brake | 10% below the highest balance: risk per trade halves. 15% below: no new buys for 10 trading days, then resume at half risk until back within 10%. | Automatic, so nothing waits for you. |
 
 A stop on every buy is not a setting. It is always on.
 
@@ -120,18 +120,18 @@ The review is a single file on Claude's own branch. Finalize rejects the whole r
 
 If no review arrives, finalize carries on and records "no review". Every decision also carries code's own one-line reasoning, so the record is complete with or without Claude.
 
-### Veto power [your call]
-Recommended: **vetoes are recorded but not obeyed during paper trading.** The trade is taken anyway and the objection is kept. At the end of paper trading the record answers the question: did the trades Claude objected to do worse? Only if they did does the veto get real power. That is the spec's "the veto needs justifying before it is granted", answered by evidence.
+### Veto power
+Decided: **vetoes are recorded but not obeyed during paper trading.** The trade is taken anyway and the objection is kept. At the end of paper trading the record answers the question: did the trades Claude objected to do worse? Only if they did does the veto get real power. That is the spec's "the veto needs justifying before it is granted", answered by evidence.
 
 This cannot be tested on past data. Claude already knows how past events turned out, so its judgment on history would be looking at the future.
 
 ---
 
-## Confidence [your call on the method]
+## Confidence
 
 **Definition.** Confidence is the estimated chance that a trade ends as a win, net of costs. That is specific enough to check later: of all trades given 60%, did about 60% win?
 
-**How it is worked out (recommended):** it is the measured win rate of the trade's cell, smoothed:
+**How it is worked out:** it is the measured win rate of the trade's cell, smoothed:
 - **Paper trades count fully. Backtest trades count a quarter each**, capped so the backtest can never outweigh 20 paper trades. Paper results soon take over.
 - **A cell with little evidence borrows from its checklist's record in all moods**, and a checklist with little evidence borrows from the overall record. The borrowing fades as the cell's own evidence grows. This is the standard remedy for small samples, and it can be explained in one sentence.
 - **Unknowns count as losses** in the number used for decisions. That is the cautious end of the range, matching how Settle books the account.
@@ -201,9 +201,9 @@ Learn writes to `data/trust/2026.jsonl`: one line per trust version, plus sugges
 
 ## Costs
 
-`config/costs.yaml` holds one estimate: **0.25% of the trade value per round trip.** That covers securities transaction tax (0.1% on each side), stamp duty, exchange fees and a depository fee, at a broker that charges no brokerage on delivery trades. It is used only to judge results net. Settle still reports gross. Change it if your broker charges differently.
+Ignored for now, by your decision: the cost estimate in `config/costs.yaml` is zero, so "net" equals gross. The mechanism stays, so costs can be switched on with one number.
 
----
+**Revisit before any real money.** At ₹1,000–2,000 per position, a broker's flat fee of about ₹15 per sale is about 1% of the trade, plus 0.1% securities transaction tax on each side.
 
 ## What Pass 1 needs from other jobs (handed to M2)
 

@@ -1,0 +1,3 @@
+# Estimated trading costs per round trip, used only to judge results net.
+# Zero for now by your decision (2026-10-11): net equals gross. Revisit before real money.
+round_trip_cost_pct: 0.0

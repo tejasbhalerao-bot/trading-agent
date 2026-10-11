@@ -2,7 +2,7 @@
 
 How the system described in [spec.md](spec.md) gets built and proven, from an empty repo to a decision on real money.
 
-**Status:** Signed off 2026-10-11. M0 complete ([reports/m0.md](reports/m0.md)). M1 complete; awaiting decisions ([reports/m1.md](reports/m1.md)).
+**Status:** Signed off 2026-10-11. M0 complete ([reports/m0.md](reports/m0.md)). M1 complete ([reports/m1.md](reports/m1.md)). M2 in progress.
 
 Claude designs and builds end to end. You check in only at the end of each milestone, when Claude stops, reports, and brings the decisions that need you, each with its tradeoffs and a recommendation.
 
@@ -20,6 +20,8 @@ Milestones M0–M6 are building and take days to a couple of weeks, depending mo
 | Repo structure | One repo; code and data on `main`. See [design/repo-structure.md](design/repo-structure.md). |
 | Data source | NSE only: daily price files and corporate actions. BSE can be added later as a second source for checking prices. |
 | Which shares | The top 500 by median daily trading value over the previous 60 trading days, recalculated monthly from NSE's own files. Not an index list, which would bias the backtest. |
+| Safety limits | ₹10,000 paper balance, 1% risk per trade, 5 positions, 20% per share, 5% total open risk, losing-run brake. See [config/limits.yaml](../config/limits.yaml). |
+| Trading costs | Ignored for now; revisit before real money. |
 
 ---
 

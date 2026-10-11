@@ -1,0 +1,10 @@
+# Your safety limits. Read by code, never written by it. Set 2026-10-11.
+paper_starting_balance_inr: 10000
+risk_per_trade_pct: 1.0
+max_open_positions: 5
+max_position_size_pct: 20.0
+max_total_open_risk_pct: 5.0
+losing_run_brake:
+  halve_risk_below_peak_pct: 10.0
+  pause_new_buys_below_peak_pct: 15.0
+  pause_trading_days: 10

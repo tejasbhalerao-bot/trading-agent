@@ -12,7 +12,7 @@ It runs on fake money for the first three to four months. No real money until it
 
 ## The seven jobs
 
-In this order, every day.
+In this order, every day. (Each evening's run does Settle and Learn before Decide, so Decide never counts a position already closed that day. Approved 2026-10-11; see [design/pass1-decide-record-learn.md](design/pass1-decide-record-learn.md).)
 
 ### 1. Fetch — get the numbers
 
