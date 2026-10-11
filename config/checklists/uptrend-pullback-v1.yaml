@@ -1,7 +1,10 @@
 # Pullback in an uptrend. Approved 2026-10-11 (docs/reports/m2.md).
-# Each condition is a yes/no answered from the numbers alone. Changing anything here means a new version.
+# Each condition is a yes/no answered from the numbers alone. Changing a condition or an exit means a new
+# version; the `idea` wording below explains the checklist and changes nothing it does.
 id: uptrend-pullback-v1
 name: Pullback in an uptrend
+idea: >
+  In a share that has been rising steadily, a short dip of a few days often bounces back as buyers return. The bet: buy the dip, sell on the bounce within a few days.
 conditions:
   - above_rising_average: {days: 50, lookback: 10}   # close above the 50-day average, which is higher than 10 days ago
   - lower_closes: {days: 3}                          # closed lower on each of the last 3 days

@@ -1,7 +1,10 @@
 # Quiet breakout: the spec's own example. Approved 2026-10-11 (docs/reports/m2.md).
-# Each condition is a yes/no answered from the numbers alone. Changing anything here means a new version.
+# Each condition is a yes/no answered from the numbers alone. Changing a condition or an exit means a new
+# version; the `idea` wording below explains the checklist and changes nothing it does.
 id: quiet-breakout-v1
 name: Quiet breakout
+idea: >
+  Shares that trade in a narrow band for a while sometimes start a strong move when they finally break out of it, especially if many more shares than usual change hands that day. The bet: the break-out continues for a few days.
 conditions:
   - quiet_range: {days: 10, max_pct: 8}        # previous 10 days' high is within 8% of their low
   - close_above_range_high: {days: 10}         # today closes above that 10-day high

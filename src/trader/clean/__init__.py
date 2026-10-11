@@ -58,6 +58,18 @@ class Cleaner:
         self._write_actions(seen, new)
         return len(new)
 
+    def add_holidays(self, body: bytes) -> int:
+        """NSE's trading holidays, kept so dates in the daily report skip them. Returns how many were new."""
+        path = self.w.base / "holidays.csv"
+        known = set()
+        if path.exists():
+            with open(path, newline="") as f:
+                known = {r["date"] for r in csv.DictReader(f)}
+        new = [{"date": h.isoformat()} for h in sorted(parse.holidays(body)) if h.isoformat() not in known]
+        if new:
+            self.w.append_csv("holidays.csv", ["date"], new)
+        return len(new)
+
     def add_renames(self, body: bytes, d: dt.date) -> int:
         """Symbol renames: a share's history follows it to its new symbol. Returns how many were new."""
         path = self.w.base / "renames"

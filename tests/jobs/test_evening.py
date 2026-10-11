@@ -54,7 +54,7 @@ def test_the_report_is_written_after_the_decisions_and_finalize_runs_once(propos
     store, today, _ = proposed
     finalize(store, today, do_publish=False, review_raw=None)
     report = store.data / "reports" / f"{today:%Y-%m}" / f"{today.isoformat()}.md"
-    assert report.exists() and "Trading plan" in report.read_text()
+    assert report.exists() and "Your trading plan" in report.read_text()
     stages = [r["stage"] for r in store.records_all("notebook") if r["type"] == "run" and r["date"] == today.isoformat()]
     assert stages.index("decided") < stages.index("finalized")
     assert finalize(store, today, do_publish=False) == "already finalized today"

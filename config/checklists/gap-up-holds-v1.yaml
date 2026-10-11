@@ -1,7 +1,10 @@
 # Gap up that holds. Approved 2026-10-11 (docs/reports/m2.md).
-# Each condition is a yes/no answered from the numbers alone. Changing anything here means a new version.
+# Each condition is a yes/no answered from the numbers alone. Changing a condition or an exit means a new
+# version; the `idea` wording below explains the checklist and changes nothing it does.
 id: gap-up-holds-v1
 name: Gap up that holds
+idea: >
+  When a share opens sharply higher (usually on news) and holds the gain all day on heavy trading, the buying often carries on for a few days. The bet: the move continues.
 conditions:
   - gap_up: {min_pct: 3}                       # opened at least 3% above yesterday's close
   - holds_gain: {top_fraction: 0.25}           # closed at or above the open, in the top quarter of the day's range

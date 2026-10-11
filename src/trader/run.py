@@ -56,6 +56,8 @@ def propose(store: Store, today: dt.date, now: dt.datetime, do_publish: bool = T
     ref = fetch.fetch_reference(store, today)
     if ref["symbol_changes"]:
         cleaner.add_renames(ref["symbol_changes"], today)
+    if ref["holidays"]:
+        cleaner.add_holidays(ref["holidays"])
     closed = "market closed: NSE holiday" if ref["holidays"] and today in parse.holidays(ref["holidays"]) else None
     actions = fetch.fetch_corporate_actions(store, today - dt.timedelta(days=30), today + dt.timedelta(days=30), on=today)
     if actions:
