@@ -34,10 +34,15 @@ def price_rows(zipped: bytes) -> list[dict]:
     return rows
 
 
+# NSE renamed its CNX indices to Nifty in November 2015.
+INDEX_ALIASES = {"CNX 500": "Nifty 500", "CNX Nifty": "Nifty 50"}
+
+
 def index_rows(text: bytes, names=("Nifty 500", "Nifty 50")) -> list[dict]:
     out = []
     for r in csv.DictReader(io.StringIO(text.decode("latin-1"))):
         name = (r.get("Index Name") or "").strip()
+        name = INDEX_ALIASES.get(name, name)
         if name in names:
             out.append({"date": _date(r["Index Date"].strip()).isoformat(), "index": name,
                         "open": r["Open Index Value"].strip(), "high": r["High Index Value"].strip(),
@@ -96,7 +101,7 @@ def symbol_changes(body: bytes) -> list[tuple[str, str, dt.date]]:
 
 
 def _date(s: str) -> dt.date:
-    for fmt in ("%Y-%m-%d", "%d-%b-%Y", "%d-%m-%Y", "%d-%b-%y"):  # "%d-%b-%y": e.g. 13-Jul-20 in some 2020 files
+    for fmt in ("%Y-%m-%d", "%d-%b-%Y", "%d-%m-%Y", "%d-%b-%y", "%d/%m/%Y"):  # 13-Jul-20 and 24/03/2015 appear in old files
         try:
             return dt.datetime.strptime(s, fmt).date()
         except ValueError:

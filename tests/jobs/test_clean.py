@@ -146,7 +146,7 @@ def test_a_rename_carries_history_but_an_old_rename_of_a_reused_symbol_does_not(
 
 def test_dates_in_every_format_nse_has_used():
     # Some 2020 price files wrote 13-Jul-20 instead of 13-JUL-2020.
-    for text in ("2020-07-13", "13-JUL-2020", "13-Jul-20", "13-07-2020"):
+    for text in ("2020-07-13", "13-JUL-2020", "13-Jul-20", "13-07-2020", "13/07/2020"):
         assert parse._date(text) == dt.date(2020, 7, 13)
 
 
@@ -159,3 +159,9 @@ def test_an_unreadable_file_fails_its_day_and_the_next_day_carries_on(tmp_path):
     assert Cleaner(Store(tmp_path)).prev_day == D2           # a new run does not retry the bad day forever
     c.clean_day(D3, new_file(D3, [("AAA", 10, 11, 9, 10.5, 10.2)]), None)
     assert Store(tmp_path).history().as_of(D3).bars("AAA")[-1].close == 10.5
+
+
+def test_old_index_names_from_before_november_2015_are_recognised():
+    text = (b"Index Name,Index Date,Open Index Value,High Index Value,Low Index Value,Closing Index Value\n"
+            b"CNX 500,01-04-2015,7000,7100,6900,7050\nCNX Nifty,01-04-2015,8500,8600,8400,8550\n")
+    assert [r["index"] for r in parse.index_rows(text)] == ["Nifty 500", "Nifty 50"]

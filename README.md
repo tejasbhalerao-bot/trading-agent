@@ -16,7 +16,7 @@ the rules that bind them, and what is still open.
 
 ## Status
 
-M0–M4 are complete: foundations, the full design, and the full system (all seven jobs, the evening run, Claude's review check, the daily report), with market history from January 2024 in `data/history/`. Next: M5, the backtest and go/no-go. Reports: [docs/reports/](docs/reports/). Milestones: [docs/plan.md](docs/plan.md).
+M0–M5 are complete. The M5 backtest over 2015–2026 found that none of the checklists makes money once trading costs are counted, so paper trading has **not** started. See [docs/reports/m5.md](docs/reports/m5.md) for the result and the options. Reports: [docs/reports/](docs/reports/). Milestones: [docs/plan.md](docs/plan.md).
 
 ## Try it
 
