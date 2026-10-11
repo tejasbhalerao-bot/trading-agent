@@ -11,7 +11,7 @@ the rules that bind them, and what is still open.
 
 ## Status
 
-M0 (foundations and data check) is complete. See [docs/plan.md](docs/plan.md) for the milestones and [docs/reports/m0.md](docs/reports/m0.md) for what M0 found. Next: M1, the design of Decide, Record and Learn.
+M0 (foundations and data check) is complete; see [docs/reports/m0.md](docs/reports/m0.md). M1 (design of Decide, Record and Learn) is complete and awaiting decisions; see [docs/reports/m1.md](docs/reports/m1.md). Milestones: [docs/plan.md](docs/plan.md).
 
 ## Build order
 
