@@ -2,7 +2,7 @@
 
 How the system described in [spec.md](spec.md) gets built and proven, from an empty repo to a decision on real money.
 
-**Status:** Signed off 2026-10-11. M0 in progress.
+**Status:** Signed off 2026-10-11. M0 complete; awaiting checkpoint decisions ([reports/m0.md](reports/m0.md)).
 
 Claude designs and builds end to end. You check in only at the end of each milestone, when Claude stops, reports, and brings the decisions that need you, each with its tradeoffs and a recommendation.
 
