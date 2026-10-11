@@ -2,7 +2,7 @@
 
 How the system described in [spec.md](spec.md) gets built and proven, from an empty repo to a decision on real money.
 
-**Status:** Signed off 2026-10-11. M0 complete; awaiting checkpoint decisions ([reports/m0.md](reports/m0.md)).
+**Status:** Signed off 2026-10-11. M0 complete and its decisions approved ([reports/m0.md](reports/m0.md)). Next: M1.
 
 Claude designs and builds end to end. You check in only at the end of each milestone, when Claude stops, reports, and brings the decisions that need you, each with its tradeoffs and a recommendation.
 
@@ -14,10 +14,12 @@ Milestones M0–M6 are building and take days to a couple of weeks, depending mo
 
 | Decision | Choice |
 |---|---|
-| Where it runs | Claude Code cloud routines, not a local machine. Each run works on a fresh copy of this repo and saves its results back to it. |
-| Language model | No API key. The routine's own Claude session writes the plain-English case and may veto a trade. Code checks its output, so it can never invent a trade. |
+| Where it runs | GitHub Actions runs all the code on a schedule. A cloud routine only writes Claude's review, onto a branch of its own. Changed after M0, which found that Anthropic's cloud cannot reach NSE and cannot be limited to a few commands. |
+| Language model | No API key. The routine's own Claude session writes the plain-English case and may veto a trade. Code checks its output, so it can never invent a trade. If no review arrives, the run carries on without one. |
 | Backtest | Allowed, with limits: see M5. |
-| Repo structure | One repo, one branch. See [design/repo-structure.md](design/repo-structure.md). |
+| Repo structure | One repo; code and data on `main`. See [design/repo-structure.md](design/repo-structure.md). |
+| Data source | NSE only: daily price files and corporate actions. BSE can be added later as a second source for checking prices. |
+| Which shares | The top 500 by median daily trading value over the previous 60 trading days, recalculated monthly from NSE's own files. Not an index list, which would bias the backtest. |
 
 ---
 
@@ -30,6 +32,8 @@ Milestones M0–M6 are building and take days to a couple of weeks, depending mo
 **What it unlocks.** Proof that the system can be built where it will run. Everything after this assumes it can.
 
 **Your decisions.** Data source; which shares to watch (top 100 or top 500); the minimum trading volume a share needs; whether the cloud setup holds up or we need a fallback.
+
+**Outcome.** Done. See [reports/m0.md](reports/m0.md). The data is there and GitHub Actions can fetch it; Anthropic's cloud cannot, so the daily run moved to GitHub Actions.
 
 ### M1 — Design Pass 1: Decide, Record, Learn
 
@@ -78,7 +82,7 @@ Two limits keep the backtest honest:
 
 ### M6 — Go live on paper
 
-**What gets done.** The daily cloud routine (weekdays at 8pm IST), a catch-up routine at 10pm that does nothing if the day's run already finished, and a weekly health check. A two-week shakedown, fixing whatever breaks.
+**What gets done.** The daily GitHub Actions run (propose in the evening, finalize later), Claude's daily review routine in between, a catch-up run that does nothing if the day's run already finished, and a weekly health check. The protection on `main`: a GitHub rule and a key only `main`'s workflows can use. These are repo settings you make from step-by-step instructions, each tested before anything relies on it. A two-week shakedown, fixing whatever breaks.
 
 **What it unlocks.** The system runs every day without you or Claude.
 
@@ -94,17 +98,13 @@ Two limits keep the backtest honest:
 
 ## What sign-off covers
 
-- Committing and pushing to `main` on this repo, by Claude and by the routines.
-- Creating the cloud routines named in M0 and M6 on your account, using Sonnet 5.5.
+- Committing and pushing to `main` on this repo, by Claude and by the daily run.
+- Creating the cloud routines named in M0 and M6 on your account, using Sonnet 5.5, with no connectors attached.
 - Claude making the calls inside each milestone. Each one is logged in the repo with its reasoning, for review at the checkpoint.
 
 ## When Claude stops early, even mid-milestone
 
-- The data check fails, or the cloud cannot reach the data or push to the repo.
-- Cloud routines cannot be limited to the two run commands and one review file.
+- The data stops being available, or GitHub Actions can no longer fetch it.
+- Any part of the protection on `main` fails its test.
 - A design problem would require changing the spec. Under its own rules, the spec reopens rather than being quietly worked around.
 - Anything would need access beyond this repo and the routines named above.
-
-## Before M0
-
-Confirm the GitHub repo is private. It will hold the trading notebook.

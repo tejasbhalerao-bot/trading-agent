@@ -11,20 +11,13 @@ the rules that bind them, and what is still open.
 
 ## Status
 
-Design complete. Not yet built.
-
-Next step is a data spike: prove that daily prices, two to three years of history, and corporate
-actions (splits and bonuses) can all be obtained for the chosen universe. That answers the only
-open question that could still change the design.
+M0 (foundations and data check) is complete. See [docs/plan.md](docs/plan.md) for the milestones and [docs/reports/m0.md](docs/reports/m0.md) for what M0 found. Next: M1, the design of Decide, Record and Learn.
 
 ## Build order
 
-Dependency-first, which is not the same as the design order in the spec. You cannot settle a trade
-before you have a price.
+Milestones M0–M7 in [docs/plan.md](docs/plan.md). Dependency-first, which is not the same as the
+design order in the spec: you cannot settle a trade before you have a price.
 
-1. One thin slice end to end — fetch, clean, one checklist, decide with fixed sizing, record, settle.
-2. Learn, once the notebook has entries to read.
-
-A run over historical data is for debugging the plumbing only. The record that counts is built
-forward, day by day, because every bug that leaks tomorrow's prices into today's decision makes a
-backtest look brilliant.
+A backtest over history sets only the starting trust scores, and the paper-trading record overrides
+them. The record that counts is built forward, day by day, because every bug that leaks tomorrow's
+prices into today's decision makes a backtest look brilliant. A test guards against exactly that.

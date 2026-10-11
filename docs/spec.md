@@ -136,8 +136,8 @@ Four things it must hold to:
 |---|---|
 | Who writes the reasoning | Rules find the candidates; a language model writes the plain-English case and may veto a trade, but never invents one. The veto needs justifying before it is granted. |
 | How confidence is worked out | What goes into the number, and how the honesty check feeds back into it. |
-| Which shares to watch | The largest 100 or the largest 500, and the floor below which a share trades too thinly for fake fills to predict real ones. |
-| Where it runs | Which data sources, and whether a laptop or a server. Running every day without fail is the point. |
+| ~~Which shares to watch~~ | **Decided after M0:** the top 500 by median daily trading value over the previous 60 trading days, recalculated monthly from NSE's own files. The floor follows from the rule (about ₹25 crore a day). See [plan.md](plan.md). |
+| ~~Where it runs~~ | **Decided after M0:** NSE data only. GitHub Actions runs the code every evening; a cloud routine writes Claude's review. See [design/repo-structure.md](design/repo-structure.md). |
 
 ---
 

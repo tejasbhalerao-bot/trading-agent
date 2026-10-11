@@ -2,16 +2,17 @@
 
 How the code and the system's memory are laid out, and how the layout itself enforces the rules in [spec.md](../spec.md).
 
-**Status:** Approved 2026-10-11.
+**Status:** Approved 2026-10-11. Revised after M0 (approved 2026-10-11): the daily run moved to GitHub Actions; Claude only reviews. See [reports/m0.md](../reports/m0.md).
 
 ---
 
 ## The tree
 
-One repo, one branch, everything in a single tree.
+One repo, everything in a single tree. `main` holds both code and data. The only other branches are the ones Claude's daily review arrives on.
 
 ```
 trading-agent/
+├── .github/workflows/   the daily run (GitHub Actions), and the checks on every push
 ├── docs/          spec, plan, designs, and a log of the decisions Claude makes
 ├── config/        your limits, the share list, the checklists. Code can read these, never write them.
 ├── src/trader/
@@ -20,8 +21,8 @@ trading-agent/
 │   ├── store/     the only code allowed to write to data/
 │   ├── backtest/  runs the same jobs over past years
 │   ├── report/    daily report and health check (read-only)
-│   └── run.py     what the daily routine runs
-├── routines/      instructions for each cloud routine
+│   └── run.py     the one entry point the daily workflows run
+├── routines/      instructions for Claude's daily review (a cloud routine)
 ├── tests/
 └── data/          the system's memory, written only by the daily run
     ├── raw/       Fetch:   downloads exactly as received, with receipts
@@ -54,15 +55,28 @@ trading-agent/
 
 **The backtest** feeds history through the real jobs, not a copy of them, so it tests what actually runs. It writes only to `data/backtest/`. Claude's veto is left out, because Claude already knows how past events turned out.
 
-## The daily run, and what the routine may do
+## The daily run
 
-1. `run propose`: Fetch, Clean, Analyze and Decide produce the day's proposed trades.
-2. The routine's Claude reads them and writes one review file: the plain-English case, plus any vetoes with reasons.
-3. `run finalize`: checks the review, rejecting any veto of a trade that was not proposed, any veto without a reason, and any addition. Then Record, Settle and Learn run, and the run commits and pushes.
+| Step | Where | What it does |
+|---|---|---|
+| 1. `run propose` | GitHub Actions, on a schedule | Fetch, Clean, Analyze and Decide produce the day's proposed trades, and commit them to `main`. |
+| 2. Review | Cloud routine | Claude reads the proposals and writes one review file: the plain-English case, plus any vetoes with reasons. It pushes the review to a branch of its own (`claude/review-<date>`), never to `main`. |
+| 3. `run finalize` | GitHub Actions, on a schedule | Takes **only the review file** from Claude's branch and checks it. Then Record, Settle and Learn run, the report is written, and the result is committed to `main`. |
 
-The routine is allowed only those two commands and that one file. It has no git and no code editor, so it cannot touch code. The run refuses to push if anything outside `data/` changed, or anything inside it was altered rather than added.
+The check in step 3 rejects any veto of a trade that was not proposed, any veto without a reason, and anything the review tries to add. Everything else on Claude's branch is ignored, so nothing Claude does in its session can reach the record except a review that passes this check.
 
-**To verify in M0:** that cloud routines support this level of tool restriction. If they do not, Claude reports back before going further.
+If no review arrives, finalize carries on without one and records that there was none. Nothing waits for Claude, just as nothing waits for you.
+
+Market data is fetched only by GitHub Actions. Anthropic's cloud cannot reach NSE, and the review does not need it to.
+
+## How `main` is protected
+
+1. **A GitHub rule on `main`** blocks pushes from everyone except you (code changes) and the finalize step.
+2. **The finalize step pushes with a key that GitHub releases only to workflows running from `main`.** A workflow added on Claude's branch cannot get it.
+3. **Scheduled workflows always run the version on `main`**, so the daily run cannot be swapped out from a branch.
+4. **Before every push, the run checks** that nothing outside `data/` changed and nothing inside it was altered rather than added.
+
+Points 1 and 2 are repo settings, made by you in M6 from step-by-step instructions, and each is tested before anything relies on it.
 
 ## Keeping mistakes out of a permanent record
 
