@@ -82,6 +82,8 @@ Stored in `config/limits.yaml`, which code can read but never write. Set by you 
 | Max total open risk | 5% of the balance | The most that can be lost if every open stop is hit at once. |
 | Losing-run brake | 10% below the highest balance: risk per trade halves. 15% below: no new buys for 10 trading days, then resume at half risk until back within 10%. | Automatic, so nothing waits for you. |
 
+**In practice** the 20% cap binds on about 72% of trades (M2 measurement: the typical stop is 3.2% below the price). So the real risk per trade is usually about ₹60, not ₹100.
+
 A stop on every buy is not a setting. It is always on.
 
 ### What it produces
@@ -217,7 +219,7 @@ Ignored for now, by your decision: the cost estimate in `config/costs.yaml` is z
 
 ## What the paper period can and cannot prove
 
-About 80 trading days, with at most 5 positions held 1–3 days, gives roughly 60–120 trades. That means:
+About 80 trading days, with at most 5 positions held 1–3 days, gives roughly 100–150 trades. (M1 estimated 60–120. M2 found candidates are plentiful, about 22 a day, so room, not candidates, is the limit.) That means:
 - **Confidence can be shown honest only roughly**, to within about ±10 percentage points. Finer claims would need more trades.
 - **Per-cell evidence will be thin**, about 5–10 trades per cell with 4 checklists and 3 moods. This is why cells borrow from their checklist's record, and why the first set of checklists should be small (M2).
 - **The veto test will rest on perhaps 10–20 objections.** Enough to see a large effect, not a small one.

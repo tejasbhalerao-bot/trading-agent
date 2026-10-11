@@ -25,7 +25,7 @@ trading-agent/
 ├── routines/      instructions for Claude's daily review (a cloud routine)
 ├── tests/
 └── data/          the system's memory, written only by the daily run
-    ├── raw/       Fetch:   downloads exactly as received, with receipts
+    ├── raw/       Fetch:   receipts: what was fetched, its checksum, and what failed (the downloads themselves are not kept; see pass4-fetch-clean.md)
     ├── history/   Clean:   verified prices, splits and bonuses, the "don't know" list
     ├── analysis/  Analyze: market mood and every check made
     ├── notebook/  Record:  decisions, skips, results

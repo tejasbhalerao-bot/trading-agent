@@ -8,7 +8,7 @@ from typing import Iterable
 # Each folder under data/ has exactly one writer. This table is the single
 # source of truth for "one writer per fact" (spec, Rules that bind everything).
 OWNERS = {
-    "raw": "fetch",
+    "raw": "fetch",  # receipts only; downloads are not kept
     "history": "clean",
     "analysis": "analyze",
     "notebook": "record",
