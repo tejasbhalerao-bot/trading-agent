@@ -19,6 +19,7 @@ from . import parse
 MAX_UNEXPLAINED_MOVE = 0.25   # larger moves with no corporate action sit out one day
 MAX_ADJUSTED_MOVE = 0.21      # a split is verified if the price, scaled by its ratio, moved no more than a day can
                               # (20% is NSE's widest daily price band; CGCL rose exactly 20% on its split day in 2024)
+RENAME_GAP_DAYS = 10         # a rename applies only if the old symbol last traded within this many days before it
 NOTICE_DAYS = 10              # in a backfill, an announcement is treated as known this many days before it takes effect
 
 
@@ -66,7 +67,11 @@ class Cleaner:
                 known |= {(r["old"], r["new"]) for r in csv.DictReader(fh)}
         new = []
         for old, sym, when in parse.symbol_changes(body):
-            if when <= d and old in self.last and (old, sym) not in known and sym not in self.last:
+            # Only a rename the old symbol actually went through: it stopped trading shortly before the
+            # rename date. NSE reuses symbols, so an old rename must not graft a stranger's history.
+            last_seen = self.last.get(old, (None,))[0]
+            recent = last_seen is not None and last_seen < when and (when - last_seen).days <= RENAME_GAP_DAYS
+            if when <= d and recent and (old, sym) not in known and sym not in self.last:
                 new.append({"old": old, "new": sym, "date": when.isoformat(), "seen": d.isoformat()})
                 self.last[sym] = self.last.pop(old)
         if new:

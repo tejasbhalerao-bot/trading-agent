@@ -63,7 +63,7 @@ def test_not_entered_on_a_locked_day(tmp_path):
 def test_waits_for_a_missing_price_then_gives_up_after_five_days(tmp_path):
     events, _, _ = run(tmp_path, [], others=7)
     assert [e["event"] for e in events] == ["waiting"] * 4 + ["not_entered"]
-    assert events[-1]["reason"] == "no price"
+    assert events[-1]["reason"] == "no price for 5 trading days"
 
 
 # Exiting

@@ -65,10 +65,11 @@ Clean asks one question of every figure: **did this happen in the market?** Neve
 ### What it stores
 | File | Holds |
 |---|---|
-| `data/history/prices/2026.csv` | One line per share per trading day, unadjusted: date, symbol, open, high, low, close, previous close, volume, traded value, number of trades. Ordinary shares only (NSE's "EQ" series). |
-| `data/history/actions/2026.csv` | Verified splits and bonuses: symbol, effective date, ratio, NSE's own wording, and how it was verified. |
-| `data/history/identity.csv` | Which ISIN each symbol had from which date, and symbol renames. A company's history follows it through both. |
-| `data/history/skipped/2026.jsonl` | Every "don't know": share, date, reason. |
+| `data/history/prices/2026-10.csv` | One line per share per trading day, unadjusted: date, symbol, open, high, low, close, previous close, volume, traded value, number of trades. Ordinary shares only (NSE's "EQ" series). |
+| `data/history/actions/2026-10.csv` | Verified splits and bonuses: symbol, effective date, ratio, NSE's own wording, and how it was verified. |
+| `data/history/identity.csv` | Which ISIN each symbol had from which date. |
+| `data/history/renames/2026-10.csv` | Symbol renames from NSE's list. A renamed share keeps its history under its new symbol. |
+| `data/history/skipped/2026-10.jsonl` | Every "don't know": share, date, reason. |
 
 All lines are only ever added. History from January 2024 is fetched in M3; 2015–2023 is added in M5 for the backtest, through this same code. Sizes: about 35 MB per year of history, about 400 MB in all after that one-time fetch, within GitHub's comfortable limits.
 

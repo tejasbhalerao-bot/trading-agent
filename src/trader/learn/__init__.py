@@ -76,7 +76,7 @@ def learn_day(store: Store, d: dt.date) -> dict | None:
         "backtest_weight": weight, "weight_changed_at": weight_changed_at, "backtest_run": prior.get("run"),
         "cost_pct": cost_pct, "overall": g, "checklists": checklists, "cells": cells,
         "calibration": calibration, "calibration_overall": overall, "changes": changes,
-        "suggestions": _suggestions(trades, shadows),
+        "suggestions": _suggestions(trades, shadows, store.checklists()),
     }
     store.writer("learn").append_records(month_file(d, "jsonl"), [version])
     return version
@@ -161,8 +161,9 @@ def _verdict(group: list[dict]) -> dict:
             "margin": [round(low_bound, 3), round(high_bound, 3)], "verdict": verdict}
 
 
-def _suggestions(trades: list[dict], shadows: list[dict]) -> list[str]:
-    """Skipped candidates never move trust scores; they can only prompt a human to look."""
+def _suggestions(trades: list[dict], shadows: list[dict], checklists: dict) -> list[str]:
+    """Skipped candidates never move trust scores; they can only prompt a human to look.
+    Raised only when skipped candidates clearly beat taken trades, even on generous terms for the taken ones."""
     out = []
     for cid in sorted({s["checklist"] for s in shadows if s.get("checklist")}):
         sh = [s for s in shadows if s.get("checklist") == cid]
@@ -172,9 +173,11 @@ def _suggestions(trades: list[dict], shadows: list[dict]) -> list[str]:
         hi = lo + sum(1 for s in sh if s["event"] == "shadow_unknown")
         taken = [t for t in trades if t["checklist"] == cid]
         t_hi = sum(t["win_ceiling"] for t in taken)
-        if taken and lo / len(sh) > t_hi / len(taken):
-            out.append(f"{cid}: skipped candidates won {lo}–{hi} of {len(sh)}, more often than taken trades "
-                       f"({t_hi} of {len(taken)} at best). Worth a human look at how candidates are ranked.")
+        if len(taken) >= 20 and lo / len(sh) > t_hi / len(taken) + 0.05:
+            name = checklists.get(cid, {}).get("name", cid)
+            out.append(f"{name}: candidates skipped for lack of room won {lo / len(sh):.0%} of the time, against "
+                       f"{t_hi / len(taken):.0%} at best for the ones taken ({len(sh)} skipped, {len(taken)} taken). "
+                       "Worth a look at how candidates are ranked.")
     return out
 
 

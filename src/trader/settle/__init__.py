@@ -100,7 +100,7 @@ def _enter(p: dict, view: HistoryView, event, wait: bool = True):
         if wait and p["waited"] < MAX_WAIT_DAYS:
             event(p, "waiting", reason="no price yet")
             return "wait"
-        event(p, "not_entered", reason="no price")
+        event(p, "not_entered", reason="no price for 5 trading days")
         return None
     action = view.verified_action(p["symbol"], view.date)
     if action:

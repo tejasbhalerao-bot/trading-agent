@@ -48,8 +48,8 @@ def test_confidence_uses_the_cautious_end_and_borrows_when_evidence_is_thin(tmp_
 def test_skipped_candidates_never_move_trust_scores(tmp_path):
     shadows = [{"type": "event", "event": "shadow_exited", "checklist": "c", "r_multiple": 1.5, "date": "2026-02-05",
                 "id": f"x{i}", "symbol": "X"} for i in range(12)]
-    plain = learn.learn_day(setup(tmp_path / "a", [("c", "up", -1.0)] * 3), D)
-    with_shadows = learn.learn_day(setup(tmp_path / "b", [("c", "up", -1.0)] * 3, shadows), D)
+    plain = learn.learn_day(setup(tmp_path / "a", [("c", "up", -1.0)] * 20), D)
+    with_shadows = learn.learn_day(setup(tmp_path / "b", [("c", "up", -1.0)] * 20, shadows), D)
     assert plain["cells"] == with_shadows["cells"]
     assert with_shadows["suggestions"] and not plain["suggestions"]
 

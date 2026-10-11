@@ -17,10 +17,10 @@ trading-agent/
 ├── config/        your limits, the share list, the checklists. Code can read these, never write them.
 ├── src/trader/
 │   ├── fetch/ clean/ analyze/ decide/ record/ settle/ learn/   the seven jobs
-│   ├── schema/    what the jobs pass to each other
+│   ├── schema/    what the jobs pass to each other, and the check on Claude's review
 │   ├── store/     the only code allowed to write to data/
 │   ├── backtest/  runs the same jobs over past years
-│   ├── report/    daily report and health check (read-only)
+│   ├── report/    the daily report (read-only)
 │   └── run.py     the one entry point the daily workflows run
 ├── routines/      instructions for Claude's daily review (a cloud routine)
 ├── tests/
@@ -30,14 +30,15 @@ trading-agent/
     ├── analysis/  Analyze: market mood and every check made
     ├── notebook/  Record:  decisions, skips, results
     ├── books/     Settle:  fills, holdings, balance
-    ├── trust/     Learn:   trust scores, each version with its evidence
-    └── backtest/  backtest results, kept apart from the notebook
+    ├── trust/     Learn:   trust scores, each version with its evidence, and suggestions for you
+    ├── backtest/  backtest results, kept apart from the notebook
+    └── reports/   the daily report, one file per day; written for you, read by nothing in the system
 ```
 
 ## Two rules for `data/`
 
 1. **Only the daily run writes to it.**
-2. **Nothing in it is ever changed or removed. Files only grow.** Each store adds lines to one file per year, and a check confirms that no existing line was removed or changed.
+2. **Nothing in it is ever changed or removed. Files only grow.** Each store adds lines to one file per month (e.g. `data/notebook/2026-10.jsonl`), which keeps every file far below GitHub's limits ([constraints.md](constraints.md)). A check confirms that no existing line was removed or changed.
 
 ## How the layout enforces the spec
 

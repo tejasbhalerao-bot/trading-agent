@@ -23,7 +23,7 @@ Background: [spec.md](../spec.md) (the seven jobs), [pass1-decide-record-learn.m
 ## What Settle reads and writes
 
 - **Reads:** final decisions (the notebook), cleaned prices and corporate actions (history), and its own books so far.
-- **Writes:** `data/books/2026.jsonl`, one line per event (entered, not entered, exited, unknown, adjusted for a split), plus one snapshot of the account per trading day. Only Settle writes here.
+- **Writes:** `data/books/2026-10.jsonl` (one file per month), one line per event (entered, not entered, exited, unknown, adjusted for a split), plus one snapshot of the account per trading day. Only Settle writes here.
 - Record then reads Settle's events and writes each finished trade's `result` into the notebook.
 
 Settle never asks you what happened. It reads the market.
@@ -76,6 +76,10 @@ The trade's value and risk do not change. (Analyze skips any share with a split 
 Dividends are ignored. At the sizes involved they move the price by well under a typical day's range.
 
 ---
+
+## Shadow trades (added in M4)
+
+Candidates Decide skipped (no room, unaffordable, switched off) are also settled by the same rules, as **shadow trades**: one share each, outside the account, recorded as `shadow_…` events. They never touch the balance or the trust scores. Learn uses them only to raise suggestions for you, e.g. "candidates skipped for lack of room won more often than the ones taken", as the spec allows.
 
 ## The account
 

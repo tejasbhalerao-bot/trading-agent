@@ -165,7 +165,7 @@ A new version of a checklist starts with no paper record. Its new backtest gives
 
 ## Record (the notebook)
 
-One file per year, `data/notebook/2026.jsonl`, one entry per line. Only Record writes it, and lines are only ever added.
+One file per month, `data/notebook/2026-10.jsonl`, one entry per line. Only Record writes it, and lines are only ever added.
 
 | Entry | Written | Holds |
 |---|---|---|
@@ -197,7 +197,7 @@ Runs each evening after the day's results are recorded (step 4).
 - **Judged net, not gross.** Both are shown; decisions use net.
 - **Every new trust version lists what changed and the entries that caused it.** A version that cannot show its evidence is not written.
 
-Learn writes to `data/trust/2026.jsonl`: one line per trust version, plus suggestion lines.
+Learn writes to `data/trust/2026-10.jsonl`: one line per trust version, including any suggestions. Suggestions come from Settle's shadow trades (see pass2-settle.md), and are raised only when skipped candidates beat the taken ones by more than 5 percentage points over at least 20 taken trades.
 
 ---
 

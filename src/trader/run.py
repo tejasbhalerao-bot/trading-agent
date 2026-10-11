@@ -56,39 +56,45 @@ def propose(store: Store, today: dt.date, now: dt.datetime, do_publish: bool = T
     ref = fetch.fetch_reference(store, today)
     if ref["symbol_changes"]:
         cleaner.add_renames(ref["symbol_changes"], today)
-    if ref["holidays"] and today in parse.holidays(ref["holidays"]):
-        return _close(store, today, "market closed: NSE holiday", do_publish)
+    closed = "market closed: NSE holiday" if ref["holidays"] and today in parse.holidays(ref["holidays"]) else None
     actions = fetch.fetch_corporate_actions(store, today - dt.timedelta(days=30), today + dt.timedelta(days=30), on=today)
     if actions:
         cleaner.add_announcements(actions, seen=today, backfill=False)
 
-    new_days, d = [], (cleaner.prev_day + dt.timedelta(days=1)) if cleaner.prev_day else today
-    while d <= today:
+    d = (cleaner.prev_day + dt.timedelta(days=1)) if cleaner.prev_day else today
+    while d <= today and not (d == today and closed):
         got = fetch.fetch_day(store, d, historical=d < today)
         if got.status == "delivered":
             cleaner.clean_day(d, got.files["price_file"], got.files.get("index_closes"))
-            new_days.append(d)
         elif d == today:
             if now.time() < LAST_TRY:
-                _publish(store, today, "receipts", do_publish)
+                # Nothing is published, so the next run starts again from the same place.
                 return "today's file is not published yet; a later run will retry"
-            reason = "market closed: no file on a weekend" if today.weekday() >= 5 else "failed: no price file by 9pm"
-            return _close(store, today, reason, do_publish)
+            closed = "market closed: no file on a weekend" if today.weekday() >= 5 else "failed: no price file by 9pm"
         d += dt.timedelta(days=1)
 
     history = store.history()
+    # Days needing the evening jobs come from the notebook's own record, not from Clean's state,
+    # so a day cleaned in an earlier, interrupted run is never skipped.
+    done = [r["date"] for r in store.records_all("notebook") if r["type"] == "run" and r["stage"] in ("proposed", "caught up")]
+    last_done = max(done) if done else None
+    new_days = [x for x in history.calendar if x <= today and (last_done is None or x.isoformat() > last_done)]
+    if last_done is None:
+        new_days = new_days[-1:]  # first ever evening: start today, not from the beginning of history
     balance = store.config("limits")["paper_starting_balance_inr"]
     summary = ""
     for d in new_days:
         record.write_run(store, d, "start")
-        out = evening_jobs(store, history.as_of(d), balance, decide_today=d == today)
-        if d == today:
+        out = evening_jobs(store, history.as_of(d), balance, decide_today=d == today and not closed)
+        if d == today and not closed:
             proposals, brake = out
             record.write_run(store, d, "proposed", proposals=len(proposals), brake=brake["mode"])
             summary = f"proposed {len(proposals)} order(s)"
         else:
             record.write_run(store, d, "caught up", note="missed evening: settled and learned; no decisions, "
                              "since orders cannot be placed in the past")
+    if closed:
+        return _close(store, today, closed, do_publish)
     _publish(store, today, "proposed", do_publish)
     return summary
 

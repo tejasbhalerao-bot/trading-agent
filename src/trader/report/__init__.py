@@ -39,7 +39,7 @@ def render(store: Store, d: dt.date) -> str:
             line += f", up to ₹{snap['balance_better']:,.0f} depending on {snap['gap'] and 'unknown results'}"
         line += f". Highest so far ₹{snap['peak']:,.0f}. {len(snap['positions'])} open position(s)."
         out.append(line)
-    out.append(f"**Losing-run brake:** {brake}.")
+    out.append(f"**Losing-run brake:** {BRAKE.get(brake, brake)}")
     out.append("")
 
     out += ["## Orders for the next trading day", ""]
@@ -81,9 +81,10 @@ def render(store: Store, d: dt.date) -> str:
         out += ["## Finished today", "", "| Share | How it ended | Result |", "|---|---|---|"]
         for r in results:
             if r["outcome"] == "exited":
-                res = f"{r['gross_return_pct']:+.1f}% ({r['r_multiple']:+.2f}× its risk)" if r.get("r_multiple") is not None else "—"
+                res = f"{r['gross_return_pct']:+.1f}%: {_times(r.get('r_multiple'))}"
             elif r["outcome"] == "unknown":
-                res = f"unknown: between {r.get('r_multiple_worse', 0):+.2f}× and {r.get('r_multiple_better', 0):+.2f}× its risk"
+                res = (f"unknown: somewhere between {_times(r.get('r_multiple_worse'))} "
+                       f"and {_times(r.get('r_multiple_better'))}")
             else:
                 res = "not bought"
             out.append(f"| {r['symbol']} | {r['reason']} | {res} |")
@@ -101,7 +102,7 @@ def render(store: Store, d: dt.date) -> str:
         out.append(f"- Claude's review: {review_line[review['status']]}.")
     out.append(f"- Shares sitting out today (Clean could not verify them): {len(dont_know)}.")
     if trust:
-        off = [k.replace("|", " in a ") + " market" for k, c in trust["cells"].items() if c.get("switched_off")]
+        off = [f"{_name(store, k.split('|')[0])} in a {k.split('|')[1]} market" for k, c in trust["cells"].items() if c.get("switched_off")]
         overall = trust.get("calibration_overall") or {}
         out.append(f"- Trust scores: version {trust['version']}, from {trust['evidence_count']} finished trade(s).")
         if overall:
@@ -113,6 +114,20 @@ def render(store: Store, d: dt.date) -> str:
             out.append(f"- Suggestion for you to look at: {s}")
     out.append("")
     return "\n".join(out)
+
+
+BRAKE = {
+    "normal": "off.",
+    "half": "on. The account is more than 10% below its highest, so each trade risks half the usual amount.",
+    "paused": "on. The account fell more than 15% below its highest, so new buys are paused for 10 trading days.",
+    "half after pause": "on. After a pause, each trade risks half the usual amount until the account is back within 10% of its highest.",
+}
+
+
+def _times(r) -> str:
+    if r is None:
+        return "—"
+    return f"gained {r:.1f} times what it risked" if r >= 0 else f"lost {-r:.1f} times what it risked"
 
 
 def _name(store: Store, cid: str) -> str:

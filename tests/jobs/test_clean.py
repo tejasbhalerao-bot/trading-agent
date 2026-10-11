@@ -123,3 +123,14 @@ def test_a_new_cleaner_picks_up_where_the_last_one_stopped(tmp_path):
     cleaned(tmp_path, [(D1, [("AAA", 10, 11, 9, 10, 10)])])
     again = Cleaner(Store(tmp_path))
     assert again.prev_day == D1 and again.last["AAA"] == (D1, 10.0)
+
+
+def test_a_rename_carries_history_but_an_old_rename_of_a_reused_symbol_does_not(tmp_path):
+    store, _ = cleaned(tmp_path, [(D1, [("OLDCO", 10, 11, 9, 10, 10), ("REUSED", 5, 6, 4, 5, 5)])])
+    c = Cleaner(store)
+    changes = f"Old Co Ltd,OLDCO,NEWCO,{D2:%d-%b-%Y}\nSomeone Else,REUSED,OTHER,01-JAN-2010\n".encode()
+    assert c.add_renames(changes, D2) == 1
+    c.clean_day(D2, new_file(D2, [("NEWCO", 10, 11, 9, 10.2, 10), ("REUSED", 5, 6, 4, 5, 5)]), None)
+    h = Store(tmp_path).history().as_of(D2)
+    assert [b.close for b in h.bars("NEWCO")] == [10, 10.2]
+    assert [b.close for b in h.bars("REUSED")] == [5, 5]

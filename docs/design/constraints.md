@@ -11,7 +11,7 @@ The hard limits of everything the system runs on, and how the design stays insid
 | Limit | Value | How the design stays inside it | Checked by |
 |---|---|---|---|
 | Single file | Warning at 50 MB, **blocked at 100 MB** | Every growing data file holds **one month**, e.g. `data/history/prices/2026-10.csv` (about 3 MB) and `data/analysis/2026-10.jsonl` (about 6 MB). | A test fails if any file under `data/` exceeds 25 MB. |
-| Repo size | Recommended under 1 GB, strongly under 5 GB; hard ceiling 10 GB (compressed) | About 40 MB compressed now; about 150 MB after the 2015–2023 backfill (M5); then about 40 MB per year. Under 1 GB for about 20 years. | The weekly health check reports the size (M6). |
+| Repo size | Recommended under 1 GB, strongly under 5 GB; hard ceiling 10 GB (compressed) | About 40 MB compressed now; about 150 MB after the 2015–2023 backfill (M5). Measured in M4: a year of live running adds about 130 MB of files, about 25 MB compressed (analysis is the largest: 6.3 MB a month, 0.9 MB compressed). Under 1 GB for over 30 years. | The weekly health check reports the size (M6). |
 | Single push | 2 GB | The largest push is the one-time backfill, about 250 MB. | — |
 
 ## GitHub Actions
