@@ -1,0 +1,497 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2024-01-01,BOROLTD,2023-12-05,restart,1.0,announced,2023-11-25,Demerger
+2024-01-01,SAFARI,2023-12-12,bonus,2.0,announced,2023-12-02,Bonus 1:1
+2024-01-01,SONATSOFTW,2023-12-12,bonus,2.0,announced,2023-12-02,Bonus 1:1
+2024-01-01,TPHQ,2023-12-14,split,10.0,announced,2023-12-04,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,KRITIKA,2023-12-19,bonus,3.0,announced,2023-12-09,Bonus 2:1
+2024-01-01,AXITA,2023-12-22,bonus,1.3333333333333333,announced,2023-12-12,Bonus 1:3
+2024-01-01,HMAAGRO,2023-12-29,split,10.0,announced,2023-12-19,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,ALLCARGO,2024-01-02,bonus,4.0,announced,2023-12-23,Bonus 3:1
+2024-01-01,NESTLEIND,2024-01-05,split,10.0,announced,2023-12-26,Face Value Split (Sub-Division) - From Rs10/- Per Share To Re 1/- Per Share
+2024-01-01,PGIL,2024-01-05,split,2.0,announced,2023-12-26,Face Value Split (Sub-Division) - From Rs10/- Per Share To Rs 5/- Per Share
+2024-01-01,COCHINSHIP,2024-01-10,split,2.0,announced,2023-12-31,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,ESSENTIA,2024-01-11,bonus,2.0,announced,2024-01-01,Bonus 1:1
+2024-01-01,NEWGEN,2024-01-12,bonus,2.0,announced,2024-01-02,Bonus 1:1
+2024-01-01,SBC,2024-01-19,bonus,1.5,announced,2024-01-09,Bonus 1:2
+2024-01-01,DOLPHIN,2024-01-25,split,10.0,announced,2024-01-15,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,KANANIIND,2024-01-30,bonus,2.0,announced,2024-01-20,Bonus 1:1
+2024-01-01,SALASAR,2024-02-01,bonus,5.0,announced,2024-01-22,Bonus 4:1
+2024-01-01,SANDUMA,2024-02-02,bonus,6.0,announced,2024-01-23,Bonus 5:1
+2024-01-01,OSWALSEEDS,2024-02-02,bonus,1.2,announced,2024-01-23,Bonus 1:5
+2024-01-01,KPIGREEN,2024-02-15,bonus,1.5,announced,2024-02-05,Bonus 1:2
+2024-01-01,AKSHAR,2024-02-15,bonus,1.2,announced,2024-02-05,Bonus 1:5
+2024-01-01,CHOICEIN,2024-02-20,bonus,2.0,announced,2024-02-10,Bonus 1:1
+2024-01-01,MASFIN,2024-02-22,bonus,3.0,announced,2024-02-12,Bonus 2:1
+2024-01-01,RPPL,2024-02-26,bonus,3.0,announced,2024-02-16,Bonus 2:1
+2024-01-01,DRCSYSTEMS,2024-02-27,bonus,3.0,announced,2024-02-17,Bonus 2:1
+2024-01-01,FIEMIND,2024-02-28,bonus,2.0,announced,2024-02-18,Bonus 1:1
+2024-01-01,CGCL,2024-03-05,split,2.0,announced,2024-02-24,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,CGCL,2024-03-05,bonus,2.0,announced,2024-02-24,Bonus 1:1
+2024-01-01,MANORAMA,2024-03-07,split,5.0,announced,2024-02-26,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,GAEL,2024-03-15,bonus,2.0,announced,2024-03-05,Bonus 1:1
+2024-01-01,MKPL,2024-03-15,bonus,3.0,announced,2024-03-05,Bonus 2:1
+2024-01-01,RAMASTEEL,2024-03-19,bonus,3.0,announced,2024-03-09,Bonus 2:1
+2024-01-01,ADVANIHOTR,2024-03-20,bonus,2.0,announced,2024-03-10,Bonus 1:1
+2024-01-01,NRL,2024-03-20,bonus,1.5,announced,2024-03-10,Bonus 1:2
+2024-01-01,PAISALO,2024-03-20,bonus,2.0,announced,2024-03-10,Bonus 1:1
+2024-01-01,REFEX,2024-03-22,split,5.0,announced,2024-03-12,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,PERSISTENT,2024-03-28,split,2.0,announced,2024-03-18,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,LAL,2024-03-28,bonus,1.5454545454545454,announced,2024-03-18,Bonus 6:11
+2024-01-01,LAL,2024-03-28,split,10.0,announced,2024-03-18,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,CUPID,2024-04-04,split,10.0,announced,2024-03-25,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,CUPID,2024-04-04,bonus,2.0,announced,2024-03-25,Bonus 1:1
+2024-01-01,BTML,2024-04-05,split,10.0,announced,2024-03-26,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,SBGLP,2024-04-18,split,10.0,announced,2024-04-08,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,MHLXMIRU,2024-04-19,restart,1.0,announced,2024-04-09,Demerger
+2024-01-01,ANUP,2024-04-23,bonus,2.0,announced,2024-04-13,Bonus 1:1
+2024-01-01,BBL,2024-04-24,split,2.0,announced,2024-04-14,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,BHAGCHEM,2024-05-02,split,10.0,announced,2024-04-22,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 1/- Per Share
+2024-01-01,SEMAC,2024-05-03,restart,1.0,announced,2024-04-23,Demerger
+2024-01-01,SONAMLTD,2024-05-10,split,2.0,announced,2024-04-30,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,CANBK,2024-05-15,split,5.0,announced,2024-05-05,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,VARDMNPOLY,2024-05-17,split,10.0,announced,2024-05-07,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,UEL,2024-05-22,restart,1.0,announced,2024-05-12,Demerger
+2024-01-01,INOXWIND,2024-05-24,bonus,4.0,announced,2024-05-14,Bonus 3:1
+2024-01-01,SDBL,2024-05-24,split,2.5,announced,2024-05-14,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Rs 2/- Per Share
+2024-01-01,BDL,2024-05-24,split,2.0,announced,2024-05-14,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,GMBREW,2024-05-24,bonus,1.25,announced,2024-05-14,Bonus 1:4
+2024-01-01,BALAXI,2024-05-30,split,5.0,announced,2024-05-20,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,DAVANGERE,2024-05-31,split,10.0,announced,2024-05-21,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,MOTILALOFS,2024-06-10,bonus,4.0,announced,2024-05-31,Bonus 3:1
+2024-01-01,SANOFI,2024-06-13,restart,1.0,announced,2024-06-03,Demerger
+2024-01-01,KAMOPAINTS,2024-06-14,split,5.0,announced,2024-06-04,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share
+2024-01-01,BPCL,2024-06-21,bonus,2.0,announced,2024-06-11,Bonus 1:1
+2024-01-01,HINDPETRO,2024-06-21,bonus,1.5,announced,2024-06-11,Bonus 1:2
+2024-01-01,PREMEXPLN,2024-06-21,split,5.0,announced,2024-06-11,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,SHAREINDIA,2024-06-27,split,5.0,announced,2024-06-17,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,AURIONPRO,2024-06-27,bonus,2.0,announced,2024-06-17,Bonus 1:1
+2024-01-01,AVONMORE,2024-06-28,split,10.0,announced,2024-06-18,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 1/- Per Share
+2024-01-01,OCCL,2024-07-01,restart,1.0,announced,2024-06-21,Demerger
+2024-01-01,OIL,2024-07-02,bonus,1.5,announced,2024-06-22,Bonus 1:2
+2024-01-01,GPTINFRA,2024-07-03,bonus,2.0,announced,2024-06-23,Bonus 1:1
+2024-01-01,VERTOZ,2024-07-05,bonus,2.0,announced,2024-06-25,Bonus 1:1
+2024-01-01,REMSONSIND,2024-07-05,split,5.0,announced,2024-06-25,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,VERTOZ,2024-07-05,split,10.0,announced,2024-06-25,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,PGEL,2024-07-10,split,10.0,announced,2024-06-30,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,RAYMOND,2024-07-11,restart,1.0,announced,2024-07-01,Demerger
+2024-01-01,MMFL,2024-07-16,bonus,2.0,announced,2024-07-06,Bonus 1:1
+2024-01-01,KPIGREEN,2024-07-18,split,2.0,announced,2024-07-08,Face Value Split (Sub-Division) - From Rs10/- Per Share To Rs 5/- Per Share
+2024-01-01,ELECON,2024-07-19,split,2.0,announced,2024-07-09,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,ALMONDZ,2024-07-23,split,6.0,announced,2024-07-13,Face Value Split (Sub-Division) - From Rs 6/- Per Share To Re 1/- Per Share
+2024-01-01,KSB,2024-07-25,split,5.0,announced,2024-07-15,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,AJMERA,2024-08-02,restart,1.0,announced,2024-07-23,Demerger
+2024-01-01,AARTECH,2024-08-09,bonus,1.5,announced,2024-07-30,Bonus 1:2
+2024-01-01,DJML,2024-08-09,bonus,3.0,announced,2024-07-30,Bonus 2:1
+2024-01-01,SAKUMA,2024-08-09,bonus,5.0,announced,2024-07-30,Bonus 4:1
+2024-01-01,AARTECH,2024-08-09,split,2.0,announced,2024-07-30,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,FILATFASH,2024-08-09,split,5.0,announced,2024-07-30,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share
+2024-01-01,RUSHIL,2024-08-09,split,10.0,announced,2024-07-30,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,KAPSTON,2024-08-09,split,2.0,announced,2024-07-30,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,GRPLTD,2024-08-12,bonus,4.0,announced,2024-08-02,Bonus 3:1
+2024-01-01,EIHAHOTELS,2024-08-13,bonus,2.0,announced,2024-08-03,Bonus 1:1
+2024-01-01,MELSTAR,2024-08-16,restart,1.0,announced,2024-08-06,Capital Reduction
+2024-01-01,CDSL,2024-08-23,bonus,2.0,announced,2024-08-13,Bonus 1:1
+2024-01-01,SAPPHIRE,2024-09-05,split,5.0,announced,2024-08-26,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,VSTIND,2024-09-06,bonus,11.0,announced,2024-08-27,Bonus 10:1
+2024-01-01,CCAVENUE,2024-09-11,restart,1.0,announced,2024-09-01,Demerger
+2024-01-01,ANDHRAPAP,2024-09-11,split,5.0,announced,2024-09-01,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,BIGBLOC,2024-09-12,bonus,2.0,announced,2024-09-02,Bonus 1:1
+2024-01-01,VBL,2024-09-12,split,2.5,announced,2024-09-02,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Rs 2/- Per Share
+2024-01-01,SPORTKING,2024-09-13,split,10.0,announced,2024-09-03,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,KIMS,2024-09-13,split,5.0,announced,2024-09-03,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,MONARCH,2024-09-13,bonus,2.0,announced,2024-09-03,Bonus 1:1
+2024-01-01,RPPL,2024-09-17,split,2.0,announced,2024-09-07,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,SAKSOFT,2024-09-19,bonus,1.25,announced,2024-09-09,Bonus 1:4
+2024-01-01,NDL,2024-09-19,split,10.0,announced,2024-09-09,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,PHOENIXLTD,2024-09-20,bonus,2.0,announced,2024-09-10,Bonus 1:1
+2024-01-01,UEL,2024-09-20,bonus,1.25,announced,2024-09-10,Bonus 1:4
+2024-01-01,ROSSELLIND,2024-09-20,restart,1.0,announced,2024-09-10,Demerger
+2024-01-01,MINDTECK,2024-09-20,bonus,1.25,announced,2024-09-10,Bonus 1:4
+2024-01-01,RITES,2024-09-20,bonus,2.0,announced,2024-09-10,Bonus 1:1
+2024-01-01,AXITA,2024-09-20,bonus,1.3333333333333333,announced,2024-09-10,Bonus 1:3
+2024-01-01,NDRAUTO,2024-09-25,bonus,2.0,announced,2024-09-15,Bonus 1:1
+2024-01-01,SANGHVIMOV,2024-09-27,split,2.0,announced,2024-09-17,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,GPIL,2024-10-04,split,5.0,announced,2024-09-24,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share
+2024-01-01,NBCC,2024-10-07,bonus,1.5,announced,2024-09-27,Bonus 1:2
+2024-01-01,POWERMECH,2024-10-08,bonus,2.0,announced,2024-09-28,Bonus 1:1
+2024-01-01,JINDALSAW,2024-10-09,split,2.0,announced,2024-09-29,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,HERCULES,2024-10-11,restart,1.0,announced,2024-10-01,Demerger
+2024-01-01,VAISHALI,2024-10-15,split,5.0,announced,2024-10-05,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,VAISHALI,2024-10-15,bonus,2.0,announced,2024-10-05,Bonus 1:1
+2024-01-01,POCL,2024-10-16,split,2.0,announced,2024-10-06,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,HEGAM,2024-10-18,split,5.0,announced,2024-10-08,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,SUKHJITS,2024-10-25,split,2.0,announced,2024-10-15,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,RELIANCE,2024-10-28,bonus,2.0,announced,2024-10-18,Bonus 1:1
+2024-01-01,DRREDDY,2024-10-28,split,5.0,announced,2024-10-18,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share
+2024-01-01,JASH,2024-10-30,split,5.0,announced,2024-10-20,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,PREMIERPOL,2024-11-05,split,5.0,announced,2024-10-26,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share
+2024-01-01,ROTO,2024-11-08,split,2.0,announced,2024-10-29,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,MOTISONS,2024-11-08,split,10.0,announced,2024-10-29,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,WEL,2024-11-12,split,10.0,announced,2024-11-02,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,JTLIND,2024-11-14,split,2.0,announced,2024-11-04,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,EASTSILK,2024-11-22,restart,1.0,announced,2024-11-12,Capital Reduction
+2024-01-01,SHAKTIPUMP,2024-11-25,bonus,6.0,announced,2024-11-15,Bonus 5:1
+2024-01-01,RPEL,2024-11-29,bonus,2.0,announced,2024-11-19,Bonus 1:1
+2024-01-01,EASEMYTRIP,2024-11-29,bonus,2.0,announced,2024-11-19,Bonus 1:1
+2024-01-01,WIPRO,2024-12-03,bonus,2.0,announced,2024-11-23,Bonus 1:1
+2024-01-01,DIACABS,2024-12-03,split,10.0,announced,2024-11-23,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,TARACHAND,2024-12-05,split,5.0,announced,2024-11-25,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,STAR,2024-12-06,restart,1.0,announced,2024-11-26,Demerger
+2024-01-01,GLOBAL,2024-12-10,split,2.5,announced,2024-11-30,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Rs 2/- Per Share
+2024-01-01,SHRADHA,2024-12-10,split,2.5,announced,2024-11-30,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Rs 2/- Per Share
+2024-01-01,EXXARO,2024-12-13,split,10.0,announced,2024-12-03,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,PCJEWELLER,2024-12-16,split,10.0,announced,2024-12-06,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,SKYGOLD,2024-12-16,bonus,10.0,announced,2024-12-06,Bonus 9:1
+2024-01-01,LINC,2024-12-20,bonus,2.0,announced,2024-12-10,Bonus 1:1
+2024-01-01,LINC,2024-12-20,split,2.0,announced,2024-12-10,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,MAZDOCK,2024-12-27,split,2.0,announced,2024-12-17,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,HARDWYN,2024-12-27,bonus,1.4,announced,2024-12-17,Bonus 2:5
+2024-01-01,NMDC,2024-12-27,bonus,3.0,announced,2024-12-17,Bonus 2:1
+2024-01-01,BANCOINDIA,2024-12-30,bonus,2.0,announced,2024-12-20,Bonus 1:1
+2024-01-01,SURYAROSNI,2025-01-01,bonus,2.0,announced,2024-12-22,Bonus 1:1
+2024-01-01,GARFIBRES,2025-01-03,bonus,5.0,announced,2024-12-24,Bonus 4:1
+2024-01-01,KPIGREEN,2025-01-03,bonus,1.5,announced,2024-12-24,Bonus 1:2
+2024-01-01,ITC,2025-01-06,restart,1.0,announced,2024-12-27,Demerger
+2024-01-01,JAGSNPHARM,2025-01-08,split,2.5,announced,2024-12-29,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Rs 2/- Per Share
+2024-01-01,KAMDHENU,2025-01-08,split,10.0,announced,2024-12-29,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,SHRIRAMFIN,2025-01-10,split,5.0,announced,2024-12-31,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,JAIBALAJI,2025-01-17,split,5.0,announced,2025-01-07,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,KITEX,2025-01-17,bonus,3.0,announced,2025-01-07,Bonus 2:1
+2024-01-01,NAVA,2025-01-20,split,2.0,announced,2025-01-10,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,MAZDA,2025-01-28,split,5.0,announced,2025-01-18,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,JBMA,2025-01-31,split,2.0,announced,2025-01-21,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,IGL,2025-01-31,bonus,2.0,announced,2025-01-21,Bonus 1:1
+2024-01-01,SENCO,2025-01-31,split,2.0,announced,2025-01-21,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,REDTAPE,2025-02-04,bonus,4.0,announced,2025-01-25,Bonus 3:1
+2024-01-01,KSOLVES,2025-02-06,split,2.0,announced,2025-01-27,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,AGIIL,2025-02-07,split,2.0,announced,2025-01-28,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,RAMAPHO,2025-02-07,split,2.0,announced,2025-01-28,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,TTL,2025-02-12,split,10.0,announced,2025-02-02,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,TARIL,2025-02-14,bonus,2.0,announced,2025-02-04,Bonus 1:1
+2024-01-01,KOTHARIPRO,2025-02-18,bonus,2.0,announced,2025-02-08,Bonus 1:1
+2024-01-01,JINDWORLD,2025-02-28,bonus,5.0,announced,2025-02-18,Bonus 4:1
+2024-01-01,COASTCORP,2025-03-04,split,5.0,announced,2025-02-22,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,MGEL,2025-03-04,split,2.0,announced,2025-02-22,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,ANANDRATHI,2025-03-05,bonus,2.0,announced,2025-02-23,Bonus 1:1
+2024-01-01,SBC,2025-03-10,bonus,1.5,announced,2025-02-28,Bonus 1:2
+2024-01-01,KESORAMIND,2025-03-10,restart,1.0,announced,2025-02-28,Demerger
+2024-01-01,IOLCP,2025-03-11,split,5.0,announced,2025-03-01,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,GREENLAM,2025-03-21,bonus,2.0,announced,2025-03-11,Bonus 1:1
+2024-01-01,DHARAN,2025-04-04,bonus,2.0,announced,2025-03-25,Bonus 1:1
+2024-01-01,SIEMENS,2025-04-07,restart,1.0,announced,2025-03-28,Demerger
+2024-01-01,QUESS,2025-04-15,restart,1.0,announced,2025-04-05,Demerger
+2024-01-01,AFIL,2025-04-17,split,10.0,announced,2025-04-07,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,NAVKARURB,2025-04-24,bonus,2.5,announced,2025-04-14,Bonus 3:2
+2024-01-01,STLTECH,2025-04-24,restart,1.0,announced,2025-04-14,Demerger
+2024-01-01,ACUTAAS,2025-04-25,split,2.0,announced,2025-04-15,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,UNITEDPOLY,2025-05-02,split,10.0,announced,2025-04-22,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,NAUKRI,2025-05-07,split,5.0,announced,2025-04-27,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,CHEMBOND,2025-05-09,restart,1.0,announced,2025-04-29,Demerger
+2024-01-01,NAVKARURB,2025-05-09,split,2.0,announced,2025-04-29,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,CPCAP,2025-05-09,restart,1.0,announced,2025-04-29,Demerger
+2024-01-01,RAYMOND,2025-05-14,restart,1.0,announced,2025-05-04,Demerger
+2024-01-01,ABFRL,2025-05-22,restart,1.0,announced,2025-05-12,Demerger
+2024-01-01,BSE,2025-05-23,bonus,3.0,announced,2025-05-13,Bonus 2:1
+2024-01-01,UEL,2025-05-30,bonus,1.68,announced,2025-05-20,Bonus 17:25
+2024-01-01,COFORGE,2025-06-04,split,5.0,announced,2025-05-25,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,KHADIM,2025-06-06,restart,1.0,announced,2025-05-27,Demerger
+2024-01-01,VESUVIUS,2025-06-10,split,10.0,announced,2025-05-31,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,VIMTALABS,2025-06-13,bonus,2.0,announced,2025-06-03,Bonus 1:1
+2024-01-01,BAJFINANCE,2025-06-16,bonus,5.0,announced,2025-06-06,Bonus 4:1
+2024-01-01,BAJFINANCE,2025-06-16,split,2.0,announced,2025-06-06,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,VMART,2025-06-23,bonus,4.0,announced,2025-06-13,Bonus 3:1
+2024-01-01,IRISDOREME,2025-07-04,bonus,2.0,announced,2025-06-24,Bonus 1:1
+2024-01-01,SHARDAMOTR,2025-07-04,bonus,2.0,announced,2025-06-24,Bonus 1:1
+2024-01-01,PARAS,2025-07-04,split,2.0,announced,2025-06-24,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,CONCOR,2025-07-04,bonus,1.25,announced,2025-06-24,Bonus 1:4
+2024-01-01,ROTO,2025-07-11,bonus,3.0,announced,2025-07-01,Bonus 2:1
+2024-01-01,DYCL,2025-07-11,bonus,2.0,announced,2025-07-01,Bonus 1:1
+2024-01-01,ANUHPHR,2025-07-15,bonus,2.0,announced,2025-07-05,Bonus 1:1
+2024-01-01,ASHOKLEY,2025-07-16,bonus,2.0,announced,2025-07-06,Bonus 1:1
+2024-01-01,MOTHERSON,2025-07-18,bonus,1.5,announced,2025-07-08,Bonus 1:2
+2024-01-01,IFGLEXPOR,2025-07-18,bonus,2.0,announced,2025-07-08,Bonus 1:1
+2024-01-01,INDOTHAI,2025-07-18,split,10.0,announced,2025-07-08,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,MSUMI,2025-07-18,bonus,1.5,announced,2025-07-08,Bonus 1:2
+2024-01-01,DBREALTY,2025-07-18,restart,1.0,announced,2025-07-08,Demerger
+2024-01-01,KELLTONTEC,2025-07-25,split,5.0,announced,2025-07-15,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share
+2024-01-01,NESTLEIND,2025-08-08,bonus,2.0,announced,2025-07-29,Bonus 1:1
+2024-01-01,INDIAGLYCO,2025-08-12,split,2.0,announced,2025-08-02,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,VRLLOG,2025-08-14,bonus,2.0,announced,2025-08-04,Bonus 1:1
+2024-01-01,DEVIT,2025-08-21,split,2.5,announced,2025-08-11,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Rs 2/- Per Share
+2024-01-01,AARON,2025-08-25,bonus,2.0,announced,2025-08-15,Bonus 1:1
+2024-01-01,TVSMOTOR,2025-08-25,restart,1.0,announced,2025-08-15,Scheme Of Arrangement - Bonus Ncrps 4:1
+2024-01-01,KARURVYSYA,2025-08-26,bonus,1.2,announced,2025-08-16,Bonus 1:5
+2024-01-01,HDFCBANK,2025-08-26,bonus,2.0,announced,2025-08-16,Bonus 1:1
+2024-01-01,STEELCAS,2025-08-29,split,5.0,announced,2025-08-19,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share
+2024-01-01,PAVNAIND,2025-09-01,split,10.0,announced,2025-08-22,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,PATANJALI,2025-09-11,bonus,3.0,announced,2025-09-01,Bonus 2:1
+2024-01-01,FISCHER,2025-09-12,split,10.0,announced,2025-09-02,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,GODFRYPHLP,2025-09-16,bonus,3.0,announced,2025-09-06,Bonus 2:1
+2024-01-01,ZYDUSWELL,2025-09-18,split,5.0,announced,2025-09-08,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,TFCILTD,2025-09-19,split,5.0,announced,2025-09-09,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,ADANIPOWER,2025-09-22,split,5.0,announced,2025-09-12,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,SANDUMA,2025-09-22,bonus,3.0,announced,2025-09-12,Bonus 2:1
+2024-01-01,PIDILITIND,2025-09-23,bonus,2.0,announced,2025-09-13,Bonus 1:1
+2024-01-01,TIMETECHNO,2025-09-23,bonus,2.0,announced,2025-09-13,Bonus 1:1
+2024-01-01,SHANKARA,2025-09-24,restart,1.0,announced,2025-09-14,Demerger
+2024-01-01,NAZARA,2025-09-26,bonus,2.0,announced,2025-09-16,Bonus 1:1
+2024-01-01,NAZARA,2025-09-26,split,2.0,announced,2025-09-16,Face Value Split (Sub-Division) - From Rs 4/- Per Share To Rs 2/- Per Share
+2024-01-01,RMDRIP,2025-09-26,split,10.0,announced,2025-09-16,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,SUMEETINDS,2025-10-03,split,5.0,announced,2025-09-23,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,SHILPAMED,2025-10-03,bonus,2.0,announced,2025-09-23,Bonus 1:1
+2024-01-01,SIGMA,2025-10-06,split,10.0,announced,2025-09-26,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,AGIIL,2025-10-10,split,5.0,announced,2025-09-30,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share
+2024-01-01,LGHL,2025-10-10,bonus,2.4,announced,2025-09-30,Bonus 7:5
+2024-01-01,UEL,2025-10-10,bonus,3.0,announced,2025-09-30,Bonus 2:1
+2024-01-01,UNIVASTU,2025-10-13,bonus,3.0,announced,2025-10-03,Bonus 2:1
+2024-01-01,GOKULAGRO,2025-10-14,split,2.0,announced,2025-10-04,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,TMPV,2025-10-14,restart,1.0,announced,2025-10-04,Demerger
+2024-01-01,TATAINVEST,2025-10-14,split,10.0,announced,2025-10-04,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,SKFINDIA,2025-10-15,restart,1.0,announced,2025-10-05,Demerger
+2024-01-01,ABINFRA,2025-10-17,split,10.0,announced,2025-10-07,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,ROLEXRINGS,2025-10-17,split,10.0,announced,2025-10-07,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,GEEKAYWIRE,2025-10-30,split,2.0,announced,2025-10-20,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,DALMIASUG,2025-10-31,restart,1.0,announced,2025-10-21,Demerger
+2024-01-01,FCL,2025-10-31,bonus,5.0,announced,2025-10-21,Bonus 4:1
+2024-01-01,FCL,2025-10-31,split,2.0,announced,2025-10-21,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,BEML,2025-11-03,split,2.0,announced,2025-10-24,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,ALLCARGO,2025-11-12,restart,1.0,announced,2025-11-02,Demerger
+2024-01-01,SMCGLOBAL,2025-11-14,bonus,2.0,announced,2025-11-04,Bonus 1:1
+2024-01-01,WEBELSOLAR,2025-11-14,split,10.0,announced,2025-11-04,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,HDFCAMC,2025-11-26,bonus,2.0,announced,2025-11-16,Bonus 1:1
+2024-01-01,SIKKO,2025-11-27,split,10.0,announced,2025-11-17,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,THYROCARE,2025-11-28,bonus,3.0,announced,2025-11-18,Bonus 2:1
+2024-01-01,CAMS,2025-12-05,split,5.0,announced,2025-11-25,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,HINDUNILVR,2025-12-05,restart,1.0,announced,2025-11-25,Demerger
+2024-01-01,SIKKO,2025-12-08,bonus,2.0,announced,2025-11-28,Bonus 1:1
+2024-01-01,BHARATRAS,2025-12-12,bonus,2.0,announced,2025-12-02,Bonus 1:1
+2024-01-01,BHARATRAS,2025-12-12,split,2.0,announced,2025-12-02,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,BECTORFOOD,2025-12-12,split,5.0,announced,2025-12-02,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,MONEYBOXX,2025-12-15,bonus,2.0,announced,2025-12-05,Bonus 1:1
+2024-01-01,LALPATHLAB,2025-12-19,bonus,2.0,announced,2025-12-09,Bonus 1:1
+2024-01-01,KMEW,2025-12-22,split,2.0,announced,2025-12-12,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,GRMOVER,2025-12-24,bonus,3.0,announced,2025-12-14,Bonus 2:1
+2024-01-01,DCMSRIND,2025-12-26,restart,1.0,announced,2025-12-16,Demerger
+2024-01-01,NUVAMA,2025-12-26,split,5.0,announced,2025-12-16,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,RAMRAT,2025-12-26,bonus,2.0,announced,2025-12-16,Bonus 1:1
+2024-01-01,MCX,2026-01-02,split,5.0,announced,2025-12-23,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,ORIENTTECH,2026-01-05,bonus,1.1,announced,2025-12-26,Bonus 1:10
+2024-01-01,SKMEGGPROD,2026-01-12,split,2.0,announced,2026-01-02,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,AIIL,2026-01-13,bonus,5.0,announced,2026-01-03,Bonus 4:1
+2024-01-01,AJMERA,2026-01-14,split,5.0,announced,2026-01-04,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,KOTAKBANK,2026-01-14,split,5.0,announced,2026-01-04,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share
+2024-01-01,BESTAGRO,2026-01-16,bonus,1.5,announced,2026-01-06,Bonus 1:2
+2024-01-01,BESTAGRO,2026-01-16,split,10.0,announced,2026-01-06,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,GENUSPOWER,2026-02-06,restart,1.0,announced,2026-01-27,Demerger
+2024-01-01,DELPHIFX,2026-02-13,split,5.0,announced,2026-02-03,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,AXITA,2026-02-13,bonus,1.1,announced,2026-02-03,Bonus 1:10
+2024-01-01,DELPHIFX,2026-02-13,bonus,3.0,announced,2026-02-03,Bonus 2:1
+2024-01-01,ANGELONE,2026-02-26,split,10.0,announced,2026-02-16,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,INFOBEAN,2026-02-27,bonus,4.0,announced,2026-02-17,Bonus 3:1
+2024-01-01,VGL,2026-03-02,split,2.0,announced,2026-02-20,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,AQYLON,2026-03-05,split,10.0,announced,2026-02-23,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,SILVERTUC,2026-03-06,bonus,2.0,announced,2026-02-24,Bonus 1:1
+2024-01-01,SILVERTUC,2026-03-06,split,5.0,announced,2026-02-24,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,KAPSTON,2026-03-06,bonus,1.5,announced,2026-02-24,Bonus 1:2
+2024-01-01,CUPID,2026-03-09,bonus,5.0,announced,2026-02-27,Bonus 4:1
+2024-01-01,ECLERX,2026-03-13,bonus,2.0,announced,2026-03-03,Bonus 1:1
+2024-01-01,METROPOLIS,2026-03-20,bonus,4.0,announced,2026-03-10,Bonus 3:1
+2024-01-01,KILITCH,2026-03-24,bonus,2.0,announced,2026-03-14,Bonus 1:1
+2024-01-01,V2RETAIL,2026-03-25,split,10.0,announced,2026-03-15,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,HIRECT,2026-03-27,bonus,2.0,announced,2026-03-17,Bonus 1:1
+2024-01-01,IRB,2026-03-30,bonus,2.0,announced,2026-03-20,Bonus 1:1
+2024-01-01,RNBDENIMS,2026-04-02,split,2.0,announced,2026-03-23,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,RNBDENIMS,2026-04-02,bonus,1.5,announced,2026-03-23,Bonus 1:2
+2024-01-01,RMDRIP,2026-04-10,bonus,1.7142857142857142,announced,2026-03-31,Bonus 5:7
+2024-01-01,PASHUPATI,2026-04-17,split,10.0,announced,2026-04-07,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,AHCL,2026-04-24,bonus,2.0,announced,2026-04-14,Bonus 1:1
+2024-01-01,AHCL,2026-04-24,split,5.0,announced,2026-04-14,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,VEDL,2026-04-30,restart,1.0,announced,2026-04-20,Demerger
+2024-01-01,AVROIND,2026-05-05,split,10.0,announced,2026-04-25,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,LICI,2026-05-29,bonus,2.0,announced,2026-05-19,Bonus 1:1
+2024-01-01,LEMERITE,2026-05-29,split,5.0,announced,2026-05-19,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,ANANDRATHI,2026-06-03,bonus,2.0,announced,2026-05-24,Bonus 1:1
+2024-01-01,TRENT,2026-06-04,bonus,1.5,announced,2026-05-25,Bonus 1:2
+2024-01-01,E2E,2026-06-05,split,10.0,announced,2026-05-26,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,CUB,2026-06-12,bonus,1.3333333333333333,announced,2026-06-02,Bonus 1:3
+2024-01-01,BRIGADE,2026-06-17,bonus,1.3333333333333333,announced,2026-06-07,Bonus 1:3
+2024-01-01,DBEIL,2026-06-19,split,10.0,announced,2026-06-09,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,ZFCVINDIA,2026-06-24,bonus,6.0,announced,2026-06-14,Bonus 5:1
+2024-01-01,KOTYARK,2026-06-24,bonus,11.0,announced,2026-06-14,Bonus 10:1
+2024-01-01,GUJENERGY,2026-07-02,restart,1.0,announced,2026-06-22,Demerger
+2024-01-01,KRISHANA,2026-07-03,split,5.0,announced,2026-06-23,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,MBAPL,2026-07-03,split,5.0,announced,2026-06-23,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,GOLDIAM,2026-07-10,bonus,1.3333333333333333,announced,2026-06-30,Bonus 1:3
+2024-01-01,MWL,2026-07-10,split,10.0,announced,2026-06-30,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,POCL,2026-07-21,split,2.5,announced,2026-07-11,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Rs 2/- Per Share
+2024-01-01,TRIVENI,2026-07-22,restart,1.0,announced,2026-07-12,Demerger
+2024-01-01,JLHL,2026-07-24,split,5.0,announced,2026-07-14,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,HARDWYN,2026-07-28,bonus,1.4,announced,2026-07-18,Bonus 2:5
+2024-01-01,INOXGREEN,2026-07-31,restart,1.0,announced,2026-07-21,Demerger
+2024-01-01,NARMADA,2026-07-31,split,2.0,announced,2026-07-21,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,TEMBO,2026-08-05,split,10.0,announced,2026-07-26,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,KIRLPNU,2026-08-18,split,2.0,announced,2026-08-08,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,SIYSIL,2026-08-21,restart,1.0,announced,2026-08-11,Scheme Of Arrangement - Bonus Ncrps 4:1
+2024-01-01,GOODLUCK,2026-08-21,bonus,3.0,announced,2026-08-11,Bonus 2:1
+2024-01-01,TDPOWERSYS,2026-08-24,split,2.0,announced,2026-08-14,Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share
+2024-01-01,CORDELIA,2026-08-25,split,10.0,announced,2026-08-15,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share
+2024-01-01,INDIAGLYCO,2026-09-02,restart,1.0,announced,2026-08-23,Demerger
+2024-01-01,TCC,2026-09-04,split,5.0,announced,2026-08-25,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,HEGAM,2026-09-07,restart,1.0,announced,2026-08-28,Demerger
+2024-01-01,TVSHLTD,2026-09-08,restart,1.0,announced,2026-08-29,Scheme Of Arrangement - Bonus Ncrps 46:1
+2024-01-01,PGIL,2026-09-11,bonus,2.0,announced,2026-09-01,Bonus 1:1
+2024-01-01,TAALTECH,2026-09-22,split,5.0,announced,2026-09-12,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,AASTHA,2026-09-28,bonus,2.0,announced,2026-09-18,Bonus 1:1
+2024-01-01,KMSUGAR,2026-10-01,restart,1.0,announced,2026-09-21,Demerger
+2024-01-01,BLSE,2026-10-06,split,2.0,announced,2026-09-26,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share
+2024-01-01,VERANDA,2026-10-06,restart,1.0,announced,2026-09-26,Demerger
+2024-01-01,BUILDPRO,2026-10-08,split,5.0,announced,2026-09-28,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share
+2024-01-01,BHAGYANGR,2026-10-08,restart,1.0,announced,2026-09-28,Demerger
+2024-01-01,MOLDTKPAC,2026-10-09,bonus,2.0,announced,2026-09-29,Bonus 1:1
+2024-01-01,MOLDTECH,2026-10-09,bonus,2.0,announced,2026-09-29,Bonus 1:1
+2024-01-01,BANSALWIRE,2026-10-16,split,5.0,announced,2026-10-06,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share
+2024-01-01,AXITA,2023-12-22,bonus,1.3333333333333333,verified,2023-12-12,checked against the price on 2024-01-01
+2024-01-01,BOROLTD,2023-12-05,restart,1.0,verified,2023-11-25,checked against the price on 2024-01-01
+2024-01-01,HMAAGRO,2023-12-29,split,10.0,verified,2023-12-19,checked against the price on 2024-01-01
+2024-01-01,SAFARI,2023-12-12,bonus,2.0,verified,2023-12-02,checked against the price on 2024-01-01
+2024-01-01,SONATSOFTW,2023-12-12,bonus,2.0,verified,2023-12-02,checked against the price on 2024-01-01
+2024-01-02,ALLCARGO,2024-01-02,bonus,4.0,verified,2023-12-23,checked against the price on 2024-01-02
+2024-01-05,NESTLEIND,2024-01-05,split,10.0,verified,2023-12-26,checked against the price on 2024-01-05
+2024-01-10,COCHINSHIP,2024-01-10,split,2.0,verified,2023-12-31,checked against the price on 2024-01-10
+2024-01-19,SBC,2024-01-19,bonus,1.5,verified,2024-01-09,checked against the price on 2024-01-19
+2024-01-20,PGIL,2024-01-05,split,2.0,verified,2023-12-26,checked against the price on 2024-01-20
+2024-01-30,KANANIIND,2024-01-30,bonus,2.0,verified,2024-01-20,checked against the price on 2024-01-30
+2024-02-01,SALASAR,2024-02-01,bonus,5.0,verified,2024-01-22,checked against the price on 2024-02-01
+2024-02-02,OSWALSEEDS,2024-02-02,bonus,1.2,verified,2024-01-23,checked against the price on 2024-02-02
+2024-02-02,SANDUMA,2024-02-02,bonus,6.0,verified,2024-01-23,checked against the price on 2024-02-02
+2024-02-12,NEWGEN,2024-01-12,bonus,2.0,verified,2024-01-02,checked against the price on 2024-02-12
+2024-02-15,KPIGREEN,2024-02-15,bonus,1.5,verified,2024-02-05,checked against the price on 2024-02-15
+2024-02-20,CHOICEIN,2024-02-20,bonus,2.0,verified,2024-02-10,checked against the price on 2024-02-20
+2024-02-22,MASFIN,2024-02-22,bonus,3.0,verified,2024-02-12,checked against the price on 2024-02-22
+2024-02-26,RPPL,2024-02-26,bonus,3.0,verified,2024-02-16,checked against the price on 2024-02-26
+2024-02-28,FIEMIND,2024-02-28,bonus,2.0,verified,2024-02-18,checked against the price on 2024-02-28
+2024-03-05,CGCL,2024-03-05,split,2.0,verified,2024-02-24,checked against the price on 2024-03-05
+2024-03-05,CGCL,2024-03-05,bonus,2.0,verified,2024-02-24,checked against the price on 2024-03-05
+2024-03-07,MANORAMA,2024-03-07,split,5.0,verified,2024-02-26,checked against the price on 2024-03-07
+2024-03-15,GAEL,2024-03-15,bonus,2.0,verified,2024-03-05,checked against the price on 2024-03-15
+2024-03-19,RAMASTEEL,2024-03-19,bonus,3.0,verified,2024-03-09,checked against the price on 2024-03-19
+2024-03-20,ADVANIHOTR,2024-03-20,bonus,2.0,verified,2024-03-10,checked against the price on 2024-03-20
+2024-03-20,NRL,2024-03-20,bonus,1.5,verified,2024-03-10,checked against the price on 2024-03-20
+2024-03-20,PAISALO,2024-03-20,bonus,2.0,verified,2024-03-10,checked against the price on 2024-03-20
+2024-03-22,REFEX,2024-03-22,split,5.0,verified,2024-03-12,checked against the price on 2024-03-22
+2024-03-26,DRCSYSTEMS,2024-02-27,bonus,3.0,verified,2024-02-17,checked against the price on 2024-03-26
+2024-03-28,PERSISTENT,2024-03-28,split,2.0,verified,2024-03-18,checked against the price on 2024-03-28
+2024-04-05,BTML,2024-04-05,split,10.0,verified,2024-03-26,checked against the price on 2024-04-05
+2024-04-15,DOLPHIN,2024-01-25,split,10.0,verified,2024-01-15,checked against the price on 2024-04-15
+2024-04-18,SBGLP,2024-04-18,split,10.0,verified,2024-04-08,checked against the price on 2024-04-18
+2024-04-23,ANUP,2024-04-23,bonus,2.0,verified,2024-04-13,checked against the price on 2024-04-23
+2024-04-24,BBL,2024-04-24,split,2.0,verified,2024-04-14,checked against the price on 2024-04-24
+2024-05-02,BHAGCHEM,2024-05-02,split,10.0,verified,2024-04-22,checked against the price on 2024-05-02
+2024-05-06,MHLXMIRU,2024-04-19,restart,1.0,verified,2024-04-09,checked against the price on 2024-05-06
+2024-05-10,SONAMLTD,2024-05-10,split,2.0,verified,2024-04-30,checked against the price on 2024-05-10
+2024-05-13,LAL,2024-03-28,bonus,1.5454545454545454,verified,2024-03-18,checked against the price on 2024-05-13
+2024-05-13,LAL,2024-03-28,split,10.0,verified,2024-03-18,checked against the price on 2024-05-13
+2024-05-15,CANBK,2024-05-15,split,5.0,verified,2024-05-05,checked against the price on 2024-05-15
+2024-05-17,SEMAC,2024-05-03,restart,1.0,verified,2024-04-23,checked against the price on 2024-05-17
+2024-05-17,VARDMNPOLY,2024-05-17,split,10.0,verified,2024-05-07,checked against the price on 2024-05-17
+2024-05-24,BDL,2024-05-24,split,2.0,verified,2024-05-14,checked against the price on 2024-05-24
+2024-05-24,GMBREW,2024-05-24,bonus,1.25,verified,2024-05-14,checked against the price on 2024-05-24
+2024-05-24,INOXWIND,2024-05-24,bonus,4.0,verified,2024-05-14,checked against the price on 2024-05-24
+2024-05-24,SDBL,2024-05-24,split,2.5,verified,2024-05-14,checked against the price on 2024-05-24
+2024-05-30,BALAXI,2024-05-30,split,5.0,verified,2024-05-20,checked against the price on 2024-05-30
+2024-05-31,DAVANGERE,2024-05-31,split,10.0,verified,2024-05-21,checked against the price on 2024-05-31
+2024-06-10,KRITIKA,2023-12-19,bonus,3.0,verified,2023-12-09,checked against the price on 2024-06-10
+2024-06-10,MOTILALOFS,2024-06-10,bonus,4.0,verified,2024-05-31,checked against the price on 2024-06-10
+2024-06-10,TPHQ,2023-12-14,split,10.0,verified,2023-12-04,checked against the price on 2024-06-10
+2024-06-14,KAMOPAINTS,2024-06-14,split,5.0,verified,2024-06-04,checked against the price on 2024-06-14
+2024-06-21,BPCL,2024-06-21,bonus,2.0,verified,2024-06-11,checked against the price on 2024-06-21
+2024-06-21,HINDPETRO,2024-06-21,bonus,1.5,verified,2024-06-11,checked against the price on 2024-06-21
+2024-06-21,PREMEXPLN,2024-06-21,split,5.0,verified,2024-06-11,checked against the price on 2024-06-21
+2024-06-27,AURIONPRO,2024-06-27,bonus,2.0,verified,2024-06-17,checked against the price on 2024-06-27
+2024-06-27,SHAREINDIA,2024-06-27,split,5.0,verified,2024-06-17,checked against the price on 2024-06-27
+2024-06-28,SANOFI,2024-06-13,restart,1.0,verified,2024-06-03,checked against the price on 2024-06-28
+2024-07-02,OIL,2024-07-02,bonus,1.5,verified,2024-06-22,checked against the price on 2024-07-02
+2024-07-05,REMSONSIND,2024-07-05,split,5.0,verified,2024-06-25,checked against the price on 2024-07-05
+2024-07-08,AKSHAR,2024-02-15,bonus,1.2,rejected,2024-02-05,checked against the price on 2024-07-08
+2024-07-08,AKSHAR,2024-07-08,restart,1.0,verified,2024-07-08,history restarts: corporate action could not be verified
+2024-07-08,VERTOZ,2024-07-05,bonus,2.0,verified,2024-06-25,checked against the price on 2024-07-08
+2024-07-08,VERTOZ,2024-07-05,split,10.0,verified,2024-06-25,checked against the price on 2024-07-08
+2024-07-10,PGEL,2024-07-10,split,10.0,verified,2024-06-30,checked against the price on 2024-07-10
+2024-07-15,OCCL,2024-07-01,restart,1.0,verified,2024-06-21,checked against the price on 2024-07-15
+2024-07-16,MMFL,2024-07-16,bonus,2.0,verified,2024-07-06,checked against the price on 2024-07-16
+2024-07-18,KPIGREEN,2024-07-18,split,2.0,verified,2024-07-08,checked against the price on 2024-07-18
+2024-07-19,ELECON,2024-07-19,split,2.0,verified,2024-07-09,checked against the price on 2024-07-19
+2024-07-23,ALMONDZ,2024-07-23,split,6.0,verified,2024-07-13,checked against the price on 2024-07-23
+2024-07-25,KSB,2024-07-25,split,5.0,verified,2024-07-15,checked against the price on 2024-07-25
+2024-07-26,RAYMOND,2024-07-11,restart,1.0,verified,2024-07-01,checked against the price on 2024-07-26
+2024-08-05,GPTINFRA,2024-07-03,bonus,2.0,rejected,2024-06-23,checked against the price on 2024-08-05
+2024-08-05,GPTINFRA,2024-08-05,restart,1.0,verified,2024-08-05,history restarts: corporate action could not be verified
+2024-08-09,SAKUMA,2024-08-09,bonus,5.0,verified,2024-07-30,checked against the price on 2024-08-09
+2024-08-09,FILATFASH,2024-08-09,split,5.0,verified,2024-07-30,checked against the price on 2024-08-09
+2024-08-09,RUSHIL,2024-08-09,split,10.0,verified,2024-07-30,checked against the price on 2024-08-09
+2024-08-12,ESSENTIA,2024-01-11,bonus,2.0,rejected,2024-01-01,checked against the price on 2024-08-12
+2024-08-12,ESSENTIA,2024-08-12,restart,1.0,verified,2024-08-12,history restarts: corporate action could not be verified
+2024-08-12,AARTECH,2024-08-09,bonus,1.5,verified,2024-07-30,checked against the price on 2024-08-12
+2024-08-12,AARTECH,2024-08-09,split,2.0,verified,2024-07-30,checked against the price on 2024-08-12
+2024-08-13,EIHAHOTELS,2024-08-13,bonus,2.0,verified,2024-08-03,checked against the price on 2024-08-13
+2024-08-19,AJMERA,2024-08-02,restart,1.0,verified,2024-07-23,checked against the price on 2024-08-19
+2024-08-23,CDSL,2024-08-23,bonus,2.0,verified,2024-08-13,checked against the price on 2024-08-23
+2024-09-05,SAPPHIRE,2024-09-05,split,5.0,verified,2024-08-26,checked against the price on 2024-09-05
+2024-09-06,VSTIND,2024-09-06,bonus,11.0,verified,2024-08-27,checked against the price on 2024-09-06
+2024-09-11,ANDHRAPAP,2024-09-11,split,5.0,verified,2024-09-01,checked against the price on 2024-09-11
+2024-09-12,BIGBLOC,2024-09-12,bonus,2.0,verified,2024-09-02,checked against the price on 2024-09-12
+2024-09-12,VBL,2024-09-12,split,2.5,verified,2024-09-02,checked against the price on 2024-09-12
+2024-09-13,KIMS,2024-09-13,split,5.0,verified,2024-09-03,checked against the price on 2024-09-13
+2024-09-13,SPORTKING,2024-09-13,split,10.0,verified,2024-09-03,checked against the price on 2024-09-13
+2024-09-13,MONARCH,2024-09-13,bonus,2.0,verified,2024-09-03,checked against the price on 2024-09-13
+2024-09-17,RPPL,2024-09-17,split,2.0,verified,2024-09-07,checked against the price on 2024-09-17
+2024-09-19,SAKSOFT,2024-09-19,bonus,1.25,verified,2024-09-09,checked against the price on 2024-09-19
+2024-09-20,AXITA,2024-09-20,bonus,1.3333333333333333,verified,2024-09-10,checked against the price on 2024-09-20
+2024-09-20,PHOENIXLTD,2024-09-20,bonus,2.0,verified,2024-09-10,checked against the price on 2024-09-20
+2024-09-20,RITES,2024-09-20,bonus,2.0,verified,2024-09-10,checked against the price on 2024-09-20
+2024-09-25,NDRAUTO,2024-09-25,bonus,2.0,verified,2024-09-15,checked against the price on 2024-09-25
+2024-09-27,SANGHVIMOV,2024-09-27,split,2.0,verified,2024-09-17,checked against the price on 2024-09-27
+2024-09-30,KAPSTON,2024-08-09,split,2.0,verified,2024-07-30,checked against the price on 2024-09-30
+2024-10-04,GPIL,2024-10-04,split,5.0,verified,2024-09-24,checked against the price on 2024-10-04
+2024-10-07,ROSSELLIND,2024-09-20,restart,1.0,verified,2024-09-10,checked against the price on 2024-10-07
+2024-10-07,NBCC,2024-10-07,bonus,1.5,verified,2024-09-27,checked against the price on 2024-10-07
+2024-10-07,GRPLTD,2024-08-12,bonus,4.0,verified,2024-08-02,checked against the price on 2024-10-07
+2024-10-08,POWERMECH,2024-10-08,bonus,2.0,verified,2024-09-28,checked against the price on 2024-10-08
+2024-10-09,JINDALSAW,2024-10-09,split,2.0,verified,2024-09-29,checked against the price on 2024-10-09
+2024-10-15,VAISHALI,2024-10-15,split,5.0,verified,2024-10-05,checked against the price on 2024-10-15
+2024-10-15,VAISHALI,2024-10-15,bonus,2.0,verified,2024-10-05,checked against the price on 2024-10-15
+2024-10-16,POCL,2024-10-16,split,2.0,verified,2024-10-06,checked against the price on 2024-10-16
+2024-10-25,SUKHJITS,2024-10-25,split,2.0,verified,2024-10-15,checked against the price on 2024-10-25
+2024-10-25,HERCULES,2024-10-11,restart,1.0,verified,2024-10-01,checked against the price on 2024-10-25
+2024-10-28,DRREDDY,2024-10-28,split,5.0,verified,2024-10-18,checked against the price on 2024-10-28
+2024-10-28,RELIANCE,2024-10-28,bonus,2.0,verified,2024-10-18,checked against the price on 2024-10-28
+2024-10-28,CUPID,2024-04-04,split,10.0,verified,2024-03-25,checked against the price on 2024-10-28
+2024-10-28,CUPID,2024-04-04,bonus,2.0,verified,2024-03-25,checked against the price on 2024-10-28
+2024-10-30,JASH,2024-10-30,split,5.0,verified,2024-10-20,checked against the price on 2024-10-30
+2024-11-01,DJML,2024-08-09,bonus,3.0,rejected,2024-07-30,checked against the price on 2024-11-01
+2024-11-01,DJML,2024-11-01,restart,1.0,verified,2024-11-01,history restarts: corporate action could not be verified
+2024-11-08,ROTO,2024-11-08,split,2.0,verified,2024-10-29,checked against the price on 2024-11-08
+2024-11-11,AVONMORE,2024-06-28,split,10.0,rejected,2024-06-18,checked against the price on 2024-11-11
+2024-11-11,AVONMORE,2024-11-11,restart,1.0,verified,2024-11-11,history restarts: corporate action could not be verified
+2024-11-12,WEL,2024-11-12,split,10.0,verified,2024-11-02,checked against the price on 2024-11-12
+2024-11-14,JTLIND,2024-11-14,split,2.0,verified,2024-11-04,checked against the price on 2024-11-14
+2024-11-18,MINDTECK,2024-09-20,bonus,1.25,rejected,2024-09-10,checked against the price on 2024-11-18
+2024-11-18,MINDTECK,2024-11-18,restart,1.0,verified,2024-11-18,history restarts: corporate action could not be verified
+2024-11-25,SHAKTIPUMP,2024-11-25,bonus,6.0,verified,2024-11-15,checked against the price on 2024-11-25
+2024-11-29,RPEL,2024-11-29,bonus,2.0,verified,2024-11-19,checked against the price on 2024-11-29
+2024-11-29,EASEMYTRIP,2024-11-29,bonus,2.0,verified,2024-11-19,checked against the price on 2024-11-29
+2024-12-03,WIPRO,2024-12-03,bonus,2.0,verified,2024-11-23,checked against the price on 2024-12-03
+2024-12-05,TARACHAND,2024-12-05,split,5.0,verified,2024-11-25,checked against the price on 2024-12-05
+2024-12-10,GLOBAL,2024-12-10,split,2.5,verified,2024-11-30,checked against the price on 2024-12-10
+2024-12-13,EXXARO,2024-12-13,split,10.0,verified,2024-12-03,checked against the price on 2024-12-13
+2024-12-20,STAR,2024-12-06,restart,1.0,verified,2024-11-26,checked against the price on 2024-12-20
+2024-12-20,LINC,2024-12-20,bonus,2.0,verified,2024-12-10,checked against the price on 2024-12-20
+2024-12-20,LINC,2024-12-20,split,2.0,verified,2024-12-10,checked against the price on 2024-12-20
+2024-12-27,NMDC,2024-12-27,bonus,3.0,verified,2024-12-17,checked against the price on 2024-12-27
+2024-12-27,HARDWYN,2024-12-27,bonus,1.4,verified,2024-12-17,checked against the price on 2024-12-27
+2024-12-27,MAZDOCK,2024-12-27,split,2.0,verified,2024-12-17,checked against the price on 2024-12-27
+2024-12-30,BANCOINDIA,2024-12-30,bonus,2.0,verified,2024-12-20,checked against the price on 2024-12-30
+2024-12-31,NDL,2024-09-19,split,10.0,rejected,2024-09-09,checked against the price on 2024-12-31
+2024-12-31,NDL,2024-12-31,restart,1.0,verified,2024-12-31,history restarts: corporate action could not be verified
+2024-12-31,MOTISONS,2024-11-08,split,10.0,verified,2024-10-29,checked against the price on 2024-12-31
+2024-12-31,PCJEWELLER,2024-12-16,split,10.0,verified,2024-12-06,checked against the price on 2024-12-31
