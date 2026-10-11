@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import datetime as dt
 
-from trader.store import Store
+from trader.store import Store, month_file
 
 
 def write_run(store: Store, d: dt.date, stage: str, **facts) -> None:
@@ -20,18 +20,17 @@ def write_decisions(store: Store, d: dt.date, review: str) -> list[dict]:
     """Final decisions: today's proposals after Claude's review. Until M4 there is no review."""
     limits = store.config("limits")
     decisions = [{**{k: v for k, v in r.items() if k != "type"}, "type": "decision", "review": review, "limits": limits}
-                 for r in store.records(f"notebook/{d.year}.jsonl") if r["type"] == "proposal" and r["date"] == d.isoformat()]
+                 for r in store.records(f"notebook/{month_file(d, 'jsonl')}") if r["type"] == "proposal" and r["date"] == d.isoformat()]
     _write(store, d, decisions)
     return decisions
 
 
 def write_results(store: Store, d: dt.date) -> int:
     """A result for every trade that finished today, read from Settle's books."""
-    decisions = {r["id"]: r for y in (d.year - 1, d.year) for r in store.records(f"notebook/{y}.jsonl")
-                 if r["type"] == "decision" and r["action"] == "buy"}
+    decisions = {r["id"]: r for r in store.records_all("notebook") if r["type"] == "decision" and r["action"] == "buy"}
     entries = {}
     results = []
-    for r in store.records(f"books/{d.year}.jsonl"):
+    for r in store.records_all("books"):
         if r["type"] != "event":
             continue
         if r["event"] == "entered":
@@ -41,7 +40,7 @@ def write_results(store: Store, d: dt.date) -> int:
         dec = decisions.get(r["id"], {})
         res = {"type": "result", "id": r["id"], "date": d.isoformat(), "symbol": r["symbol"],
                "checklist": dec.get("checklist"), "outcome": r["event"], "reason": r.get("reason")}
-        entry = entries.get(r["id"]) or _entry_last_year(store, d, r["id"])
+        entry = entries.get(r["id"])
         if entry and r["event"] != "not_entered":
             price, risk = entry["price"], entry["price"] - dec["stop"]
             res.update(entry_price=price, quantity=entry["qty"])
@@ -57,13 +56,6 @@ def write_results(store: Store, d: dt.date) -> int:
     return len(results)
 
 
-def _entry_last_year(store: Store, d: dt.date, id_: str) -> dict | None:
-    for r in store.records(f"books/{d.year - 1}.jsonl"):
-        if r["type"] == "event" and r["event"] == "entered" and r["id"] == id_:
-            return r
-    return None
-
-
 def _write(store: Store, d: dt.date, records: list[dict]) -> None:
     if records:
-        store.writer("record").append_records(f"{d.year}.jsonl", records)
+        store.writer("record").append_records(month_file(d, "jsonl"), records)

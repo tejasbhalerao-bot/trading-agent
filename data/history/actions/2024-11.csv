@@ -1,0 +1,13 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2024-11-01,DJML,2024-08-09,bonus,3.0,rejected,2024-07-30,checked against the price on 2024-11-01
+2024-11-01,DJML,2024-11-01,restart,1.0,verified,2024-11-01,history restarts: corporate action could not be verified
+2024-11-08,ROTO,2024-11-08,split,2.0,verified,2024-10-29,checked against the price on 2024-11-08
+2024-11-11,AVONMORE,2024-06-28,split,10.0,rejected,2024-06-18,checked against the price on 2024-11-11
+2024-11-11,AVONMORE,2024-11-11,restart,1.0,verified,2024-11-11,history restarts: corporate action could not be verified
+2024-11-12,WEL,2024-11-12,split,10.0,verified,2024-11-02,checked against the price on 2024-11-12
+2024-11-14,JTLIND,2024-11-14,split,2.0,verified,2024-11-04,checked against the price on 2024-11-14
+2024-11-18,MINDTECK,2024-09-20,bonus,1.25,rejected,2024-09-10,checked against the price on 2024-11-18
+2024-11-18,MINDTECK,2024-11-18,restart,1.0,verified,2024-11-18,history restarts: corporate action could not be verified
+2024-11-25,SHAKTIPUMP,2024-11-25,bonus,6.0,verified,2024-11-15,checked against the price on 2024-11-25
+2024-11-29,RPEL,2024-11-29,bonus,2.0,verified,2024-11-19,checked against the price on 2024-11-29
+2024-11-29,EASEMYTRIP,2024-11-29,bonus,2.0,verified,2024-11-19,checked against the price on 2024-11-29

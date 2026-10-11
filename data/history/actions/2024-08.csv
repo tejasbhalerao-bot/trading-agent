@@ -1,0 +1,13 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2024-08-05,GPTINFRA,2024-07-03,bonus,2.0,rejected,2024-06-23,checked against the price on 2024-08-05
+2024-08-05,GPTINFRA,2024-08-05,restart,1.0,verified,2024-08-05,history restarts: corporate action could not be verified
+2024-08-09,SAKUMA,2024-08-09,bonus,5.0,verified,2024-07-30,checked against the price on 2024-08-09
+2024-08-09,FILATFASH,2024-08-09,split,5.0,verified,2024-07-30,checked against the price on 2024-08-09
+2024-08-09,RUSHIL,2024-08-09,split,10.0,verified,2024-07-30,checked against the price on 2024-08-09
+2024-08-12,ESSENTIA,2024-01-11,bonus,2.0,rejected,2024-01-01,checked against the price on 2024-08-12
+2024-08-12,ESSENTIA,2024-08-12,restart,1.0,verified,2024-08-12,history restarts: corporate action could not be verified
+2024-08-12,AARTECH,2024-08-09,bonus,1.5,verified,2024-07-30,checked against the price on 2024-08-12
+2024-08-12,AARTECH,2024-08-09,split,2.0,verified,2024-07-30,checked against the price on 2024-08-12
+2024-08-13,EIHAHOTELS,2024-08-13,bonus,2.0,verified,2024-08-03,checked against the price on 2024-08-13
+2024-08-19,AJMERA,2024-08-02,restart,1.0,verified,2024-07-23,checked against the price on 2024-08-19
+2024-08-23,CDSL,2024-08-23,bonus,2.0,verified,2024-08-13,checked against the price on 2024-08-23

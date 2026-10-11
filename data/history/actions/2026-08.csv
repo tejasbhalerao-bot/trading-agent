@@ -1,0 +1,9 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2026-08-05,TEMBO,2026-08-05,split,10.0,verified,2026-07-26,checked against the price on 2026-08-05
+2026-08-05,TRIVENI,2026-07-22,restart,1.0,verified,2026-07-12,checked against the price on 2026-08-05
+2026-08-14,INOXGREEN,2026-07-31,restart,1.0,verified,2026-07-21,checked against the price on 2026-08-14
+2026-08-18,KIRLPNU,2026-08-18,split,2.0,verified,2026-08-08,checked against the price on 2026-08-18
+2026-08-21,GOODLUCK,2026-08-21,bonus,3.0,verified,2026-08-11,checked against the price on 2026-08-21
+2026-08-21,SIYSIL,2026-08-21,restart,1.0,verified,2026-08-11,checked against the price on 2026-08-21
+2026-08-24,TDPOWERSYS,2026-08-24,split,2.0,verified,2026-08-14,checked against the price on 2026-08-24
+2026-08-25,CORDELIA,2026-08-25,split,10.0,verified,2026-08-15,checked against the price on 2026-08-25

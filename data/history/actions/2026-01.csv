@@ -1,0 +1,10 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2026-01-02,MCX,2026-01-02,split,5.0,verified,2025-12-23,checked against the price on 2026-01-02
+2026-01-05,ORIENTTECH,2026-01-05,bonus,1.1,verified,2025-12-26,checked against the price on 2026-01-05
+2026-01-09,DCMSRIND,2025-12-26,restart,1.0,verified,2025-12-16,checked against the price on 2026-01-09
+2026-01-12,SKMEGGPROD,2026-01-12,split,2.0,verified,2026-01-02,checked against the price on 2026-01-12
+2026-01-13,AIIL,2026-01-13,bonus,5.0,verified,2026-01-03,checked against the price on 2026-01-13
+2026-01-14,AJMERA,2026-01-14,split,5.0,verified,2026-01-04,checked against the price on 2026-01-14
+2026-01-14,KOTAKBANK,2026-01-14,split,5.0,verified,2026-01-04,checked against the price on 2026-01-14
+2026-01-16,BESTAGRO,2026-01-16,bonus,1.5,verified,2026-01-06,checked against the price on 2026-01-16
+2026-01-16,BESTAGRO,2026-01-16,split,10.0,verified,2026-01-06,checked against the price on 2026-01-16

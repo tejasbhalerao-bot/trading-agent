@@ -1,0 +1,12 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2026-03-02,VGL,2026-03-02,split,2.0,verified,2026-02-20,checked against the price on 2026-03-02
+2026-03-05,AQYLON,2026-03-05,split,10.0,verified,2026-02-23,checked against the price on 2026-03-05
+2026-03-06,SILVERTUC,2026-03-06,bonus,2.0,verified,2026-02-24,checked against the price on 2026-03-06
+2026-03-06,SILVERTUC,2026-03-06,split,5.0,verified,2026-02-24,checked against the price on 2026-03-06
+2026-03-09,CUPID,2026-03-09,bonus,5.0,verified,2026-02-27,checked against the price on 2026-03-09
+2026-03-13,ECLERX,2026-03-13,bonus,2.0,verified,2026-03-03,checked against the price on 2026-03-13
+2026-03-20,METROPOLIS,2026-03-20,bonus,4.0,verified,2026-03-10,checked against the price on 2026-03-20
+2026-03-24,KILITCH,2026-03-24,bonus,2.0,verified,2026-03-14,checked against the price on 2026-03-24
+2026-03-25,V2RETAIL,2026-03-25,split,10.0,verified,2026-03-15,checked against the price on 2026-03-25
+2026-03-27,HIRECT,2026-03-27,bonus,2.0,verified,2026-03-17,checked against the price on 2026-03-27
+2026-03-30,IRB,2026-03-30,bonus,2.0,verified,2026-03-20,checked against the price on 2026-03-30

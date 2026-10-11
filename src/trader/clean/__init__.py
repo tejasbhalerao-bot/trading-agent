@@ -12,7 +12,7 @@ import datetime as dt
 from collections import Counter
 
 from trader.schema import ACTION_FIELDS, INDEX_FIELDS, PRICE_FIELDS, RESTART
-from trader.store import Store
+from trader.store import Store, month_file
 
 from . import parse
 
@@ -117,14 +117,14 @@ class Cleaner:
         for s, (last_date, _) in sorted(self.last.items()):
             if last_date == self.prev_day and s not in present:
                 skipped.append({"date": d.isoformat(), "symbol": s, "reason": "not traded today"})
-        self.w.append_csv(f"prices/{d.year}.csv", PRICE_FIELDS, stored)
+        self.w.append_csv(f"prices/{month_file(d, 'csv')}", PRICE_FIELDS, stored)
         if skipped:
-            self.w.append_records(f"skipped/{d.year}.jsonl", skipped)
+            self.w.append_records(f"skipped/{month_file(d, 'jsonl')}", skipped)
         self._write_actions(d, action_lines)
         if identity:
             self.w.append_csv("identity.csv", ["symbol", "isin", "from"], identity)
         if index_file:
-            self.w.append_csv(f"index/{d.year}.csv", INDEX_FIELDS, parse.index_rows(index_file))
+            self.w.append_csv(f"index/{month_file(d, 'csv')}", INDEX_FIELDS, parse.index_rows(index_file))
         self.prev_day = d
         return {"stored": len(stored), "skipped": len(skipped), "actions_checked": len(action_lines)}
 
@@ -134,7 +134,7 @@ class Cleaner:
 
     def _write_actions(self, d: dt.date, lines: list[dict]) -> None:
         if lines:
-            self.w.append_csv(f"actions/{d.year}.csv", ACTION_FIELDS, lines)
+            self.w.append_csv(f"actions/{month_file(d, 'csv')}", ACTION_FIELDS, lines)
 
 
 class _Known:

@@ -1,0 +1,8 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2025-11-03,BEML,2025-11-03,split,2.0,verified,2025-10-24,checked against the price on 2025-11-03
+2025-11-14,SMCGLOBAL,2025-11-14,bonus,2.0,verified,2025-11-04,checked against the price on 2025-11-14
+2025-11-14,WEBELSOLAR,2025-11-14,split,10.0,verified,2025-11-04,checked against the price on 2025-11-14
+2025-11-17,DALMIASUG,2025-10-31,restart,1.0,verified,2025-10-21,checked against the price on 2025-11-17
+2025-11-26,ALLCARGO,2025-11-12,restart,1.0,verified,2025-11-02,checked against the price on 2025-11-26
+2025-11-26,HDFCAMC,2025-11-26,bonus,2.0,verified,2025-11-16,checked against the price on 2025-11-26
+2025-11-28,THYROCARE,2025-11-28,bonus,3.0,verified,2025-11-18,checked against the price on 2025-11-28

@@ -1,0 +1,14 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2025-03-04,COASTCORP,2025-03-04,split,5.0,verified,2025-02-22,checked against the price on 2025-03-04
+2025-03-04,MGEL,2025-03-04,split,2.0,verified,2025-02-22,checked against the price on 2025-03-04
+2025-03-05,ANANDRATHI,2025-03-05,bonus,2.0,verified,2025-02-23,checked against the price on 2025-03-05
+2025-03-10,KITEX,2025-01-17,bonus,3.0,rejected,2025-01-07,checked against the price on 2025-03-10
+2025-03-10,KITEX,2025-03-10,restart,1.0,verified,2025-03-10,history restarts: corporate action could not be verified
+2025-03-10,SBC,2025-03-10,bonus,1.5,verified,2025-02-28,checked against the price on 2025-03-10
+2025-03-11,IOLCP,2025-03-11,split,5.0,verified,2025-03-01,checked against the price on 2025-03-11
+2025-03-17,TTL,2025-02-12,split,10.0,rejected,2025-02-02,checked against the price on 2025-03-17
+2025-03-17,TTL,2025-03-17,restart,1.0,verified,2025-03-17,history restarts: corporate action could not be verified
+2025-03-21,GREENLAM,2025-03-21,bonus,2.0,verified,2025-03-11,checked against the price on 2025-03-21
+2025-03-25,KESORAMIND,2025-03-10,restart,1.0,verified,2025-02-28,checked against the price on 2025-03-25
+2025-03-25,KOTHARIPRO,2025-02-18,bonus,2.0,rejected,2025-02-08,checked against the price on 2025-03-25
+2025-03-25,KOTHARIPRO,2025-03-25,restart,1.0,verified,2025-03-25,history restarts: corporate action could not be verified

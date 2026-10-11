@@ -1,0 +1,7 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2026-04-06,AXITA,2026-02-13,bonus,1.1,verified,2026-02-03,checked against the price on 2026-04-06
+2026-04-10,RMDRIP,2026-04-10,bonus,1.7142857142857142,verified,2026-03-31,checked against the price on 2026-04-10
+2026-04-17,PASHUPATI,2026-04-17,split,10.0,verified,2026-04-07,checked against the price on 2026-04-17
+2026-04-24,AHCL,2026-04-24,bonus,2.0,verified,2026-04-14,checked against the price on 2026-04-24
+2026-04-24,AHCL,2026-04-24,split,5.0,verified,2026-04-14,checked against the price on 2026-04-24
+2026-04-30,VEDL,2026-04-30,restart,1.0,verified,2026-04-20,checked against the price on 2026-04-30

@@ -1,0 +1,15 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2024-05-02,BHAGCHEM,2024-05-02,split,10.0,verified,2024-04-22,checked against the price on 2024-05-02
+2024-05-06,MHLXMIRU,2024-04-19,restart,1.0,verified,2024-04-09,checked against the price on 2024-05-06
+2024-05-10,SONAMLTD,2024-05-10,split,2.0,verified,2024-04-30,checked against the price on 2024-05-10
+2024-05-13,LAL,2024-03-28,bonus,1.5454545454545454,verified,2024-03-18,checked against the price on 2024-05-13
+2024-05-13,LAL,2024-03-28,split,10.0,verified,2024-03-18,checked against the price on 2024-05-13
+2024-05-15,CANBK,2024-05-15,split,5.0,verified,2024-05-05,checked against the price on 2024-05-15
+2024-05-17,SEMAC,2024-05-03,restart,1.0,verified,2024-04-23,checked against the price on 2024-05-17
+2024-05-17,VARDMNPOLY,2024-05-17,split,10.0,verified,2024-05-07,checked against the price on 2024-05-17
+2024-05-24,BDL,2024-05-24,split,2.0,verified,2024-05-14,checked against the price on 2024-05-24
+2024-05-24,GMBREW,2024-05-24,bonus,1.25,verified,2024-05-14,checked against the price on 2024-05-24
+2024-05-24,INOXWIND,2024-05-24,bonus,4.0,verified,2024-05-14,checked against the price on 2024-05-24
+2024-05-24,SDBL,2024-05-24,split,2.5,verified,2024-05-14,checked against the price on 2024-05-24
+2024-05-30,BALAXI,2024-05-30,split,5.0,verified,2024-05-20,checked against the price on 2024-05-30
+2024-05-31,DAVANGERE,2024-05-31,split,10.0,verified,2024-05-21,checked against the price on 2024-05-31

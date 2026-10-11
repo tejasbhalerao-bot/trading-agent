@@ -5,7 +5,7 @@ from __future__ import annotations
 import datetime as dt
 from dataclasses import dataclass, field
 
-from trader.store import Store
+from trader.store import Store, month_file
 
 from . import nse
 
@@ -48,4 +48,4 @@ def fetch_corporate_actions(store: Store, start: dt.date, end: dt.date, on: dt.d
 
 
 def _receipt(store: Store, d: dt.date, status: str, items: list[dict]) -> None:
-    store.writer("fetch").append_records(f"{d.year}.jsonl", [{"date": d.isoformat(), "day_status": status, "items": items}])
+    store.writer("fetch").append_records(month_file(d, "jsonl"), [{"date": d.isoformat(), "day_status": status, "items": items}])

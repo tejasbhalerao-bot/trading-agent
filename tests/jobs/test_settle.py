@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from trader.schema import Action
 from trader.settle import settle_day
-from trader.store import Store
+from trader.store import Store, month_file
 
 from ..market import history_of
 
@@ -23,12 +23,12 @@ def run(tmp_path, days, others=None, actions=(), name="t"):
     h = history_of(bars, actions)
     store = Store(tmp_path / name)
     d0 = h.calendar[0]
-    store.writer("record").append_records(f"{d0.year}.jsonl", [{
+    store.writer("record").append_records(month_file(d0, "jsonl"), [{
         "type": "decision", "action": "buy", "id": "t", "symbol": "X", "date": d0.isoformat(),
         "quantity": 10, "stop": 95, "target": 110, "max_hold_days": 3}])
     for d in h.calendar[1:]:
         settle_day(store, h.as_of(d), 10_000)
-    books = store.records(f"books/{d0.year}.jsonl")
+    books = store.records_all("books")
     return [r for r in books if r["type"] == "event"], [r for r in books if r["type"] == "snapshot"], h
 
 

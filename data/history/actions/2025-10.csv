@@ -1,0 +1,19 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2025-10-03,SHILPAMED,2025-10-03,bonus,2.0,verified,2025-09-23,checked against the price on 2025-10-03
+2025-10-06,IRISDOREME,2025-07-04,bonus,2.0,verified,2025-06-24,checked against the price on 2025-10-06
+2025-10-06,SIGMA,2025-10-06,split,10.0,verified,2025-09-26,checked against the price on 2025-10-06
+2025-10-06,SUMEETINDS,2025-10-03,split,5.0,rejected,2025-09-23,checked against the price on 2025-10-06
+2025-10-06,SUMEETINDS,2025-10-06,restart,1.0,verified,2025-10-06,history restarts: corporate action could not be verified
+2025-10-09,SHANKARA,2025-09-24,restart,1.0,verified,2025-09-14,checked against the price on 2025-10-09
+2025-10-10,AGIIL,2025-10-10,split,5.0,verified,2025-09-30,checked against the price on 2025-10-10
+2025-10-10,LGHL,2025-10-10,bonus,2.4,verified,2025-09-30,checked against the price on 2025-10-10
+2025-10-13,UNIVASTU,2025-10-13,bonus,3.0,verified,2025-10-03,checked against the price on 2025-10-13
+2025-10-14,GOKULAGRO,2025-10-14,split,2.0,verified,2025-10-04,checked against the price on 2025-10-14
+2025-10-14,TATAINVEST,2025-10-14,split,10.0,verified,2025-10-04,checked against the price on 2025-10-14
+2025-10-17,ABINFRA,2025-10-17,split,10.0,verified,2025-10-07,checked against the price on 2025-10-17
+2025-10-17,ROLEXRINGS,2025-10-17,split,10.0,verified,2025-10-07,checked against the price on 2025-10-17
+2025-10-24,TMPV,2025-10-14,restart,1.0,verified,2025-10-04,checked against the price on 2025-10-24
+2025-10-30,GEEKAYWIRE,2025-10-30,split,2.0,verified,2025-10-20,checked against the price on 2025-10-30
+2025-10-31,FCL,2025-10-31,bonus,5.0,verified,2025-10-21,checked against the price on 2025-10-31
+2025-10-31,FCL,2025-10-31,split,2.0,verified,2025-10-21,checked against the price on 2025-10-31
+2025-10-31,SKFINDIA,2025-10-15,restart,1.0,verified,2025-10-05,checked against the price on 2025-10-31

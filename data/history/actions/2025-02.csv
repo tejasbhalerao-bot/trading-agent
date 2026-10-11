@@ -1,0 +1,8 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2025-02-04,REDTAPE,2025-02-04,bonus,4.0,verified,2025-01-25,checked against the price on 2025-02-04
+2025-02-06,KSOLVES,2025-02-06,split,2.0,verified,2025-01-27,checked against the price on 2025-02-06
+2025-02-07,RAMAPHO,2025-02-07,split,2.0,verified,2025-01-28,checked against the price on 2025-02-07
+2025-02-07,AGIIL,2025-02-07,split,2.0,verified,2025-01-28,checked against the price on 2025-02-07
+2025-02-14,TARIL,2025-02-14,bonus,2.0,verified,2025-02-04,checked against the price on 2025-02-14
+2025-02-24,PREMIERPOL,2024-11-05,split,5.0,verified,2024-10-26,checked against the price on 2025-02-24
+2025-02-28,JINDWORLD,2025-02-28,bonus,5.0,verified,2025-02-18,checked against the price on 2025-02-28

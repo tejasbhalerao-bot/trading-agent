@@ -1,0 +1,9 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2026-05-04,KAPSTON,2026-03-06,bonus,1.5,rejected,2026-02-24,checked against the price on 2026-05-04
+2026-05-04,KAPSTON,2026-05-04,restart,1.0,verified,2026-05-04,history restarts: corporate action could not be verified
+2026-05-05,AVROIND,2026-05-05,split,10.0,verified,2026-04-25,checked against the price on 2026-05-05
+2026-05-19,RNBDENIMS,2026-04-02,split,2.0,rejected,2026-03-23,checked against the price on 2026-05-19
+2026-05-19,RNBDENIMS,2026-04-02,bonus,1.5,rejected,2026-03-23,checked against the price on 2026-05-19
+2026-05-19,RNBDENIMS,2026-05-19,restart,1.0,verified,2026-05-19,history restarts: corporate action could not be verified
+2026-05-29,LEMERITE,2026-05-29,split,5.0,verified,2026-05-19,checked against the price on 2026-05-29
+2026-05-29,LICI,2026-05-29,bonus,2.0,verified,2026-05-19,checked against the price on 2026-05-29

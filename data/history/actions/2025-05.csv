@@ -1,0 +1,14 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2025-05-02,UNITEDPOLY,2025-05-02,split,10.0,verified,2025-04-22,checked against the price on 2025-05-02
+2025-05-05,NAVKARURB,2025-04-24,bonus,2.5,verified,2025-04-14,checked against the price on 2025-05-05
+2025-05-07,NAUKRI,2025-05-07,split,5.0,verified,2025-04-27,checked against the price on 2025-05-07
+2025-05-09,NAVKARURB,2025-05-09,split,2.0,verified,2025-04-29,checked against the price on 2025-05-09
+2025-05-09,STLTECH,2025-04-24,restart,1.0,verified,2025-04-14,checked against the price on 2025-05-09
+2025-05-12,SHRADHA,2024-12-10,split,2.5,verified,2024-11-30,checked against the price on 2025-05-12
+2025-05-19,MAZDA,2025-01-28,split,5.0,rejected,2025-01-18,checked against the price on 2025-05-19
+2025-05-19,MAZDA,2025-05-19,restart,1.0,verified,2025-05-19,history restarts: corporate action could not be verified
+2025-05-22,ABFRL,2025-05-22,restart,1.0,verified,2025-05-12,checked against the price on 2025-05-22
+2025-05-23,BSE,2025-05-23,bonus,3.0,verified,2025-05-13,checked against the price on 2025-05-23
+2025-05-23,CHEMBOND,2025-05-09,restart,1.0,verified,2025-04-29,checked against the price on 2025-05-23
+2025-05-23,CPCAP,2025-05-09,restart,1.0,verified,2025-04-29,checked against the price on 2025-05-23
+2025-05-28,RAYMOND,2025-05-14,restart,1.0,verified,2025-05-04,checked against the price on 2025-05-28

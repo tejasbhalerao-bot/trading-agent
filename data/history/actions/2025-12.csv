@@ -1,0 +1,12 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2025-12-05,CAMS,2025-12-05,split,5.0,verified,2025-11-25,checked against the price on 2025-12-05
+2025-12-05,HINDUNILVR,2025-12-05,restart,1.0,verified,2025-11-25,checked against the price on 2025-12-05
+2025-12-12,BHARATRAS,2025-12-12,bonus,2.0,verified,2025-12-02,checked against the price on 2025-12-12
+2025-12-12,BHARATRAS,2025-12-12,split,2.0,verified,2025-12-02,checked against the price on 2025-12-12
+2025-12-12,BECTORFOOD,2025-12-12,split,5.0,verified,2025-12-02,checked against the price on 2025-12-12
+2025-12-15,MONEYBOXX,2025-12-15,bonus,2.0,verified,2025-12-05,checked against the price on 2025-12-15
+2025-12-19,LALPATHLAB,2025-12-19,bonus,2.0,verified,2025-12-09,checked against the price on 2025-12-19
+2025-12-22,KMEW,2025-12-22,split,2.0,verified,2025-12-12,checked against the price on 2025-12-22
+2025-12-24,GRMOVER,2025-12-24,bonus,3.0,verified,2025-12-14,checked against the price on 2025-12-24
+2025-12-26,NUVAMA,2025-12-26,split,5.0,verified,2025-12-16,checked against the price on 2025-12-26
+2025-12-26,RAMRAT,2025-12-26,bonus,2.0,verified,2025-12-16,checked against the price on 2025-12-26

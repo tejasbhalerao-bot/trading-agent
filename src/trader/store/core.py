@@ -30,6 +30,11 @@ OWNERS = {
 FOLDER_OF = {job: folder for folder, job in OWNERS.items()}
 
 
+def month_file(d, ext: str) -> str:
+    """Every growing data file holds one month (constraints.md: GitHub blocks files over 100 MB)."""
+    return f"{d.year:04d}-{d.month:02d}.{ext}"
+
+
 class StoreError(Exception):
     """A write that breaks a store rule. Never caught and ignored."""
 
@@ -72,6 +77,16 @@ class Store:
         records = records + [json.loads(line) for line in new.decode("utf-8").splitlines() if line]
         self._seen[path] = (offset + len(new), records)
         return records
+
+    def records_all(self, folder: str) -> list[dict]:
+        """Every record in every monthly .jsonl file of a folder, oldest month first."""
+        base = _inside(self.data, folder) if (self.data / folder).exists() else None
+        if base is None:
+            return []
+        out = []
+        for path in sorted(base.glob("*.jsonl")):
+            out.extend(self.records(str(path.relative_to(self.data))))
+        return out
 
     def code_version(self) -> str:
         r = subprocess.run(["git", "-C", str(REPO), "rev-parse", "--short", "HEAD"], capture_output=True, text=True)

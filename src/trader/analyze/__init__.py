@@ -9,7 +9,7 @@ import datetime as dt
 import statistics
 
 from trader.schema import RESTART, SPLIT, BONUS
-from trader.store import Store
+from trader.store import Store, month_file
 from trader.store.history import HistoryView
 
 from .conditions import CONDITIONS, typical_daily_move
@@ -24,7 +24,7 @@ MOOD_INDEX = "Nifty 500"
 def analyze_day(store: Store, view: HistoryView) -> dict:
     d = view.date
     w = store.writer("analyze")
-    path = f"{d.year}.jsonl"
+    path = month_file(d, "jsonl")
     universe = _universe(store, view, w, path)
     mood = _mood(view)
     w.append_records(path, [{"type": "mood", "date": d.isoformat(), **mood}])
@@ -71,7 +71,7 @@ def _universe(store: Store, view: HistoryView, w, path: str) -> list[str]:
     """The month's 500 shares with the highest median traded value over the previous 60 trading days."""
     d = view.date
     month = f"{d.year}-{d.month:02d}"
-    for r in reversed(store.records(path)):
+    for r in reversed(store.records(f"analysis/{path}")):
         if r["type"] == "universe":
             if r["month"] == month:
                 return r["symbols"]

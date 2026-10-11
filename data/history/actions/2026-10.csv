@@ -1,0 +1,4 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2026-10-06,BLSE,2026-10-06,split,2.0,verified,2026-09-26,checked against the price on 2026-10-06
+2026-10-08,BUILDPRO,2026-10-08,split,5.0,verified,2026-09-28,checked against the price on 2026-10-08
+2026-10-09,MOLDTKPAC,2026-10-09,bonus,2.0,verified,2026-09-29,checked against the price on 2026-10-09

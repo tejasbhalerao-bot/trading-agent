@@ -7,7 +7,7 @@ import datetime as dt
 import trader.analyze as analyze
 from trader.analyze.conditions import close_above_range_high, quiet_range, volume_multiple
 from trader.schema import Action, Bar
-from trader.store import Store
+from trader.store import Store, month_file
 
 from ..market import history_of, make_market, trading_days
 
@@ -42,7 +42,7 @@ def test_universe_uses_only_the_previous_60_days(tmp_path, monkeypatch):
     spike = h._bars["SPIKE"]
     spike[-1] = Bar(today, "SPIKE", 10, 11, 9, 10, 10, 1e12, 1e13, 10)
     store = Store(tmp_path)
-    universe = analyze._universe(store, h.as_of(today), store.writer("analyze"), f"{today.year}.jsonl")
+    universe = analyze._universe(store, h.as_of(today), store.writer("analyze"), month_file(today, "jsonl"))
     assert universe == ["STEADY"]
 
 
@@ -54,6 +54,6 @@ def test_a_split_due_inside_the_holding_period_excludes_the_share(tmp_path):
     history = store.history()
     history._actions["S01"].append(soon)
     analyze.analyze_day(store, history.as_of(today))
-    checks = {r["symbol"]: r for r in store.records(f"analysis/{today.year}.jsonl") if r["type"] == "check"}
+    checks = {r["symbol"]: r for r in store.records_all("analysis") if r["type"] == "check"}
     assert checks["S01"]["results"]["quiet-breakout-v1"]["failed"] == "corporate_action_within_holding_period"
     assert checks["S02"]["results"]["quiet-breakout-v1"]["failed"] != "corporate_action_within_holding_period"

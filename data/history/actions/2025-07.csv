@@ -1,0 +1,12 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2025-07-04,CONCOR,2025-07-04,bonus,1.25,verified,2025-06-24,checked against the price on 2025-07-04
+2025-07-04,PARAS,2025-07-04,split,2.0,verified,2025-06-24,checked against the price on 2025-07-04
+2025-07-04,SHARDAMOTR,2025-07-04,bonus,2.0,verified,2025-06-24,checked against the price on 2025-07-04
+2025-07-11,DYCL,2025-07-11,bonus,2.0,verified,2025-07-01,checked against the price on 2025-07-11
+2025-07-11,ROTO,2025-07-11,bonus,3.0,verified,2025-07-01,checked against the price on 2025-07-11
+2025-07-15,ANUHPHR,2025-07-15,bonus,2.0,verified,2025-07-05,checked against the price on 2025-07-15
+2025-07-16,ASHOKLEY,2025-07-16,bonus,2.0,verified,2025-07-06,checked against the price on 2025-07-16
+2025-07-18,IFGLEXPOR,2025-07-18,bonus,2.0,verified,2025-07-08,checked against the price on 2025-07-18
+2025-07-18,MSUMI,2025-07-18,bonus,1.5,verified,2025-07-08,checked against the price on 2025-07-18
+2025-07-18,MOTHERSON,2025-07-18,bonus,1.5,verified,2025-07-08,checked against the price on 2025-07-18
+2025-07-25,KELLTONTEC,2025-07-25,split,5.0,verified,2025-07-15,checked against the price on 2025-07-25

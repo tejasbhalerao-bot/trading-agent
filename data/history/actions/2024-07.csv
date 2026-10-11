@@ -1,0 +1,15 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2024-07-02,OIL,2024-07-02,bonus,1.5,verified,2024-06-22,checked against the price on 2024-07-02
+2024-07-05,REMSONSIND,2024-07-05,split,5.0,verified,2024-06-25,checked against the price on 2024-07-05
+2024-07-08,AKSHAR,2024-02-15,bonus,1.2,rejected,2024-02-05,checked against the price on 2024-07-08
+2024-07-08,AKSHAR,2024-07-08,restart,1.0,verified,2024-07-08,history restarts: corporate action could not be verified
+2024-07-08,VERTOZ,2024-07-05,bonus,2.0,verified,2024-06-25,checked against the price on 2024-07-08
+2024-07-08,VERTOZ,2024-07-05,split,10.0,verified,2024-06-25,checked against the price on 2024-07-08
+2024-07-10,PGEL,2024-07-10,split,10.0,verified,2024-06-30,checked against the price on 2024-07-10
+2024-07-15,OCCL,2024-07-01,restart,1.0,verified,2024-06-21,checked against the price on 2024-07-15
+2024-07-16,MMFL,2024-07-16,bonus,2.0,verified,2024-07-06,checked against the price on 2024-07-16
+2024-07-18,KPIGREEN,2024-07-18,split,2.0,verified,2024-07-08,checked against the price on 2024-07-18
+2024-07-19,ELECON,2024-07-19,split,2.0,verified,2024-07-09,checked against the price on 2024-07-19
+2024-07-23,ALMONDZ,2024-07-23,split,6.0,verified,2024-07-13,checked against the price on 2024-07-23
+2024-07-25,KSB,2024-07-25,split,5.0,verified,2024-07-15,checked against the price on 2024-07-25
+2024-07-26,RAYMOND,2024-07-11,restart,1.0,verified,2024-07-01,checked against the price on 2024-07-26

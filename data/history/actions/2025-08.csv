@@ -1,0 +1,11 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2025-08-01,DBREALTY,2025-07-18,restart,1.0,verified,2025-07-08,checked against the price on 2025-08-01
+2025-08-08,NESTLEIND,2025-08-08,bonus,2.0,verified,2025-07-29,checked against the price on 2025-08-08
+2025-08-12,INDIAGLYCO,2025-08-12,split,2.0,verified,2025-08-02,checked against the price on 2025-08-12
+2025-08-14,VRLLOG,2025-08-14,bonus,2.0,verified,2025-08-04,checked against the price on 2025-08-14
+2025-08-21,DEVIT,2025-08-21,split,2.5,verified,2025-08-11,checked against the price on 2025-08-21
+2025-08-25,AARON,2025-08-25,bonus,2.0,verified,2025-08-15,checked against the price on 2025-08-25
+2025-08-25,TVSMOTOR,2025-08-25,restart,1.0,verified,2025-08-15,checked against the price on 2025-08-25
+2025-08-26,HDFCBANK,2025-08-26,bonus,2.0,verified,2025-08-16,checked against the price on 2025-08-26
+2025-08-26,KARURVYSYA,2025-08-26,bonus,1.2,verified,2025-08-16,checked against the price on 2025-08-26
+2025-08-29,STEELCAS,2025-08-29,split,5.0,verified,2025-08-19,checked against the price on 2025-08-29

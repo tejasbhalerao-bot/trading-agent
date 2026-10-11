@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import math
 
-from trader.store import Store
+from trader.store import Store, month_file
 from trader.store.history import HistoryView
 
 MAX_WAIT_DAYS = 5
@@ -17,7 +17,7 @@ MAX_WAIT_DAYS = 5
 def settle_day(store: Store, view: HistoryView, starting_balance: float) -> dict:
     d = view.date
     w = store.writer("settle")
-    path = f"{d.year}.jsonl"
+    path = month_file(d, "jsonl")
     state = _last_snapshot(store, d) or {"cash_worse": starting_balance, "cash_better": starting_balance,
                                          "positions": [], "pending": [], "peak": starting_balance}
     cash_w, cash_b = state["cash_worse"], state["cash_better"]
@@ -138,15 +138,14 @@ def _scale(p: dict, factor: float) -> dict:
 
 
 def _last_snapshot(store: Store, d) -> dict | None:
-    for year in (d.year, d.year - 1):
-        for r in reversed(store.records(f"books/{year}.jsonl")):
-            if r["type"] == "snapshot" and r["date"] < d.isoformat():
-                return r
+    for r in reversed(store.records_all("books")):
+        if r["type"] == "snapshot" and r["date"] < d.isoformat():
+            return r
     return None
 
 
 def _decisions(store: Store, day) -> list[dict]:
     if day is None:
         return []
-    return [r for r in store.records(f"notebook/{day.year}.jsonl")
+    return [r for r in store.records(f"notebook/{month_file(day, 'jsonl')}")
             if r["type"] == "decision" and r["action"] == "buy" and r["date"] == day.isoformat()]

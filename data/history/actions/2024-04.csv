@@ -1,0 +1,6 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2024-04-05,BTML,2024-04-05,split,10.0,verified,2024-03-26,checked against the price on 2024-04-05
+2024-04-15,DOLPHIN,2024-01-25,split,10.0,verified,2024-01-15,checked against the price on 2024-04-15
+2024-04-18,SBGLP,2024-04-18,split,10.0,verified,2024-04-08,checked against the price on 2024-04-18
+2024-04-23,ANUP,2024-04-23,bonus,2.0,verified,2024-04-13,checked against the price on 2024-04-23
+2024-04-24,BBL,2024-04-24,split,2.0,verified,2024-04-14,checked against the price on 2024-04-24

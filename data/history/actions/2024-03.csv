@@ -1,0 +1,12 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2024-03-05,CGCL,2024-03-05,split,2.0,verified,2024-02-24,checked against the price on 2024-03-05
+2024-03-05,CGCL,2024-03-05,bonus,2.0,verified,2024-02-24,checked against the price on 2024-03-05
+2024-03-07,MANORAMA,2024-03-07,split,5.0,verified,2024-02-26,checked against the price on 2024-03-07
+2024-03-15,GAEL,2024-03-15,bonus,2.0,verified,2024-03-05,checked against the price on 2024-03-15
+2024-03-19,RAMASTEEL,2024-03-19,bonus,3.0,verified,2024-03-09,checked against the price on 2024-03-19
+2024-03-20,ADVANIHOTR,2024-03-20,bonus,2.0,verified,2024-03-10,checked against the price on 2024-03-20
+2024-03-20,NRL,2024-03-20,bonus,1.5,verified,2024-03-10,checked against the price on 2024-03-20
+2024-03-20,PAISALO,2024-03-20,bonus,2.0,verified,2024-03-10,checked against the price on 2024-03-20
+2024-03-22,REFEX,2024-03-22,split,5.0,verified,2024-03-12,checked against the price on 2024-03-22
+2024-03-26,DRCSYSTEMS,2024-02-27,bonus,3.0,verified,2024-02-17,checked against the price on 2024-03-26
+2024-03-28,PERSISTENT,2024-03-28,split,2.0,verified,2024-03-18,checked against the price on 2024-03-28

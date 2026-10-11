@@ -48,7 +48,7 @@ def cleaned(tmp_path, days, announcements=()):
         c.add_announcements(json.dumps(list(announcements)).encode(), seen=D1, backfill=False)
     for d, rows in days:
         c.clean_day(d, new_file(d, rows), None)
-    skipped = store.records(f"history/skipped/{D1.year}.jsonl")
+    skipped = store.records_all("history/skipped")
     return store, {(r["symbol"], r["date"]): r["reason"] for r in skipped}
 
 

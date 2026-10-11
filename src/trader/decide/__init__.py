@@ -12,7 +12,7 @@ from __future__ import annotations
 import math
 
 from trader.schema import entry_id
-from trader.store import Store
+from trader.store import Store, month_file
 from trader.store.history import HistoryView
 
 
@@ -35,8 +35,9 @@ def decide(store: Store, view: HistoryView) -> tuple[list[dict], list[dict]]:
             proposals.append({"id": p["id"], "date": d.isoformat(), "action": "exit", "symbol": p["symbol"],
                               "quantity": p["qty"], "reason": "time limit: sell at tomorrow's open"})
 
-    checks = [r for r in store.records(f"analysis/{d.year}.jsonl") if r["type"] == "check" and r["date"] == d.isoformat()]
-    mood = next((r["mood"] for r in store.records(f"analysis/{d.year}.jsonl")
+    today = store.records(f"analysis/{month_file(d, 'jsonl')}")
+    checks = [r for r in today if r["type"] == "check" and r["date"] == d.isoformat()]
+    mood = next((r["mood"] for r in today
                  if r["type"] == "mood" and r["date"] == d.isoformat()), "unknown")
     candidates = [(r, cid) for r in checks for cid, res in r["results"].items() if res["pass"]]
     candidates.sort(key=lambda rc: (-rc[0]["figures"]["value"], rc[0]["symbol"], rc[1]))
@@ -91,8 +92,7 @@ def decide(store: Store, view: HistoryView) -> tuple[list[dict], list[dict]]:
 
 
 def _snapshot(store: Store, d) -> dict | None:
-    for year in (d.year, d.year - 1):
-        for r in reversed(store.records(f"books/{year}.jsonl")):
-            if r["type"] == "snapshot" and r["date"] <= d.isoformat():
-                return r
+    for r in reversed(store.records_all("books")):
+        if r["type"] == "snapshot" and r["date"] <= d.isoformat():
+            return r
     return None

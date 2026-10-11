@@ -17,8 +17,8 @@ from ..market import make_market
 DECISION_TYPES = ("proposal", "skip", "decision")
 
 
-def records(store, folder, year, types, until):
-    return [r for r in store.records(f"{folder}/{year}.jsonl") if r["type"] in types and r["date"] <= until]
+def records(store, folder, types, until):
+    return [r for r in store.records_all(folder) if r["type"] in types and r["date"] <= until]
 
 
 @pytest.fixture
@@ -45,8 +45,8 @@ def test_the_markets_really_differ_after_the_cut(two_markets):
 def test_decisions_up_to_the_cut_do_not_depend_on_later_prices(two_markets):
     runs, cut = two_markets
     until = cut.isoformat()
-    a = records(runs["same"], "notebook", cut.year, DECISION_TYPES, until)
-    b = records(runs["changed"], "notebook", cut.year, DECISION_TYPES, until)
+    a = records(runs["same"], "notebook", DECISION_TYPES, until)
+    b = records(runs["changed"], "notebook", DECISION_TYPES, until)
     assert a, "the test market should produce decisions before the cut"
     assert any(r["type"] == "decision" and r["action"] == "buy" for r in a)
     assert a == b
@@ -56,7 +56,7 @@ def test_checks_up_to_the_cut_do_not_depend_on_later_prices(two_markets):
     runs, cut = two_markets
     until = cut.isoformat()
     types = ("check", "mood", "universe")
-    assert records(runs["same"], "analysis", cut.year, types, until) == records(runs["changed"], "analysis", cut.year, types, until)
+    assert records(runs["same"], "analysis", types, until) == records(runs["changed"], "analysis", types, until)
 
 
 def test_a_view_refuses_to_read_a_later_day(tmp_path):
@@ -75,7 +75,7 @@ def test_replaying_twice_gives_identical_notebooks(tmp_path):
     for name in ("a", "b"):
         store = Store(tmp_path / name, history_from=tmp_path / "m")
         replay(store, days[65], days[-1], quiet=True)
-        out.append((tmp_path / name / "data" / "notebook" / f"{days[-1].year}.jsonl").read_bytes())
+        out.append(b"".join(p.read_bytes() for p in sorted((tmp_path / name / "data" / "notebook").glob("*.jsonl"))))
     assert out[0] == out[1]
 
 

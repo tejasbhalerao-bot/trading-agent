@@ -1,0 +1,4 @@
+seen,symbol,ex_date,kind,factor,status,known_from,subject
+2025-04-07,SIEMENS,2025-04-07,restart,1.0,verified,2025-03-28,checked against the price on 2025-04-07
+2025-04-17,AFIL,2025-04-17,split,10.0,verified,2025-04-07,checked against the price on 2025-04-17
+2025-04-30,QUESS,2025-04-15,restart,1.0,verified,2025-04-05,checked against the price on 2025-04-30
