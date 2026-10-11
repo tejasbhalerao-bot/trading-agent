@@ -20,15 +20,18 @@ def publish(repo: Path | str, message: str, branch: str = "main", attempts: int 
     if _run(repo, "diff", "--quiet").returncode != 0:
         raise StoreError("files outside data/ were modified during the run; refusing to publish")
     _git(repo, *AUTHOR, "commit", "--quiet", "-m", message)
+    errors = []
     for _ in range(attempts):
         _git(repo, "fetch", "--quiet", "origin", branch)
         _git(repo, *AUTHOR, "rebase", "--quiet", f"origin/{branch}")
         problems = check(repo, f"origin/{branch}", "HEAD", data_only=True)
         if problems:
             raise StoreError("refusing to push: " + "; ".join(problems))
-        if _run(repo, "push", "--quiet", "origin", f"HEAD:{branch}").returncode == 0:
+        pushed = _run(repo, "push", "--quiet", "origin", f"HEAD:{branch}")
+        if pushed.returncode == 0:
             return _git(repo, "rev-parse", "HEAD").strip()
-    raise StoreError(f"push to {branch} rejected {attempts} times")
+        errors.append(pushed.stderr.strip())
+    raise StoreError(f"push to {branch} rejected {attempts} times: {errors[-1]}")
 
 
 def _run(repo: Path, *args: str) -> subprocess.CompletedProcess:
