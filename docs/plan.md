@@ -2,7 +2,7 @@
 
 How the system described in [spec.md](spec.md) gets built and proven, from an empty repo to a decision on real money.
 
-**Status:** Signed off 2026-10-11. M0 complete ([reports/m0.md](reports/m0.md)). M1 complete ([reports/m1.md](reports/m1.md)). M2 complete ([reports/m2.md](reports/m2.md)). Next: M3.
+**Status:** Signed off 2026-10-11. M0 complete ([reports/m0.md](reports/m0.md)). M1 complete ([reports/m1.md](reports/m1.md)). M2 complete ([reports/m2.md](reports/m2.md)). M3 complete ([reports/m3.md](reports/m3.md)). Next: M4.
 
 Claude designs and builds end to end. You check in only at the end of each milestone, when Claude stops, reports, and brings the decisions that need you, each with its tradeoffs and a recommendation.
 

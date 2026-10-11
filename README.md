@@ -11,7 +11,15 @@ the rules that bind them, and what is still open.
 
 ## Status
 
-M0 (foundations and data check) and M1 (design of Decide, Record and Learn) are complete. M2 (design of Settle, Analyze, Fetch and Clean) is complete. Next: M3, the first working slice. Reports: [docs/reports/](docs/reports/). Milestones: [docs/plan.md](docs/plan.md).
+M0–M3 are complete: foundations, the full design, and the first working slice (fetch, clean, one checklist, decide, record, settle), with market history from January 2024 in `data/history/`. Next: M4, the full system. Reports: [docs/reports/](docs/reports/). Milestones: [docs/plan.md](docs/plan.md).
+
+## Try it
+
+```bash
+python3 -m venv .venv && .venv/bin/pip install -e '.[dev]'
+.venv/bin/python -m pytest -q
+.venv/bin/python src/trader/run.py replay 2025-01-01 2025-03-31 --into /tmp/practice
+```
 
 ## Build order
 
