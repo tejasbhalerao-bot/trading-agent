@@ -8,6 +8,8 @@
         Fetch and clean past days into data/history.
     python3 src/trader/run.py replay FROM TO --into DIR [--report]
         Run the trading jobs over past days into DIR (practice; never the real record).
+    python3 src/trader/run.py backtest FROM TO --work DIR
+        Replay the period in DIR, then write results and starting trust scores to data/backtest.
 
 Both evening parts are safe to run more than once: a part already done for the day exits.
 Timetable and platform limits: docs/design/constraints.md.
@@ -23,7 +25,8 @@ REPO = Path(__file__).resolve().parents[2]
 if __package__ in (None, ""):
     sys.path.insert(0, str(REPO / "src"))
 
-from trader import analyze, clean, decide, fetch, learn, record, report, settle  # noqa: E402
+from trader import clean, fetch, record, report  # noqa: E402
+from trader.evening import evening_jobs, replay  # noqa: E402
 from trader.clean import parse  # noqa: E402
 from trader.schema.review import check_review  # noqa: E402
 from trader.store import Store, month_file  # noqa: E402
@@ -32,20 +35,6 @@ from trader.store.publish import publish, read_from_branch  # noqa: E402
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 LAST_TRY = dt.time(21, 0)  # after this, a missing price file means the day failed (or the market was closed)
 REVIEW_FILE = "work/review.json"
-
-
-def evening_jobs(store: Store, view, balance: float, decide_today: bool):
-    """The order every evening runs in (spec note: Settle and Learn before Decide)."""
-    d = view.date
-    settle.settle_day(store, view, balance)
-    record.write_results(store, d)
-    learn.learn_day(store, d)
-    analyze.analyze_day(store, view)
-    if not decide_today:
-        return None
-    proposals, skips, brake = decide.decide(store, view, learn.latest_version(store, d))
-    record.write_proposals(store, d, proposals, skips)
-    return proposals, brake
 
 
 def propose(store: Store, today: dt.date, now: dt.datetime, do_publish: bool = True) -> str:
@@ -143,23 +132,6 @@ def backfill(store: Store, start: dt.date, end: dt.date) -> None:
         d += dt.timedelta(days=1)
 
 
-def replay(store: Store, start: dt.date, end: dt.date, quiet: bool = False, report_last: bool = False) -> None:
-    """Every evening job over past trading days, without Claude's review (it would know the future)."""
-    history = store.history()
-    balance = store.config("limits")["paper_starting_balance_inr"]
-    days = [d for d in history.calendar if start <= d <= end]
-    for d in days:
-        record.write_run(store, d, "start")
-        proposals, brake = evening_jobs(store, history.as_of(d), balance, decide_today=True)
-        record.write_run(store, d, "proposed", proposals=len(proposals), brake=brake["mode"])
-        record.write_decisions(store, d, None, ["no review arrived"])
-        record.write_run(store, d, "finalized")
-        if not quiet:
-            print(d, f"proposed {len(proposals)}", f"brake {brake['mode']}")
-    if report_last and days:
-        store.writer("report").add_file(f"{days[-1]:%Y-%m}/{days[-1].isoformat()}.md", report.render(store, days[-1]).encode())
-
-
 def _stage(store: Store, d: dt.date, stage: str) -> bool:
     return any(r["type"] == "run" and r["date"] == d.isoformat() and r["stage"] == stage
                for r in store.records(f"notebook/{month_file(d, 'jsonl')}"))
@@ -199,6 +171,12 @@ def main(argv: list[str]) -> int:
         return 0
     if argv[:1] == ["backfill"] and len(argv) == 3:
         backfill(Store(REPO), dt.date.fromisoformat(argv[1]), dt.date.fromisoformat(argv[2]))
+        return 0
+    if argv[:1] == ["backtest"] and len(argv) >= 5 and argv[3] == "--work":
+        from trader.backtest import run_backtest
+        start, end = dt.date.fromisoformat(argv[1]), dt.date.fromisoformat(argv[2])
+        out = run_backtest(Store(REPO), Path(argv[4]), start, end, f"bt-{now.date().isoformat()}")
+        print(f"{out['trades']} trades settled; account: {out['portfolio']}")
         return 0
     if argv[:1] == ["replay"] and len(argv) >= 5 and argv[3] == "--into":
         replay(Store(argv[4], history_from=REPO), dt.date.fromisoformat(argv[1]), dt.date.fromisoformat(argv[2]),

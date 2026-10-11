@@ -50,6 +50,7 @@ class Store:
         self.history_dir = (Path(history_from).resolve() / "data" if history_from else self.data) / "history"
         self.config_dir = Path(config_dir) if config_dir else REPO / "config"
         self._seen: dict[Path, tuple[int, list[dict]]] = {}
+        self._all: dict[str, tuple[list[dict], dict[str, int]]] = {}
 
     def history(self) -> History:
         return History.load(self.history_dir)
@@ -80,14 +81,36 @@ class Store:
         return records
 
     def records_all(self, folder: str) -> list[dict]:
-        """Every record in every monthly .jsonl file of a folder, oldest month first."""
-        base = _inside(self.data, folder) if (self.data / folder).exists() else None
-        if base is None:
+        """Every record in every monthly .jsonl file of a folder, oldest month first.
+
+        Files only grow, so the combined list is kept and extended with new lines only.
+        Callers must treat the returned list and its records as read-only.
+        """
+        base = self.data / folder
+        if not base.exists():
             return []
-        out = []
-        for path in sorted(base.glob("*.jsonl")):
-            out.extend(self.records(str(path.relative_to(self.data))))
-        return out
+        combined, counts = self._all.get(folder, ([], {}))
+        paths = sorted(str(p.relative_to(self.data)) for p in base.glob("*.jsonl"))
+        for i, rel in enumerate(paths):
+            recs = self.records(rel)
+            seen = counts.get(rel, 0)
+            if len(recs) > seen:
+                if i < len(paths) - 1 and any(counts.get(p, 0) for p in paths[i + 1:]):
+                    combined, counts = [], {}      # an older month grew after newer ones: rebuild in order
+                    return self._rebuild(folder, paths)
+                combined.extend(recs[seen:])
+                counts[rel] = len(recs)
+        self._all[folder] = (combined, counts)
+        return combined
+
+    def _rebuild(self, folder: str, paths: list[str]) -> list[dict]:
+        combined, counts = [], {}
+        for rel in paths:
+            recs = self.records(rel)
+            combined.extend(recs)
+            counts[rel] = len(recs)
+        self._all[folder] = (combined, counts)
+        return combined
 
     def code_version(self) -> str:
         r = subprocess.run(["git", "-C", str(REPO), "rev-parse", "--short", "HEAD"], capture_output=True, text=True)

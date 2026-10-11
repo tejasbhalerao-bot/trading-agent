@@ -9,6 +9,7 @@ can raise suggestions about them. They never touch the balance or the trust scor
 
 from __future__ import annotations
 
+import copy
 import math
 
 from trader.store import Store, month_file
@@ -19,7 +20,7 @@ MAX_WAIT_DAYS = 5
 
 def settle_day(store: Store, view: HistoryView, starting_balance: float) -> dict:
     d = view.date
-    state = _last_snapshot(store, d) or {"cash_worse": starting_balance, "cash_better": starting_balance,
+    state = copy.deepcopy(_last_snapshot(store, d)) or {"cash_worse": starting_balance, "cash_better": starting_balance,
                                          "positions": [], "pending": [], "shadows": [], "peak": starting_balance}
     cash = {"worse": state["cash_worse"], "better": state["cash_better"]}
     events = []
@@ -123,7 +124,7 @@ def _exit(p: dict, view: HistoryView, event):
         p["waited"] += 1
         if p["waited"] >= MAX_WAIT_DAYS:
             event(p, "unknown", reason="no price for 5 trading days", worse=p["stop"], better=p["target"],
-                  **_r_both(p))
+                  entry=p["entry"], stop=p["stop"], **_r_both(p))
             return p["stop"], p["target"]
         return None
     p["waited"] = 0
@@ -143,14 +144,14 @@ def _exit(p: dict, view: HistoryView, event):
         price, reason = bar.open, "gapped through the target"
     elif bar.low <= p["stop"] and bar.high >= p["target"]:
         event(p, "unknown", reason="the day touched both the stop and the target", worse=p["stop"], better=p["target"],
-              **_r_both(p))
+              entry=p["entry"], stop=p["stop"], **_r_both(p))
         return p["stop"], p["target"]
     elif bar.low <= p["stop"]:
         price, reason = p["stop"], "stop"
     elif bar.high >= p["target"]:
         price, reason = p["target"], "target"
     if price is not None:
-        event(p, "exited", price=price, reason=reason, entry=p["entry"], **_r(p, price))
+        event(p, "exited", price=price, reason=reason, entry=p["entry"], stop=p["stop"], **_r(p, price))
         return price, price
     if not bar.locked:
         p["days"] += 1
