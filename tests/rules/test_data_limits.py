@@ -10,7 +10,7 @@ DATA = Path(__file__).resolve().parents[2] / "data"
 LIMIT_BYTES = 25 * 1024 * 1024
 MONTHLY = re.compile(r"^\d{4}-\d{2}\.(csv|jsonl)$")
 DAILY_REPORT = re.compile(r"^\d{4}-\d{2}-\d{2}\.md$")
-SINGLE_FILES = {"identity.csv", "holidays.csv", "RECORD_START"}
+SINGLE_FILES = {"identity.csv", "holidays.csv", "RECORD_START", "README.md"}
 
 
 def data_files():
