@@ -2,7 +2,7 @@
 
 How the system described in [spec.md](spec.md) gets built and proven, from an empty repo to a decision on real money.
 
-**Status:** Signed off 2026-10-11. M0 complete ([reports/m0.md](reports/m0.md)). M1 complete ([reports/m1.md](reports/m1.md)). M2 complete ([reports/m2.md](reports/m2.md)). M3 complete ([reports/m3.md](reports/m3.md)). M4 complete; awaiting your decision on the daily report ([reports/m4.md](reports/m4.md)).
+**Status:** Signed off 2026-10-11. M0 complete ([reports/m0.md](reports/m0.md)). M1 complete ([reports/m1.md](reports/m1.md)). M2 complete ([reports/m2.md](reports/m2.md)). M3 complete ([reports/m3.md](reports/m3.md)). M4 complete ([reports/m4.md](reports/m4.md)). M5 in progress.
 
 Claude designs and builds end to end. You check in only at the end of each milestone, when Claude stops, reports, and brings the decisions that need you, each with its tradeoffs and a recommendation.
 
@@ -23,6 +23,7 @@ Milestones M0–M6 are building and take days to a couple of weeks, depending mo
 | Safety limits | ₹10,000 paper balance, 1% risk per trade, 5 positions, 20% per share, 5% total open risk, losing-run brake. See [config/limits.yaml](../config/limits.yaml). |
 | Trading costs | Ignored for now; revisit before real money. |
 | Market mood | Nifty 500 against its 50-day moving average (50 DMA): up if above a rising 50 DMA, down if below a falling one, otherwise sideways. |
+| Daily report | Plain English for a non-trader; saved in `data/reports/`. See [how to read it](how-to-read-the-daily-report.md). |
 | First checklists | Quiet breakout, Pullback in an uptrend, Gap up that holds. Same exits for all. See [design/pass3-analyze.md](design/pass3-analyze.md). |
 
 ---
