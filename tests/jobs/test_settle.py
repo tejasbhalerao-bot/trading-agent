@@ -125,3 +125,12 @@ def test_settling_the_same_days_twice_gives_identical_books(tmp_path):
     a = run(tmp_path, days, name="a")
     b = run(tmp_path, days, name="b")
     assert a[0] == b[0] and a[1] == b[1]
+
+
+def test_a_trade_open_across_a_broken_price_history_is_unknown_not_a_fake_loss(tmp_path):
+    from ..market import trading_days
+    broke = trading_days(3)[2]
+    restart = Action("X", broke, "restart", 1.0, "verified", broke, "test")
+    events, _, _ = run(tmp_path, [QUIET, (10, 10.2, 9.8, 10)], actions=[restart])
+    e = only(events, "unknown")
+    assert "broke" in e["reason"] and (e["worse"], e["better"]) == (95, 110)

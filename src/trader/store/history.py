@@ -123,6 +123,11 @@ class HistoryView:
                 return a
         return None
 
+    def restarted(self, symbol: str, since: dt.date) -> bool:
+        """True if the share's price history was broken (restarted) after `since`, up to today."""
+        return any(a.kind == RESTART and a.status == "verified" and since < a.ex_date <= self.date
+                   for a in self._h._actions.get(symbol, []))
+
     def index_closes(self, name: str) -> list[float]:
         rows = self._h._index.get(name, [])
         return [c for d, c in rows[: bisect.bisect_right(rows, (self.date, float("inf")))]]

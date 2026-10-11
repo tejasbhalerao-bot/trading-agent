@@ -111,6 +111,14 @@ def test_a_split_not_matching_the_price_is_dont_know_and_history_restarts(tmp_pa
     assert [b.date for b in store.history().as_of(D3).bars("AAA")] == [D3]
 
 
+def test_a_move_beyond_35_percent_with_no_corporate_action_restarts_history(tmp_path):
+    # e.g. JSW Steel, 4 Jan 2017: -90%, a 1-for-10 split missing from NSE's corporate-action list.
+    store, skipped = cleaned(tmp_path, [(D1, [("AAA", 100, 101, 99, 100, 100)]), (D2, [("AAA", 10, 10.2, 9.8, 10, 100)]),
+                                        (D3, [("AAA", 10, 10.3, 9.9, 10.1, 10)])])
+    assert "history restarts" in skipped[("AAA", "2025-03-04")]
+    assert [b.date for b in store.history().as_of(D3).bars("AAA")] == [D3]
+
+
 def test_a_big_unexplained_move_sits_out_one_day_then_is_accepted(tmp_path):
     store, skipped = cleaned(tmp_path, [(D1, [("AAA", 100, 101, 99, 100, 100)]), (D2, [("AAA", 70, 71, 69, 70, 100)]),
                                         (D3, [("AAA", 70, 72, 69, 71, 70)])])

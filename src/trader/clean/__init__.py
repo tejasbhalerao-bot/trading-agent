@@ -18,6 +18,7 @@ from trader.store import Store, month_file
 from . import parse
 
 MAX_UNEXPLAINED_MOVE = 0.25   # larger moves with no corporate action sit out one day
+MAX_BELIEVABLE_MOVE = 0.35    # beyond this, an unexplained move can't be told from an unrecorded split: history restarts
 MAX_ADJUSTED_MOVE = 0.21      # a split is verified if the price, scaled by its ratio, moved no more than a day can
                               # (20% is NSE's widest daily price band; CGCL rose exactly 20% on its split day in 2024)
 RENAME_GAP_DAYS = 10         # a rename applies only if the old symbol last traded within this many days before it
@@ -145,11 +146,11 @@ class Cleaner:
                                          "subject": f"checked against the price on {d.isoformat()}"})
                 if not ok:
                     # Unverifiable: drop the share's earlier history rather than keep an unexplained jump in it.
-                    self.actions[(s, d, RESTART)] = _Known(1.0, "verified", d)
-                    action_lines.append({"symbol": s, "ex_date": d.isoformat(), "kind": RESTART, "factor": 1.0,
-                                         "status": "verified", "seen": d.isoformat(), "known_from": d.isoformat(),
-                                         "subject": "history restarts: corporate action could not be verified"})
-                    self.last.pop(s, None)
+                    self._restart(s, d, action_lines, "history restarts: corporate action could not be verified")
+            elif reason is None and last_date == self.prev_day and abs(c / p - 1) > MAX_BELIEVABLE_MOVE:
+                # NSE's corporate-action list misses some splits and demergers (e.g. JSW Steel's 1-for-10 split, 2017).
+                reason = f"moved {c / p - 1:+.0%} with no corporate action: possibly an unrecorded split; history restarts"
+                self._restart(s, d, action_lines, "history restarts: unexplained move beyond 35%")
             elif reason is None and last_date == self.prev_day and abs(c / p - 1) > MAX_UNEXPLAINED_MOVE:
                 reason = f"moved {c / p - 1:+.0%} with no corporate action; sitting out one day"
             if reason:
@@ -174,6 +175,12 @@ class Cleaner:
             self.w.append_csv(f"index/{month_file(d, 'csv')}", INDEX_FIELDS, parse.index_rows(index_file))
         self.prev_day = d
         return {"stored": len(stored), "skipped": len(skipped), "actions_checked": len(action_lines)}
+
+    def _restart(self, s: str, d: dt.date, action_lines: list, why: str) -> None:
+        self.actions[(s, d, RESTART)] = _Known(1.0, "verified", d)
+        action_lines.append({"symbol": s, "ex_date": d.isoformat(), "kind": RESTART, "factor": 1.0, "status": "verified",
+                             "seen": d.isoformat(), "known_from": d.isoformat(), "subject": why})
+        self.last.pop(s, None)
 
     def _takes_effect(self, symbol: str, last_date: dt.date | None, d: dt.date) -> list:
         """Announced actions whose effective date falls after the share's last stored day, up to today."""

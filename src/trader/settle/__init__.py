@@ -10,6 +10,7 @@ can raise suggestions about them. They never touch the balance or the trust scor
 from __future__ import annotations
 
 import copy
+import datetime as dt
 import math
 
 from trader.store import Store, month_file
@@ -127,6 +128,11 @@ def _exit(p: dict, view: HistoryView, event):
                   entry=p["entry"], stop=p["stop"], **_r_both(p))
             return p["stop"], p["target"]
         return None
+    if view.restarted(p["symbol"], dt.date.fromisoformat(p["entered"])):
+        # The price series broke (an unverifiable corporate action): no honest price to settle against.
+        event(p, "unknown", reason="its price history broke (possibly an unrecorded split)", worse=p["stop"],
+              better=p["target"], entry=p["entry"], stop=p["stop"], **_r_both(p))
+        return p["stop"], p["target"]
     p["waited"] = 0
     action = view.verified_action(p["symbol"], d)
     if action and p["entered"] != d.isoformat():
