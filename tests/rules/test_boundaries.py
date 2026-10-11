@@ -45,3 +45,14 @@ def test_report_never_asks_for_a_writer():
         if {"store"} & imported_trader_packages(tree, package) and "publish" in path.read_text():
             offences.append(f"report/{path.name} references publish")
     assert not offences, offences
+
+
+def test_no_job_reads_the_reports():
+    """Watchers are not jobs: nothing in the system may depend on what the report writes."""
+    offences = []
+    for package, path, tree in modules():
+        if package in JOBS + ["schema"]:  # store/ names the folder in its ownership table, nothing more
+            for node in ast.walk(tree):
+                if isinstance(node, ast.Constant) and isinstance(node.value, str) and node.value.startswith("reports"):
+                    offences.append(f"{package}/{path.name}:{node.lineno}")
+    assert not offences, offences

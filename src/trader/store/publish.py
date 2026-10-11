@@ -34,6 +34,15 @@ def publish(repo: Path | str, message: str, branch: str = "main", attempts: int 
     raise StoreError(f"push to {branch} rejected {attempts} times: {errors[-1]}")
 
 
+def read_from_branch(repo: Path | str, branch: str, path: str) -> bytes | None:
+    """One file from a branch on GitHub (e.g. Claude's review), or None if it is not there."""
+    repo = Path(repo)
+    if _run(repo, "fetch", "--quiet", "origin", branch).returncode != 0:
+        return None
+    r = subprocess.run(["git", "-C", str(repo), "show", f"FETCH_HEAD:{path}"], capture_output=True)
+    return r.stdout if r.returncode == 0 else None
+
+
 def _run(repo: Path, *args: str) -> subprocess.CompletedProcess:
     return subprocess.run(["git", "-C", str(repo), *args], capture_output=True, text=True)
 

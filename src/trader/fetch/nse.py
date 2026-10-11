@@ -33,6 +33,10 @@ def index_file_url(d: dt.date) -> str:
     return f"https://nsearchives.nseindia.com/content/indices/ind_close_all_{d:%d%m%Y}.csv"
 
 
+HOLIDAYS_URL = "https://www.nseindia.com/api/holiday-master?type=trading"
+SYMBOL_CHANGES_URL = "https://nsearchives.nseindia.com/content/equities/symbolchange.csv"
+
+
 def corporate_actions_url(start: dt.date, end: dt.date) -> str:
     return (
         "https://www.nseindia.com/api/corporates-corporateActions?index=equities"

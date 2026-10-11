@@ -78,6 +78,23 @@ def parse_subject(subject: str) -> tuple[str | None, float]:
     return None, 1.0
 
 
+def holidays(body: bytes) -> set[dt.date]:
+    """Trading holidays for ordinary shares (NSE's "CM" segment)."""
+    return {_date(h["tradingDate"]) for h in json.loads(body).get("CM", [])}
+
+
+def symbol_changes(body: bytes) -> list[tuple[str, str, dt.date]]:
+    """(old symbol, new symbol, date) from NSE's symbol-change list (no header row)."""
+    out = []
+    for row in csv.reader(io.StringIO(body.decode("latin-1"))):
+        if len(row) >= 4:
+            try:
+                out.append((row[-3].strip(), row[-2].strip(), _date(row[-1].strip())))
+            except ValueError:
+                continue
+    return out
+
+
 def _date(s: str) -> dt.date:
     for fmt in ("%Y-%m-%d", "%d-%b-%Y", "%d-%m-%Y"):
         try:

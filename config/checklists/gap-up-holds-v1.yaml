@@ -1,0 +1,12 @@
+# Gap up that holds. Approved 2026-10-11 (docs/reports/m2.md).
+# Each condition is a yes/no answered from the numbers alone. Changing anything here means a new version.
+id: gap-up-holds-v1
+name: Gap up that holds
+conditions:
+  - gap_up: {min_pct: 3}                       # opened at least 3% above yesterday's close
+  - holds_gain: {top_fraction: 0.25}           # closed at or above the open, in the top quarter of the day's range
+  - volume_multiple: {min: 3, avg_days: 20}    # volume at least 3x the previous 20 days' average
+exits:
+  stop_typical_moves: 1.0
+  target_typical_moves: 1.5
+  max_hold_days: 3

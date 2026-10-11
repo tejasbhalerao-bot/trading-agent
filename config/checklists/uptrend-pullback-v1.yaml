@@ -1,0 +1,11 @@
+# Pullback in an uptrend. Approved 2026-10-11 (docs/reports/m2.md).
+# Each condition is a yes/no answered from the numbers alone. Changing anything here means a new version.
+id: uptrend-pullback-v1
+name: Pullback in an uptrend
+conditions:
+  - above_rising_average: {days: 50, lookback: 10}   # close above the 50-day average, which is higher than 10 days ago
+  - lower_closes: {days: 3}                          # closed lower on each of the last 3 days
+exits:
+  stop_typical_moves: 1.0
+  target_typical_moves: 1.5
+  max_hold_days: 3

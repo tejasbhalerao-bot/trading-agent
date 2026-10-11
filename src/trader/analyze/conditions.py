@@ -24,10 +24,38 @@ def volume_multiple(bars: list[Bar], min: float, avg_days: int) -> tuple[bool, d
     return multiple >= min, {"volume_multiple": round(multiple, 2), f"avg_volume_{avg_days}d": round(avg)}
 
 
+def above_rising_average(bars: list[Bar], days: int, lookback: int) -> tuple[bool, dict]:
+    closes = [b.close for b in bars]
+    now = sum(closes[-days:]) / days
+    then = sum(closes[-days - lookback:-lookback]) / days
+    return closes[-1] > now and now > then, {f"avg_{days}d": round(now, 2), f"avg_{days}d_{lookback}_days_ago": round(then, 2)}
+
+
+def lower_closes(bars: list[Bar], days: int) -> tuple[bool, dict]:
+    closes = [b.close for b in bars[-days - 1:]]
+    falls = sum(1 for a, b in zip(closes, closes[1:]) if b < a)
+    return falls == days, {f"lower_closes_of_last_{days}": falls}
+
+
+def gap_up(bars: list[Bar], min_pct: float) -> tuple[bool, dict]:
+    pct = (bars[-1].open / bars[-2].close - 1) * 100
+    return pct >= min_pct, {"gap_pct": round(pct, 2)}
+
+
+def holds_gain(bars: list[Bar], top_fraction: float) -> tuple[bool, dict]:
+    b = bars[-1]
+    position = (b.close - b.low) / (b.high - b.low) if b.high > b.low else 0.0
+    return b.close >= b.open and position >= 1 - top_fraction, {"close_position_in_range": round(position, 3)}
+
+
 CONDITIONS = {
     "quiet_range": quiet_range,
     "close_above_range_high": close_above_range_high,
     "volume_multiple": volume_multiple,
+    "above_rising_average": above_rising_average,
+    "lower_closes": lower_closes,
+    "gap_up": gap_up,
+    "holds_gain": holds_gain,
 }
 
 

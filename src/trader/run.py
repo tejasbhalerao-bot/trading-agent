@@ -1,16 +1,21 @@
 """The one entry point the daily GitHub Actions workflows run.
 
-    python3 src/trader/run.py backfill FROM TO          fetch and clean past days into data/history
-    python3 src/trader/run.py replay FROM TO --into DIR run the trading jobs over past days into DIR (practice)
-    python3 src/trader/run.py probe                     M0 data check (throwaway; replaced by Fetch)
+    python3 src/trader/run.py propose  [--date YYYY-MM-DD] [--no-publish]
+        Evening, part 1: fetch (catching up missed days), clean, settle, learn, analyze, decide.
+    python3 src/trader/run.py finalize [--date YYYY-MM-DD] [--no-publish]
+        Evening, part 2: check Claude's review, record the decisions, write the daily report.
+    python3 src/trader/run.py backfill FROM TO
+        Fetch and clean past days into data/history.
+    python3 src/trader/run.py replay FROM TO --into DIR [--report]
+        Run the trading jobs over past days into DIR (practice; never the real record).
 
-Dates are YYYY-MM-DD. The evening run (propose / finalize) arrives in M4.
+Both evening parts are safe to run more than once: a part already done for the day exits.
+Timetable and platform limits: docs/design/constraints.md.
 """
 
 from __future__ import annotations
 
 import datetime as dt
-import json
 import sys
 from pathlib import Path
 
@@ -18,10 +23,93 @@ REPO = Path(__file__).resolve().parents[2]
 if __package__ in (None, ""):
     sys.path.insert(0, str(REPO / "src"))
 
-from trader import analyze, clean, decide, fetch, record, settle  # noqa: E402
-from trader.fetch import probe  # noqa: E402
-from trader.store import Store  # noqa: E402
-from trader.store.publish import publish  # noqa: E402
+from trader import analyze, clean, decide, fetch, learn, record, report, settle  # noqa: E402
+from trader.clean import parse  # noqa: E402
+from trader.schema.review import check_review  # noqa: E402
+from trader.store import Store, month_file  # noqa: E402
+from trader.store.publish import publish, read_from_branch  # noqa: E402
+
+IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
+LAST_TRY = dt.time(21, 0)  # after this, a missing price file means the day failed (or the market was closed)
+REVIEW_FILE = "work/review.json"
+
+
+def evening_jobs(store: Store, view, balance: float, decide_today: bool):
+    """The order every evening runs in (spec note: Settle and Learn before Decide)."""
+    d = view.date
+    settle.settle_day(store, view, balance)
+    record.write_results(store, d)
+    learn.learn_day(store, d)
+    analyze.analyze_day(store, view)
+    if not decide_today:
+        return None
+    proposals, skips, brake = decide.decide(store, view, learn.latest_version(store, d))
+    record.write_proposals(store, d, proposals, skips)
+    return proposals, brake
+
+
+def propose(store: Store, today: dt.date, now: dt.datetime, do_publish: bool = True) -> str:
+    if _stage(store, today, "proposed"):
+        return "already proposed today"
+    _finalize_leftover(store, today, do_publish)
+    cleaner = clean.Cleaner(store)
+    ref = fetch.fetch_reference(store, today)
+    if ref["symbol_changes"]:
+        cleaner.add_renames(ref["symbol_changes"], today)
+    if ref["holidays"] and today in parse.holidays(ref["holidays"]):
+        return _close(store, today, "market closed: NSE holiday", do_publish)
+    actions = fetch.fetch_corporate_actions(store, today - dt.timedelta(days=30), today + dt.timedelta(days=30), on=today)
+    if actions:
+        cleaner.add_announcements(actions, seen=today, backfill=False)
+
+    new_days, d = [], (cleaner.prev_day + dt.timedelta(days=1)) if cleaner.prev_day else today
+    while d <= today:
+        got = fetch.fetch_day(store, d, historical=d < today)
+        if got.status == "delivered":
+            cleaner.clean_day(d, got.files["price_file"], got.files.get("index_closes"))
+            new_days.append(d)
+        elif d == today:
+            if now.time() < LAST_TRY:
+                _publish(store, today, "receipts", do_publish)
+                return "today's file is not published yet; a later run will retry"
+            reason = "market closed: no file on a weekend" if today.weekday() >= 5 else "failed: no price file by 9pm"
+            return _close(store, today, reason, do_publish)
+        d += dt.timedelta(days=1)
+
+    history = store.history()
+    balance = store.config("limits")["paper_starting_balance_inr"]
+    summary = ""
+    for d in new_days:
+        record.write_run(store, d, "start")
+        out = evening_jobs(store, history.as_of(d), balance, decide_today=d == today)
+        if d == today:
+            proposals, brake = out
+            record.write_run(store, d, "proposed", proposals=len(proposals), brake=brake["mode"])
+            summary = f"proposed {len(proposals)} order(s)"
+        else:
+            record.write_run(store, d, "caught up", note="missed evening: settled and learned; no decisions, "
+                             "since orders cannot be placed in the past")
+    _publish(store, today, "proposed", do_publish)
+    return summary
+
+
+def finalize(store: Store, today: dt.date, do_publish: bool = True, review_raw: bytes | None = None,
+             late: bool = False) -> str:
+    if _stage(store, today, "finalized"):
+        return "already finalized today"
+    if not _stage(store, today, "proposed"):
+        return "nothing to finalize: no proposals today"
+    if review_raw is None:
+        review_raw = read_from_branch(store.repo_root, f"claude/review-{today.isoformat()}", REVIEW_FILE)
+    ids = {p["id"] for p in record.proposals_for(store, today) if p["action"] == "buy"}
+    review, problems = check_review(review_raw, today.isoformat(), ids)
+    record.write_decisions(store, today, review, problems)
+    record.write_run(store, today, "decided", review="accepted" if review else problems[0][:80], late=late)
+    _publish(store, today, "decisions", do_publish)       # decisions are saved before the report exists
+    store.writer("report").add_file(f"{today:%Y-%m}/{today.isoformat()}.md", report.render(store, today).encode())
+    record.write_run(store, today, "finalized")
+    _publish(store, today, "report", do_publish)
+    return f"finalized; review {'accepted' if review else 'not used: ' + problems[0]}"
 
 
 def backfill(store: Store, start: dt.date, end: dt.date) -> None:
@@ -47,45 +135,66 @@ def backfill(store: Store, start: dt.date, end: dt.date) -> None:
         d += dt.timedelta(days=1)
 
 
-def replay(store: Store, start: dt.date, end: dt.date, quiet: bool = False) -> None:
-    """Settle, Record, Analyze, Decide and Record again, for each trading day in the range (no review)."""
+def replay(store: Store, start: dt.date, end: dt.date, quiet: bool = False, report_last: bool = False) -> None:
+    """Every evening job over past trading days, without Claude's review (it would know the future)."""
     history = store.history()
     balance = store.config("limits")["paper_starting_balance_inr"]
-    for d in history.calendar:
-        if not start <= d <= end:
-            continue
-        view = history.as_of(d)
+    days = [d for d in history.calendar if start <= d <= end]
+    for d in days:
         record.write_run(store, d, "start")
-        s = settle.settle_day(store, view, balance)
-        n_results = record.write_results(store, d)
-        a = analyze.analyze_day(store, view)
-        proposals, skips = decide.decide(store, view)
-        record.write_proposals(store, d, proposals, skips)
-        record.write_decisions(store, d, review="none (no review until M4)")
-        record.write_run(store, d, "end", proposals=len(proposals), skips=len(skips), results=n_results)
+        proposals, brake = evening_jobs(store, history.as_of(d), balance, decide_today=True)
+        record.write_run(store, d, "proposed", proposals=len(proposals), brake=brake["mode"])
+        record.write_decisions(store, d, None, ["no review arrived"])
+        record.write_run(store, d, "finalized")
         if not quiet:
-            print(d, a["mood"], f"matches {a['matches']}", f"proposed {len(proposals)}", f"open {s['open']}")
+            print(d, f"proposed {len(proposals)}", f"brake {brake['mode']}")
+    if report_last and days:
+        store.writer("report").add_file(f"{days[-1]:%Y-%m}/{days[-1].isoformat()}.md", report.render(store, days[-1]).encode())
 
 
-def cmd_probe(no_publish: bool = False) -> int:
-    report = probe.run()
-    print(probe.summary(report))
-    stamp = report["probed_at"].replace(":", "").replace("+0000", "Z")
-    path = Store(REPO).writer("fetch").add_file(f"_probe/{stamp}.json", (json.dumps(report, indent=2) + "\n").encode())
-    print(f"recorded {path.relative_to(REPO)}")
-    if not no_publish:
-        print(f"published {publish(REPO, f'M0 data check {stamp}') or 'nothing'}")
-    return 0
+def _stage(store: Store, d: dt.date, stage: str) -> bool:
+    return any(r["type"] == "run" and r["date"] == d.isoformat() and r["stage"] == stage
+               for r in store.records(f"notebook/{month_file(d, 'jsonl')}"))
+
+
+def _finalize_leftover(store: Store, today: dt.date, do_publish: bool) -> None:
+    """If an earlier evening proposed but never finalized (both finalize runs lost), finish it now."""
+    runs = [r for r in store.records_all("notebook") if r["type"] == "run" and r["date"] < today.isoformat()]
+    proposed = [r["date"] for r in runs if r["stage"] == "proposed"]
+    if proposed and not any(r["date"] == proposed[-1] and r["stage"] == "finalized" for r in runs):
+        finalize(store, dt.date.fromisoformat(proposed[-1]), do_publish, late=True)
+
+
+def _close(store: Store, d: dt.date, reason: str, do_publish: bool) -> str:
+    record.write_run(store, d, "closed", reason=reason)
+    _publish(store, d, "closed", do_publish)
+    return reason
+
+
+def _publish(store: Store, d: dt.date, what: str, do_publish: bool) -> None:
+    if do_publish:
+        print(f"published {publish(store.repo_root, f'Evening run {d.isoformat()}: {what}') or 'nothing'}")
 
 
 def main(argv: list[str]) -> int:
-    if argv[:1] == ["probe"]:
-        return cmd_probe(no_publish="--no-publish" in argv)
+    flags = {a for a in argv if a.startswith("--")}
+    date = next((argv[i + 1] for i, a in enumerate(argv) if a == "--date"), None)
+    now = dt.datetime.now(IST)
+    today = dt.date.fromisoformat(date) if date else now.date()
+    if date:
+        now = dt.datetime.combine(today, dt.time(23, 59), IST)
+    if argv[:1] == ["propose"]:
+        print(propose(Store(REPO), today, now, do_publish="--no-publish" not in flags))
+        return 0
+    if argv[:1] == ["finalize"]:
+        print(finalize(Store(REPO), today, do_publish="--no-publish" not in flags))
+        return 0
     if argv[:1] == ["backfill"] and len(argv) == 3:
         backfill(Store(REPO), dt.date.fromisoformat(argv[1]), dt.date.fromisoformat(argv[2]))
         return 0
-    if argv[:1] == ["replay"] and len(argv) == 5 and argv[3] == "--into":
-        replay(Store(argv[4], history_from=REPO), dt.date.fromisoformat(argv[1]), dt.date.fromisoformat(argv[2]))
+    if argv[:1] == ["replay"] and len(argv) >= 5 and argv[3] == "--into":
+        replay(Store(argv[4], history_from=REPO), dt.date.fromisoformat(argv[1]), dt.date.fromisoformat(argv[2]),
+               report_last="--report" in flags)
         return 0
     print(__doc__)
     return 2

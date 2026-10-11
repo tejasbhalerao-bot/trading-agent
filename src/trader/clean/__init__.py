@@ -57,6 +57,22 @@ class Cleaner:
         self._write_actions(seen, new)
         return len(new)
 
+    def add_renames(self, body: bytes, d: dt.date) -> int:
+        """Symbol renames: a share's history follows it to its new symbol. Returns how many were new."""
+        path = self.w.base / "renames"
+        known = set()
+        for f in sorted(path.glob("*.csv")) if path.exists() else []:
+            with open(f, newline="") as fh:
+                known |= {(r["old"], r["new"]) for r in csv.DictReader(fh)}
+        new = []
+        for old, sym, when in parse.symbol_changes(body):
+            if when <= d and old in self.last and (old, sym) not in known and sym not in self.last:
+                new.append({"old": old, "new": sym, "date": when.isoformat(), "seen": d.isoformat()})
+                self.last[sym] = self.last.pop(old)
+        if new:
+            self.w.append_csv(f"renames/{month_file(d, 'csv')}", ["old", "new", "date", "seen"], new)
+        return len(new)
+
     def clean_day(self, d: dt.date, price_file: bytes, index_file: bytes | None) -> dict:
         rows = parse.price_rows(price_file)
         counts = Counter(r["symbol"] for r in rows)

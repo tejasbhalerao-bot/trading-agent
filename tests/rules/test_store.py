@@ -9,7 +9,7 @@ from trader.store import FOLDER_OF, OWNERS, Store, StoreError
 
 def test_every_folder_has_exactly_one_owner():
     assert len(set(OWNERS.values())) == len(OWNERS)
-    assert set(OWNERS) == {"raw", "history", "analysis", "notebook", "books", "trust", "backtest"}
+    assert set(OWNERS) == {"raw", "history", "analysis", "notebook", "books", "trust", "backtest", "reports"}
 
 
 def test_a_job_writes_only_its_own_folder(tmp_path):
@@ -21,7 +21,7 @@ def test_a_job_writes_only_its_own_folder(tmp_path):
             store.writer("clean").append_lines(escape, ["x"])
 
 
-@pytest.mark.parametrize("job", ["report", "decide", "run", "probe", ""])
+@pytest.mark.parametrize("job", ["decide", "run", "probe", ""])
 def test_non_owners_get_no_writer(tmp_path, job):
     assert job not in FOLDER_OF
     with pytest.raises(StoreError):

@@ -47,5 +47,13 @@ def fetch_corporate_actions(store: Store, start: dt.date, end: dt.date, on: dt.d
     return body
 
 
+def fetch_reference(store: Store, d: dt.date) -> dict[str, bytes | None]:
+    """NSE's trading holidays and symbol changes. Small files, fetched each evening."""
+    holidays, r1 = nse.get("holidays", nse.HOLIDAYS_URL)
+    changes, r2 = nse.get("symbol_changes", nse.SYMBOL_CHANGES_URL)
+    _receipt(store, d, "delivered" if holidays and changes else "failed", [r1, r2])
+    return {"holidays": holidays, "symbol_changes": changes}
+
+
 def _receipt(store: Store, d: dt.date, status: str, items: list[dict]) -> None:
     store.writer("fetch").append_records(month_file(d, "jsonl"), [{"date": d.isoformat(), "day_status": status, "items": items}])

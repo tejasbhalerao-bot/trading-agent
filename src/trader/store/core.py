@@ -25,6 +25,7 @@ OWNERS = {
     "books": "settle",
     "trust": "learn",
     "backtest": "backtest",
+    "reports": "report",  # the daily report: written for you, read by nothing in the system
 }
 
 FOLDER_OF = {job: folder for folder, job in OWNERS.items()}

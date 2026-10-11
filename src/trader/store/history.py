@@ -43,6 +43,12 @@ class History:
                     key = (r["symbol"], r["ex_date"], r["kind"])
                     latest[key] = Action(r["symbol"], to_date(r["ex_date"]), r["kind"], float(r["factor"]),
                                          r["status"], to_date(r["known_from"]), r["subject"])
+        for path in sorted((history_dir / "renames").glob("*.csv")):
+            with open(path, newline="") as f:
+                for r in csv.DictReader(f):  # a renamed share keeps its history under its new symbol
+                    old = [b for b in bars.pop(r["old"], [])]
+                    bars[r["new"]] = [Bar(b.date, r["new"], b.open, b.high, b.low, b.close, b.prev_close, b.volume,
+                                          b.value, b.trades) for b in old] + bars[r["new"]]
         index = defaultdict(list)
         for path in sorted((history_dir / "index").glob("*.csv")):
             with open(path, newline="") as f:

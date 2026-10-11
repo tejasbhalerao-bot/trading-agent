@@ -57,3 +57,33 @@ def test_a_split_due_inside_the_holding_period_excludes_the_share(tmp_path):
     checks = {r["symbol"]: r for r in store.records_all("analysis") if r["type"] == "check"}
     assert checks["S01"]["results"]["quiet-breakout-v1"]["failed"] == "corporate_action_within_holding_period"
     assert checks["S02"]["results"]["quiet-breakout-v1"]["failed"] != "corporate_action_within_holding_period"
+
+
+def series(closes, opens=None, highs=None, lows=None, volumes=None):
+    days = trading_days(len(closes))
+    n = len(closes)
+    opens, highs, lows = opens or closes, highs or [c * 1.01 for c in closes], lows or [c * 0.99 for c in closes]
+    volumes = volumes or [1000] * n
+    return [Bar(d, "X", o, h, l, c, c, v, 0, 1) for d, o, h, l, c, v in zip(days, opens, highs, lows, closes, volumes)]
+
+
+def test_above_rising_average():
+    from trader.analyze.conditions import above_rising_average
+    rising = [100 + i for i in range(70)]
+    assert above_rising_average(series(rising), days=50, lookback=10)[0]
+    assert not above_rising_average(series(rising[::-1]), days=50, lookback=10)[0]
+
+
+def test_lower_closes():
+    from trader.analyze.conditions import lower_closes
+    assert lower_closes(series([10, 9, 8, 7]), days=3)[0]
+    assert not lower_closes(series([10, 9, 9, 7]), days=3)[0]
+
+
+def test_gap_up_and_holds_gain():
+    from trader.analyze.conditions import gap_up, holds_gain
+    b = series([100, 104.5], opens=[100, 103], highs=[101, 105], lows=[99, 102.5])
+    assert gap_up(b, min_pct=3)[0] and holds_gain(b, top_fraction=0.25)[0]
+    faded = series([100, 102.6], opens=[100, 103], highs=[101, 105], lows=[99, 102.5])
+    assert not holds_gain(faded, top_fraction=0.25)[0]
+    assert not gap_up(series([100, 102], opens=[100, 102.9]), min_pct=3)[0]
