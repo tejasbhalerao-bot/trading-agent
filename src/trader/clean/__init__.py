@@ -17,7 +17,8 @@ from trader.store import Store
 from . import parse
 
 MAX_UNEXPLAINED_MOVE = 0.25   # larger moves with no corporate action sit out one day
-MAX_ADJUSTED_MOVE = 0.20      # a split is verified if the price, scaled by its ratio, moved less than this
+MAX_ADJUSTED_MOVE = 0.21      # a split is verified if the price, scaled by its ratio, moved no more than a day can
+                              # (20% is NSE's widest daily price band; CGCL rose exactly 20% on its split day in 2024)
 NOTICE_DAYS = 10              # in a backfill, an announcement is treated as known this many days before it takes effect
 
 

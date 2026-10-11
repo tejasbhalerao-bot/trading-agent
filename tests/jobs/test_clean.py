@@ -96,6 +96,14 @@ def test_a_split_matching_the_price_is_stored_and_applied_only_from_its_date(tmp
     assert h.as_of(D2).bars("AAA")[0].close == 50       # after: the earlier price is halved
 
 
+def test_a_split_day_rising_by_a_full_price_band_still_verifies(tmp_path):
+    # CGCL, 5 March 2024: a 1-for-2 split and a 1:1 bonus (4x together), then the price rose 20%.
+    bonus = {"symbol": "AAA", "series": "EQ", "exDate": f"{D2:%d-%b-%Y}", "subject": "Bonus 1:1"}
+    _, skipped = cleaned(tmp_path, [(D1, [("AAA", 960, 970, 950, 964.15, 960)]), (D2, [("AAA", 250, 290, 245, 289.25, 964.15)])],
+                         announcements=[split("AAA", D2, "From Rs 2/- Per Share To Re 1/- Per Share"), bonus])
+    assert not skipped
+
+
 def test_a_split_not_matching_the_price_is_dont_know_and_history_restarts(tmp_path):
     store, skipped = cleaned(tmp_path, [(D1, [("AAA", 100, 101, 99, 100, 100)]), (D2, [("AAA", 98, 99, 97, 98, 100)]),
                                         (D3, [("AAA", 98, 99, 97, 98.5, 98)])], announcements=[split("AAA", D2)])
