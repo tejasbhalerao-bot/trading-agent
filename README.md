@@ -11,7 +11,7 @@ the rules that bind them, and what is still open.
 
 ## Status
 
-M0–M3 are complete: foundations, the full design, and the first working slice (fetch, clean, one checklist, decide, record, settle), with market history from January 2024 in `data/history/`. Next: M4, the full system. Reports: [docs/reports/](docs/reports/). Milestones: [docs/plan.md](docs/plan.md).
+M0–M4 are complete: foundations, the full design, and the full system (all seven jobs, the evening run, Claude's review check, the daily report), with market history from January 2024 in `data/history/`. Next: M5, the backtest and go/no-go. Reports: [docs/reports/](docs/reports/). Milestones: [docs/plan.md](docs/plan.md).
 
 ## Try it
 
