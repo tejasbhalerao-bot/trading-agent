@@ -1,13 +1,13 @@
-# market data — never committed
-data/
-*.csv
-*.parquet
-*.db
-*.sqlite3
+# data/ is committed: it is the system's memory (docs/design/repo-structure.md)
+
+# rebuildable local cache, and the routine's review scratch file
+.cache/
+work/
 
 # python
 __pycache__/
 *.py[cod]
+*.egg-info/
 .venv/
 venv/
 .pytest_cache/
